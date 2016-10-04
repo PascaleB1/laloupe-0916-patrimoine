@@ -1,0 +1,7 @@
+patrimoine_patrimoine:
+    resource: "@PatrimoineBundle/Resources/config/routing/patrimoine.yml"
+    prefix:   /patrimoine
+
+patrimoine_homepage:
+    path:     /
+    defaults: { _controller: PatrimoineBundle:Default:index }

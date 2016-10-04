@@ -1,0 +1,32 @@
+PatrimoineBundle\Entity\patrimoine:
+    type: entity
+    table: null
+    repositoryClass: PatrimoineBundle\Repository\patrimoineRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+            column: Titre
+        intro:
+            type: string
+            length: 255
+            column: Intro
+        article:
+            type: string
+            length: 255
+            column: Article
+        presentation:
+            type: string
+            length: 255
+            column: Présentation
+        formulaire:
+            type: string
+            length: 255
+            column: Formulaire
+    lifecycleCallbacks: {  }
