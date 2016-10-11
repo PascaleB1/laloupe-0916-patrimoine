@@ -2,6 +2,8 @@
 
 namespace PatrimoineBundle\Repository;
 
+use Doctrine\ORM\EntityRepository;
+
 /**
  * RealisationRepository
  *
