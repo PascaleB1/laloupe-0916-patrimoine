@@ -22,3 +22,8 @@ patrimoine_delete:
     path:     /{id}/delete
     defaults: { _controller: "PatrimoineBundle:patrimoine:delete" }
     methods:  DELETE
+
+patrimoine_realisation:
+    path:     /realisation
+    defaults: { _controller: "PatrimoineBundle:patrimoine:realisation" }
+    methods:  [GET, POST]

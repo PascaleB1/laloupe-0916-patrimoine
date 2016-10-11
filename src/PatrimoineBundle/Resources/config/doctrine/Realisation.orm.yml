@@ -1,0 +1,18 @@
+PatrimoineBundle\Entity\Realisation:
+    type: entity
+    table: null
+    repositoryClass: PatrimoineBundle\Repository\RealisationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: '255'
+        article:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
