@@ -3,9 +3,9 @@
 namespace PatrimoineBundle\Entity;
 
 /**
- * Realisation
+ * Association
  */
-class Realisation
+class Association
 {
     /**
      * @var int
@@ -15,7 +15,7 @@ class Realisation
     /**
      * @var string
      */
-    private $titre;
+    private $intro;
 
     /**
      * @var string
@@ -34,27 +34,27 @@ class Realisation
     }
 
     /**
-     * Set titre
+     * Set intro
      *
-     * @param string $titre
+     * @param string $intro
      *
-     * @return Realisation
+     * @return Association
      */
-    public function setTitre($titre)
+    public function setIntro($intro)
     {
-        $this->titre = $titre;
+        $this->intro = $intro;
 
         return $this;
     }
 
     /**
-     * Get titre
+     * Get intro
      *
      * @return string
      */
-    public function getTitre()
+    public function getIntro()
     {
-        return $this->titre;
+        return $this->intro;
     }
 
     /**
@@ -62,7 +62,7 @@ class Realisation
      *
      * @param string $article
      *
-     * @return Realisation
+     * @return Association
      */
     public function setArticle($article)
     {

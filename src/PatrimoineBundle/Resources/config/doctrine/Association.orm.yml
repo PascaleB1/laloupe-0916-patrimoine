@@ -1,0 +1,24 @@
+PatrimoineBundle\Entity\Association:
+    type: entity
+    table: null
+    repositoryClass: PatrimoineBundle\Repository\AssociationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        article:
+            type: string
+            length: 255
+        article1:
+            type: string
+            length: 255
+        article2:
+            type: string
+            length: 255
+        article3:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

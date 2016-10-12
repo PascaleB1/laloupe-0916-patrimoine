@@ -1,7 +1,7 @@
-PatrimoineBundle\Entity\Realisation:
+PatrimoineBundle\Entity\Mecene:
     type: entity
     table: null
-    repositoryClass: PatrimoineBundle\Repository\RealisationRepository
+    repositoryClass: PatrimoineBundle\Repository\MeceneRepository
     id:
         id:
             type: integer
@@ -9,10 +9,13 @@ PatrimoineBundle\Entity\Realisation:
             generator:
                 strategy: AUTO
     fields:
-        titre:
+        presentation:
             type: string
-            length: '255'
-        article:
+            length: 255
+        formulaire1:
+            type: string
+            length: 255
+        formulaire2:
             type: string
             length: 255
     lifecycleCallbacks: {  }

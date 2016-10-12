@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(edit_form) }}
+    {{ form_errors(edit_form) }}
+
+            {{ form_widget(edit_form.article) }}
+            {{ form_errors(edit_form.article) }}
+<div id="container">
+    <div class="row fond">
+        <div class="présentation">
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos"></p>
+            </div>
+            <div class="image col-xs-12 col-lg-4">
+                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+            {{ form_widget(edit_form.article1) }}
+            {{ form_errors(edit_form.article1) }}
+    <div class="row fond">
+        <div class="présentation">
+            <div class="image col-xs-12 col-lg-4">
+               <!-- <img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+            </div>
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos"></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <br/>
+    <br/>
+    {{ form_widget(edit_form.article2) }}
+    {{ form_errors(edit_form.article2) }}
+    <div class="row fond">
+        <div class="présentation">
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos"></p>
+            </div>
+            <div class="image col-xs-12 col-lg-4">
+                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+    {{ form_widget(edit_form.article3) }}
+    {{ form_errors(edit_form.article3) }}
+    <div class="row fond">
+        <div class="présentation">
+            <div class="image col-xs-12 col-lg-4">
+                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+            </div>
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br/>
+    <br/>
+
+         <input type="submit" value="Edit" />
+    {{ form_end(edit_form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('association_index') }}">Back to the list</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

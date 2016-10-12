@@ -1,0 +1,24 @@
+mecene_index:
+    path:     /
+    defaults: { _controller: "PatrimoineBundle:Mecene:index" }
+    methods:  GET
+
+mecene_show:
+    path:     /{id}/show
+    defaults: { _controller: "PatrimoineBundle:Mecene:show" }
+    methods:  GET
+
+mecene_new:
+    path:     /new
+    defaults: { _controller: "PatrimoineBundle:Mecene:new" }
+    methods:  [GET, POST]
+
+mecene_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PatrimoineBundle:Mecene:edit" }
+    methods:  [GET, POST]
+
+mecene_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PatrimoineBundle:Mecene:delete" }
+    methods:  DELETE

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Mecenes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Presentation</th>
+                <th>Formulaire1</th>
+                <th>Formulaire2</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mecene in mecenes %}
+            <tr>
+                <td><a href="{{ path('mecene_show', { 'id': mecene.id }) }}">{{ mecene.id }}</a></td>
+                <td>{{ mecene.presentation }}</td>
+                <td>{{ mecene.formulaire1 }}</td>
+                <td>{{ mecene.formulaire2 }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('mecene_show', { 'id': mecene.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('mecene_edit', { 'id': mecene.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('mecene_new') }}">Create a new mecene</a>
+        </li>
+    </ul>
+{% endblock %}

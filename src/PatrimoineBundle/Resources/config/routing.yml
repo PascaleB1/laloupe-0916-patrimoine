@@ -9,3 +9,23 @@ patrimoine_patrimoine:
 patrimoine_homepage:
     path:     /
     defaults: { _controller: PatrimoineBundle:Default:index }
+
+patrimoine_association:
+    resource: "@PatrimoineBundle/Resources/config/routing/association.yml"
+    prefix:   /association
+
+patrimoine_accueil:
+    resource: "@PatrimoineBundle/Resources/config/routing/accueil.yml"
+    prefix:   /accueil
+
+patrimoine_agenda:
+    resource: "@PatrimoineBundle/Resources/config/routing/agenda.yml"
+    prefix:   /agenda
+
+patrimoine_mecene:
+    resource: "@PatrimoineBundle/Resources/config/routing/mecene.yml"
+    prefix:   /mecene
+
+patrimoine_histoire:
+        resource: "@PatrimoineBundle/Resources/config/routing/histoire.yml"
+        prefix:   /histoire

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Histoires list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Article1</th>
+                <th>Article2</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for histoire in histoires %}
+            <tr>
+                <td><a href="{{ path('histoire_show', { 'id': histoire.id }) }}">{{ histoire.id }}</a></td>
+                <td>{{ histoire.article1 }}</td>
+                <td>{{ histoire.article2 }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('histoire_show', { 'id': histoire.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('histoire_edit', { 'id': histoire.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('histoire_new') }}">Create a new histoire</a>
+        </li>
+    </ul>
+{% endblock %}

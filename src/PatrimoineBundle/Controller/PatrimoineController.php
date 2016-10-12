@@ -12,7 +12,7 @@ use PatrimoineBundle\Form\patrimoineType;
  * patrimoine controller.
  *
  */
-class patrimoineController extends Controller
+class PatrimoineController extends Controller
 {
     /**
      * Lists all patrimoine entities.

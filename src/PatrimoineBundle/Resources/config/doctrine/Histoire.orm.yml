@@ -1,7 +1,7 @@
-PatrimoineBundle\Entity\Realisation:
+PatrimoineBundle\Entity\Histoire:
     type: entity
     table: null
-    repositoryClass: PatrimoineBundle\Repository\RealisationRepository
+    repositoryClass: PatrimoineBundle\Repository\HistoireRepository
     id:
         id:
             type: integer
@@ -9,10 +9,10 @@ PatrimoineBundle\Entity\Realisation:
             generator:
                 strategy: AUTO
     fields:
-        titre:
+        article1:
             type: string
-            length: '255'
-        article:
+            length: 255
+        article2:
             type: string
             length: 255
     lifecycleCallbacks: {  }

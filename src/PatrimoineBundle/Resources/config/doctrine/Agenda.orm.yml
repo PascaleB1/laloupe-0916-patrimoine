@@ -1,0 +1,11 @@
+PatrimoineBundle\Entity\Agenda:
+    type: entity
+    table: null
+    repositoryClass: PatrimoineBundle\Repository\AgendaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
