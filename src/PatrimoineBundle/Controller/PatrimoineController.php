@@ -125,4 +125,9 @@ class PatrimoineController extends Controller
             ->getForm()
         ;
     }
+
+    public function realisationAction()
+    {
+        return $this->render('PatrimoineBundle:patrimoine:realisation.html.twig');
+    }
 }

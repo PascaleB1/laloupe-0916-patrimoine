@@ -1,0 +1,131 @@
+body {
+    background-color: #F5F0D8;
+}
+
+.navbar {
+    background-color: #6E7A7F;
+}
+
+ul.nav.navbar-nav > li.active > a {
+    background-color: #6E7A7F;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ul.nav.navbar-nav > li.active > a.btn.btn-outline-warning {
+    background-color: #D8CFA6;
+    width: 200px;
+}
+
+.txt_assos {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FFF;
+    text-align: justify;
+}
+
+.carousel-inner {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    max-height: 632px;
+}
+
+.image+p {
+    padding-left: 3%;
+}
+
+#container {
+    margin-top: 40px;
+    margin-right: 60px;
+    padding-left: 5%;
+}
+
+.intro {
+    margin-bottom: 40px;
+    padding-top: 15px;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+.photo_visiteur {
+    margin-top: 20px;
+}
+
+footer {
+    height: auto;
+    background-color: #3E3A3A;
+    color: #fff;
+    line-height: 50px;
+}
+a.btn.btn-primary {
+    margin-left: 150px;
+    background-color: #3E3A3A;
+    border: #3E3A3A;
+}
+a.btn.btn-default {
+    width: 100%;
+}
+.eleve {
+    width: 100%;
+
+}
+
+#float_right {
+    float: right;
+}
+/* Lionel */
+
+#marge_top {
+    margin-top: 50px;
+    border: #fff 1px solid;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.devenir_mecene {
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+.text-big {
+    text-align: center;
+}
+
+.para_txt {
+    text-align: center;
+}
+
+.title_mecene {
+    margin: 10px;
+}
+
+.calendar {
+    margin-top: 2.5%;
+}
+/*Lionel*/
+/* YLC */
+
+.fond {
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+.img_tmp {
+    height: 400px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.btn_grp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
