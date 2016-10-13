@@ -8,7 +8,6 @@ patrimoine_homepage:
     path:     /
     defaults: { _controller: PatrimoineBundle:Default:index }
 
-<<<<<<< HEAD
 patrimoine_association:
     resource: "@PatrimoineBundle/Resources/config/routing/association.yml"
     prefix:   /association
@@ -28,9 +27,8 @@ patrimoine_mecene:
 patrimoine_histoire:
         resource: "@PatrimoineBundle/Resources/config/routing/histoire.yml"
         prefix:   /histoire
-=======
 
 patrimoine_realisation:
     resource: "@PatrimoineBundle/Resources/config/routing/realisation.yml"
     prefix:   /realisation
->>>>>>> 83371cdb52d9ac48207862db6760edd3ddac33a9
+

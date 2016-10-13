@@ -1,44 +1,55 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Associations list</h1>
+   <h1>Associations list</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Intro</th>
-                <th>Article</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for association in associations %}
-            <tr>
-                <td><a href="{{ path('association_show', { 'id': association.id }) }}">{{ association.id }}</a></td>
-                <td>{{ association.intro }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('association_show', { 'id': association.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('association_edit', { 'id': association.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('association_new') }}">Create a new association</a>
-        </li>
-    </ul>
+     {% for association in associations %}
+        <div class=container>
+        <div class="row fond">
+            <div class="présentation">
+                <div class="col-xs-12 col-lg-8">
+                    <h1>{{ association.titre1 }}</h1>
+                    <p class="txt_assos">{{ association.article1 }}</p>
+                </div>
+                <div class="image col-xs-12 col-lg-4">
+                    <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+                </div>
+            </div>
+        </div>
+          <div class="row fond">
+              <div class="présentation">
+                  <div class="col-xs-12 col-lg-8">
+                      <h1>{{ association.titre2 }}</h1>
+                      <p class="txt_assos">{{ association.article2 }}</p>
+                  </div>
+                  <div class="image col-xs-12 col-lg-4">
+                      <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+                  </div>
+              </div>
+          </div>
+          <div class="row fond">
+              <div class="présentation">
+                  <div class="col-xs-12 col-lg-8">
+                      <h1>{{ association.titre3 }}</h1>
+                      <p class="txt_assos">{{ association.article3 }}</p>
+                  </div>
+                  <div class="image col-xs-12 col-lg-4">
+                      <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+                  </div>
+              </div>
+          </div>
+          <div class="row fond">
+              <div class="présentation">
+                  <div class="col-xs-12 col-lg-8">
+                      <h1>{{ association.titre4 }}</h1>
+                      <p class="txt_assos">{{ association.article4 }}</p>
+                  </div>
+                  <div class="image col-xs-12 col-lg-4">
+                      <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+                  </div>
+              </div>
+          </div>
+     {% endfor %}
+    </div>
 {% endblock %}

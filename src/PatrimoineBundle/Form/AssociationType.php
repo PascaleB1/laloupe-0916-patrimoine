@@ -13,8 +13,14 @@ class AssociationType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('intro')
-                ->add('article')
+        $builder->add('titre1')
+                ->add('titre2')
+                ->add('titre3')
+                ->add('titre4')
+                ->add('article1')
+                ->add('article2')
+                ->add('article3')
+                ->add('article4')
         ;
     }
     

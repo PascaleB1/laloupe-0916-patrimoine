@@ -9,7 +9,16 @@ PatrimoineBundle\Entity\Association:
             generator:
                 strategy: AUTO
     fields:
-        article:
+        titre1:
+            type: string
+            length: 255
+        titre2:
+            type: string
+            length: 255
+        titre3:
+            type: string
+            length: 255
+        titre4:
             type: string
             length: 255
         article1:
@@ -19,6 +28,9 @@ PatrimoineBundle\Entity\Association:
             type: string
             length: 255
         article3:
+            type: string
+            length: 255
+        article4:
             type: string
             length: 255
     lifecycleCallbacks: {  }
