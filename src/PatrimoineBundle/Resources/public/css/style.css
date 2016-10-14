@@ -129,3 +129,10 @@ a.btn.btn-default {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.bouton_twix {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
