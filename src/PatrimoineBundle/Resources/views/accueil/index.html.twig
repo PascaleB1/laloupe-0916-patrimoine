@@ -7,6 +7,15 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Article1</th>
+                <th>Article2</th>
+                <th>Article3</th>
+                <th>Article4</th>
+                <th>Titre1</th>
+                <th>Titre2</th>
+                <th>Titre3</th>
+                <th>Titre4</th>
+                <th>Video</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -14,6 +23,15 @@
         {% for accueil in accueils %}
             <tr>
                 <td><a href="{{ path('accueil_show', { 'id': accueil.id }) }}">{{ accueil.id }}</a></td>
+                <td>{{ accueil.article1 }}</td>
+                <td>{{ accueil.article2 }}</td>
+                <td>{{ accueil.article3 }}</td>
+                <td>{{ accueil.article4 }}</td>
+                <td>{{ accueil.titre1 }}</td>
+                <td>{{ accueil.titre2 }}</td>
+                <td>{{ accueil.titre3 }}</td>
+                <td>{{ accueil.titre4 }}</td>
+                <td>{{ accueil.video }}</td>
                 <td>
                     <ul>
                         <li>

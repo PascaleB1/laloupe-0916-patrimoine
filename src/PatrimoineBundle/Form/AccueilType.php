@@ -8,7 +8,14 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class AccueilType extends AbstractType
 {
-
+    /**
+     * {@inheritdoc}
+     */
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder->add('article1')->add('article2')->add('article3')->add('article4')->add('titre1')->add('titre2')->add('titre3')->add('titre4')->add('video')        ;
+    }
+    
     /**
      * {@inheritdoc}
      */

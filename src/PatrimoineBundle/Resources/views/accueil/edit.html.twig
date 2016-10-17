@@ -1,20 +1,74 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Accueil edit</h1>
+    <br/>
+    <br/>
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
 
-    <ul>
+<div id="container" xmlns="http://www.w3.org/1999/html">
+    <div class="row fond">
+        <div class="video">
+            <label for="patrimoinebundle_accueil_video" class="required">Video</label>
+            <input id="patrimoinebundle_accueil_video" name="patrimoinebundle_accueil[video]" required="required" maxlength="255" value="uio" type="text">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row fond">
+        <div class="presentation">
+            <div class="col-xs-12 col-lg-6">
+                <h1>{{ accueil.titre1 }}</h1>
+                {{ form_widget(form.titre1) }}
+                {{ form_errors(form.titre1) }}
+
+                <p class="txt_accueil">{{ accueil.article1 }}</p>
+                {{ form_widget(form.article1) }}
+                {{ form_errors(form.article1) }}
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <h1>{{ accueil.titre2 }}</h1>
+                {{ form_widget(form.titre2) }}
+                {{ form_errors(form.titre2) }}
+
+                <p class="txt_accueil">{{ accueil.article2 }}</p>
+                {{ form_widget(form.article2) }}
+                {{ form_errors(form.article2) }}
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <h1>{{ accueil.titre3 }}</h1>
+                {{ form_widget(form.titre3) }}
+                {{ form_errors(form.titre3) }}
+
+                <p class="txt_accueil">{{ accueil.article3 }}</p>
+                {{ form_widget(form.article3) }}
+                {{ form_errors(form.article3) }}
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <h1>{{ accueil.titre4 }}</h1>
+                {{ form_widget(form.titre4) }}
+                {{ form_errors(form.titre4) }}
+
+                <p class="txt_accueil">{{ accueil.article4 }}</p>
+                {{ form_widget(form.article4) }}
+                {{ form_errors(form.article4) }}
+            </div>
+        </div>
+    </div>
+</div>
+
+    <ul class="bouton_twix">
         <li>
-            <a href="{{ path('accueil_index') }}">Back to the list</a>
+           <a href="{{ path('association_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <input type="submit" value="Edit"/>
+
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+            <input type="submit" value="Delete">
             {{ form_end(delete_form) }}
         </li>
     </ul>

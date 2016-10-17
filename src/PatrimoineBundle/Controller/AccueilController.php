@@ -83,7 +83,7 @@ class AccueilController extends Controller
 
         return $this->render('PatrimoineBundle:accueil:edit.html.twig', array(
             'accueil' => $accueil,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
