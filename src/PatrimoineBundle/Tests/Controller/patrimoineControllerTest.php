@@ -4,7 +4,7 @@ namespace PatrimoineBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class patrimoineControllerTest extends WebTestCase
+class PatrimoineControllerTest extends WebTestCase
 {
     /*
     public function testCompleteScenario()

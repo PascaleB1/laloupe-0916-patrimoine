@@ -23,4 +23,3 @@ class Accueil
         return $this->id;
     }
 }
-

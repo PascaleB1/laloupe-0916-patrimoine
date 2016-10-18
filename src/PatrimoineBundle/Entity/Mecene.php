@@ -110,4 +110,3 @@ class Mecene
         return $this->formulaire2;
     }
 }
-

@@ -81,4 +81,3 @@ class Histoire
         return $this->article2;
     }
 }
-

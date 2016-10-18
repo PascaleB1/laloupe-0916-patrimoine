@@ -23,4 +23,3 @@ class Agenda
         return $this->id;
     }
 }
-
