@@ -33,4 +33,22 @@ PatrimoineBundle\Entity\Association:
         article4:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+        image1:
+            type: string
+            lenght: 255
+        image2:
+            type: string
+            lenght: 255
+        image3:
+            type: string
+            lenght: 255
+        image4:
+            type: string
+            lenght: 255
+
+    lifecycleCallbacks:
+      prePersist: [ preUpload]
+      preUpdate: [ preUpload ]
+      postPersist: [ upload ]
+      postUpdate: [ upload ]
+      postRemove: [ removeUpload ]

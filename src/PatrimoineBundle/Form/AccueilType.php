@@ -5,6 +5,7 @@ namespace PatrimoineBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class AccueilType extends AbstractType
 {
@@ -13,7 +14,17 @@ class AccueilType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('article1')->add('article2')->add('article3')->add('article4')->add('titre1')->add('titre2')->add('titre3')->add('titre4')->add('video')        ;
+        $builder
+            ->add('article1', TextareaType::class)
+            ->add('article2', TextareaType::class)
+            ->add('article3', TextareaType::class)
+            ->add('article4', TextareaType::class)
+            ->add('titre1', TextareaType::class)
+            ->add('titre2', TextareaType::class)
+            ->add('titre3', TextareaType::class)
+            ->add('titre4', TextareaType::class)
+            ->add('video');
+
     }
     
     /**

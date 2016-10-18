@@ -140,3 +140,11 @@ a.btn.btn-default {
 .video {
     text-align: center;
 }
+
+textarea {
+    border: #6E7A7F 2px solid;
+    border-radius: 12.5px 12.5px 0px 12.5px;
+    text-align: center;
+    width: 325px;
+    height: 200px;
+}
