@@ -7,6 +7,8 @@ namespace PatrimoineBundle\Entity;
  */
 class Realisation
 {
+    public $file;
+    
     /**
      * @var int
      */
