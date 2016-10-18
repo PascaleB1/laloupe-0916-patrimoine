@@ -111,6 +111,7 @@ a.btn.btn-default {
 
 .calendar {
     margin-top: 2.5%;
+    height: 800px;
 }
 /*Lionel*/
 /* YLC */
@@ -128,4 +129,60 @@ a.btn.btn-default {
 .btn_grp {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/* CLASS TWIX */
+
+.bouton_twix {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* BOUTON P2W */
+
+.bouton_entreprise {
+    border: solid 1px black;
+    background-color: #C5D1CE;
+    width: 150px;
+}
+
+.bouton_paypal {
+    border: solid 1px black;
+    background-color: #A2A8A7;
+    width: 125px;
+}
+
+.bouton_particulier {
+    border: solid 1px black;
+    background-color: #7E8281;
+    width: 150px;
+}
+
+/* -------------------------BOUTON------------------------- */
+
+.bouton_entreprise:hover, .bouton_entreprise:focus {
+    border: solid #C5D1CE 1px;
+    background-color: #C5D1CE;
+}
+
+.bouton_paypal:hover, .bouton_paypal:focus {
+    border: solid 1px #A2A8A7;
+    background-color: #A2A8A7;
+}
+
+
+.bouton_particulier:hover, .bouton_particulier:focus {
+    border: solid 1px;
+    background-color: #7E8281
+}
+
+/* TEXTAREA */
+
+textarea {
+    border: #6E7A7F 2px solid;
+    border-radius: 12.5px 12.5px 0px 12.5px;
+    text-align: center;
+    width: 325px;
+    height: 180px;
 }
