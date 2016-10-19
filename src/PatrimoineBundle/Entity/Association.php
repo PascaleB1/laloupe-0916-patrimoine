@@ -7,7 +7,7 @@ namespace PatrimoineBundle\Entity;
  */
 class Association
 {
-    public $file;
+   public $file;
 
     protected function getUploadDir()
     {
@@ -18,7 +18,7 @@ class Association
     {
         return __DIR__.'/../../../web/'.$this->getUploadDir();
     }
-
+/*
     public function getWebPath()
     {
         return null === $this->image ? null : $this->getUploadDir().'/'.$this->image;
@@ -27,7 +27,7 @@ class Association
     public function getAbsolutePath()
     {
         return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
-    }
+    }*/
 
 
     public function preUpload()
@@ -54,9 +54,9 @@ class Association
 
     public function removeUpload()
     {
-        if ($file = $this->getAbsolutePath()) {
+        /*if ($file = $this->getAbsolutePath()) {
             unlink($file);
-        }
+        }*/
     }
     /**code généré
     /**

@@ -11,16 +11,16 @@ PatrimoineBundle\Entity\Accueil:
     fields:
         article1:
             type: string
-            length: 255
+            length: 700
         article2:
             type: string
-            length: 255
+            length: 700
         article3:
             type: string
-            length: 255
+            length: 700
         article4:
             type: string
-            length: 255
+            length: 700
         titre1:
             type: string
             length: 255

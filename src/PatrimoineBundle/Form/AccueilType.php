@@ -19,10 +19,10 @@ class AccueilType extends AbstractType
             ->add('article2', TextareaType::class)
             ->add('article3', TextareaType::class)
             ->add('article4', TextareaType::class)
-            ->add('titre1', TextareaType::class)
-            ->add('titre2', TextareaType::class)
-            ->add('titre3', TextareaType::class)
-            ->add('titre4', TextareaType::class)
+            ->add('titre1')
+            ->add('titre2')
+            ->add('titre3')
+            ->add('titre4')
             ->add('video');
 
     }

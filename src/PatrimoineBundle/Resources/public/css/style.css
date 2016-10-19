@@ -146,5 +146,10 @@ textarea {
     border-radius: 12.5px 12.5px 0px 12.5px;
     text-align: center;
     width: 325px;
-    height: 200px;
+    height: 180px;
+}
+
+h1 {
+    font-family: Verdana, serif;
+    font-size: x-large;
 }

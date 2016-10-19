@@ -9,9 +9,9 @@
 
 <div id="container" xmlns="http://www.w3.org/1999/html">
     <div class="row fond">
-        <div class="video">
-            <label for="patrimoinebundle_accueil_video" class="required">Video</label>
-            <input id="patrimoinebundle_accueil_video" name="patrimoinebundle_accueil[video]" required="required" maxlength="255" value="uio" type="text">
+        <div class="video">{{ accueil.video }}
+            {{ form_widget(form.video) }}
+            {{ form_errors(form.video) }}
         </div>
     </div>
     <br/>
@@ -58,18 +58,20 @@
     </div>
 </div>
 
-    <ul class="bouton_twix">
-        <li>
-           <a href="{{ path('association_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <input type="submit" value="Edit"/>
 
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-            <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        <ul class="bouton_twix">
+            <li>
+                <a href="{{ path('accueil_index') }}">Back to the list</a>
+            </li>
+            <li>
+                <input type="submit" value="Edit"/>
+                {{ form_end(form) }}
+            </li>
+            <li>
+                {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+                {{ form_end(delete_form) }}
+            </li>
+        </ul>
+
 {% endblock %}
