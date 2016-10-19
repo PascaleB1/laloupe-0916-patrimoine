@@ -139,43 +139,39 @@ a.btn.btn-default {
     justify-content: space-around;
 }
 
-/* BOUTON P2W */
-
-.bouton_entreprise {
-    border: solid 1px black;
-    background-color: #C5D1CE;
-    width: 150px;
-}
-
-.bouton_paypal {
-    border: solid 1px black;
-    background-color: #A2A8A7;
-    width: 125px;
-}
-
-.bouton_particulier {
-    border: solid 1px black;
-    background-color: #7E8281;
-    width: 150px;
-}
-
-/* -------------------------BOUTON------------------------- */
+/* ----------------------BOUTON--------------------------- */
 
 .bouton_entreprise:hover, .bouton_entreprise:focus {
-    border: solid #C5D1CE 1px;
+    border: solid 1px #C5D1CE;
+    background-color: whitesmoke;
+}
+
+.bouton_entreprise, .bouton_entreprise:focus {
+    border: solid 1px #C5D1CE;
     background-color: #C5D1CE;
 }
 
 .bouton_paypal:hover, .bouton_paypal:focus {
+    border: solid 1px #A2A8A7;
+    background-color: whitesmoke;
+}
+
+.bouton_paypal, .bouton_paypal:focus {
     border: solid 1px #A2A8A7;
     background-color: #A2A8A7;
 }
 
 
 .bouton_particulier:hover, .bouton_particulier:focus {
-    border: solid 1px;
-    background-color: #7E8281
+    border: solid 1px #7E8281;
+    background-color: whitesmoke;
 }
+
+.bouton_particulier, .bouton_particulier:focus {
+    border: solid 1px #7E8281;
+    background-color: #7E8281;
+}
+
 
 /* TEXTAREA */
 
@@ -185,4 +181,30 @@ textarea {
     text-align: center;
     width: 325px;
     height: 180px;
+}
+
+.champ1 {
+    width: 1050px;
+}
+
+.champ3 {
+    height: 210px;
+}
+
+/* MODAL MENTION LEGAL */
+
+.modal_mention {
+    text-align: center;
+    font-size: 1.35em;
+    color: black;
+    margin: 20px;
+}
+
+.btn_fermer {
+    margin: 20px;
+    margin-left: 90%;
+}
+
+hr {
+    width: 80%;
 }

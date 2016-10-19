@@ -1,21 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     {{ form_start(edit_form) }}
     {{ form_errors(edit_form) }}
 
-
     <hr/>
     <div class="container">
         <div id="marge_top">
-            <p>Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis militibus discrepantes opposita cuncta superasse virtute.
+            <p>Etre donateur ou mécène, c'est s'impliquer dans la mesure de ses moyens dans le développement d'actions qui sensibilisent, informent et dynamisent le territoire percheron et ses richesses. C'est permettre de concrétiser, grâce à la force du plus grand nombre, des idées généreuses et porteuses de progrès social pour les habitants et hôtes du Perche.
 
-                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+                Les avantages du mécénat: pour les entreprises, c'est un moyen de communiquer, d'afficher une image positive, tournée vers son environnement proche et de bénéficier d'un avantage fiscal, pour les particuliers c'est aussi un avantage fiscal et un mode de participation citoyen.
+
+                Le fonds de dotation est un organisme d'intérêt général à but non lucratif régi par la loi du 4 août 2008; déclaré en préfecture le 22 juillet 2010 et publié au JO du 21 août 2010, son objet est de promouvoir la mise en valeur et la conservation du patrimoine percheron. Les donateurs ou mécènes bénéficient d'un avantage fiscal (art 200 et 238bis du CGI):
+
+                les entreprises qui consentent des dons au profit d'un fonds de dotation bénéficient d'une réduction d'impôt à hauteur de 60% du montant des versements dans la limite de 0.5% du chiffre d'affaires.
+
+                les particuliers bénéficient d'une réduction d'impôt sur le revenu de 66% de leur versement dans la limite de 20% du revenu imposable.
+
+                les dons et legs consentis au profit d'un fonds de dotation sont exonérés des droits de mutation (art 795, §14 du CGI).
+
+            </p>
             {{ mecene.presentation }}
-            {{ form_widget(edit_form.presentation) }}
-            {{ form_errors(edit_form.presentation) }}
+            {{ form_widget(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
+            {{ form_errors(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
 
         </div>
         <br/>
@@ -45,7 +54,8 @@
                 <div class="row">
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-12 col-md-12" data-scrollreveal="enter top after 0s over 1s">
-                        <p class="text-big">Un reçu fiscal vous sera adressé automatiquement</p>
+                        <p class="text-big">Un reçu fiscal vous sera adressé automatiquement</p><hr/>
+                        <p>Valoriser le Perche en étant notre mécène. la suite.<br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
 
                     </div>
                 </div>
@@ -85,8 +95,8 @@
                                 <p>
                                     La réduction d’impôt est égale à 60 % du montant du don effectué , et retenu dans la limite de 0,5 % du chiffre d’affaires H.T., avec la possibilité, en cas de dépassement de ce plafond, de reporter l’excédent au titre des cinq exercices suivants </p>
                                 {{ mecene.formulaire1 }}
-                                {{ form_widget(edit_form.formulaire1, {'class': 'test'}) }}
-                                {{ form_errors(edit_form.formulaire1) }}
+                                {{ form_widget(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
+                                {{ form_errors(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
 
 
                             </div>
@@ -110,8 +120,8 @@
                                 La réduction d'impôt est égale à 66 % des sommes versées, retenues dans la limite annuelle de 20 % du revenu imposable
                             </p>
                             {{ mecene.formulaire2 }}
-                            {{ form_widget(edit_form.formulaire2) }}
-                            {{ form_errors(edit_form.formulaire2) }}
+                            {{ form_widget(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
+                            {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
 
 
                         </div>
@@ -129,7 +139,7 @@
                         <p>Je suis une entreprise</p>
 
                         <p>
-                            <button type="button" class="btn btn-primary btn-lg bouton_entreprise" data-toggle="modal" data-target=".bs-entreprise-modal-lg">Je fais un don</button>
+                            <button type="button" class="btn btn btn-lg bouton_entreprise" data-toggle="modal" data-target=".bs-entreprise-modal-lg">Je fais un don</button>
                         </p>
 
                     </div>
@@ -147,7 +157,7 @@
                             <input name="no_note" value="0" type="hidden">
                             <input name="currency_code" value="EUR" type="hidden">
                             <input name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest" type="hidden">
-                            <button type="submit" class="btn btn-success btn-lg bouton_paypal" name="submit" title="donner">Paypal</button>
+                            <button type="submit" class="btn btn btn-lg bouton_paypal" name="submit" title="donner">Paypal</button>
                         </form>
                         <p></p>
 
@@ -157,7 +167,7 @@
                         <p>Je suis un particulier</p>
 
                         <p>
-                            <button type="button" class="btn btn-info btn-lg bouton_particulier" data-toggle="modal" data-target=".bs-particulier-modal-lg">Je fais un don</button>
+                            <button type="button" class="btn btn btn-lg bouton_particulier" data-toggle="modal" data-target=".bs-particulier-modal-lg">Je fais un don</button>
                         </p>
 
                     </div>
@@ -386,5 +396,5 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- FIN MODAL PARTICULIER -->
-
+</body>
 {% endblock %}
