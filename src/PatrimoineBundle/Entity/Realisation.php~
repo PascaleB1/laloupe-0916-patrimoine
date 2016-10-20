@@ -1,12 +1,14 @@
 <?php
 
 namespace PatrimoineBundle\Entity;
+use Symfony\Component\Validator\Constraints\Image;
 
 /**
  * Realisation
  */
 class Realisation
 {
+    /* ENTITES GENEREES */
     /**
      * @var int
      */
@@ -603,4 +605,66 @@ class Realisation
     {
         return $this->article10;
     }
+
+//    /**
+//     * @var string
+//     */
+//    private $image;
+//
+//    /**
+//     * Set image
+//     *
+//     * @param string $image
+//     *
+//     * @return Image
+//     */
+//    public function setImage($image)
+//    {
+//        $this->image = $image;
+//
+//        return $this;
+//    }
+//
+//
+//    /**
+//     * Constructor
+//     */
+//    public function __construct()
+//    {
+//        $this->image = new \Doctrine\Common\Collections\ArrayCollection();
+//    }
+
+//    /**
+//     * Add image
+//     *
+//     * @param \PatrimoineBundle\Entity\Image $image
+//     *
+//     * @return Realisation
+//     */
+//    public function addImage(\PatrimoineBundle\Entity\Image $image)
+//    {
+//        $this->image[] = $image;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Remove image
+//     *
+//     * @param \PatrimoineBundle\Entity\Image $image
+//     */
+//    public function removeImage(\PatrimoineBundle\Entity\Image $image)
+//    {
+//        $this->image->removeElement($image);
+//    }
+//
+//    /**
+//     * Get image
+//     *
+//     * @return \Doctrine\Common\Collections\Collection
+//     */
+//    public function getImage()
+//    {
+//        return $this->image;
+//    }
 }

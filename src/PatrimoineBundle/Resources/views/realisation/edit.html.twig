@@ -1,23 +1,477 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <br />
-    <br />
+    <br/>
+    <br/>
     <h1>Realisation edit - PAGE EDIT</h1>
 
+    {#{{ form_start(edit_form) }}#}
+    {#{{ form_widget(edit_form) }}#}
+    {#<input type="submit" value="Edit" />#}
+    {#{{ form_end(edit_form) }}#}
+    <!---------------------------->
+    {#<div class="container">#}
+    {#<br/>#}
+    {#<br/>#}
+
+
+    {#<div class="row fond">#}
+    {#<div class="col-xs-12 text-center">#}
+
+    {#<h3>{{ realisation.titre1 }}</h3>#}
+
+    {#<div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"#}
+    {#class="thumbnail img_tmp"/></div>#}
+
+    {#<div class="col-xs-8">#}
+    {#<h3>description</h3>#}
+
+
+    {#<p>Article 1</p>#}
+
+    {#</div>#}
+    {#</div>#}
+    {#</div>#}
+    {#</div>#}
+
+    {#<ul>#}
+    {#<li>#}
+    {#<a href="{{ path('realisation_new') }}">Create a new entry</a>#}
+    {#</li>#}
+    {#</ul>#}
+    {#<br/>#}
+    {#</div>#}
+
     {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+
+
+    <!-- BLOC 1 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre1 }}</h3>
+
+                {{ form_widget(edit_form.titre1) }}
+
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article1 }}</p>
+                {{ form_widget(edit_form.article1) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 1 -->
+
+
+    <!-- BLOC 2 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre2 }}</h3>
+                {{ form_widget(edit_form.titre2) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article2 }}</p>
+                {{ form_widget(edit_form.article2) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 2 -->
+
+
+    <!-- BLOC 3 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre3 }}</h3>
+                {{ form_widget(edit_form.titre3) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article3 }}</p>
+                {{ form_widget(edit_form.article3) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 3 -->
+
+
+    <!-- BLOC 4 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre4 }}</h3>
+                {{ form_widget(edit_form.titre4) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article4 }}</p>
+                {{ form_widget(edit_form.article4) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 4 -->
+
+
+    <!-- BLOC 5 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre5 }}</h3>
+                {{ form_widget(edit_form.titre5) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article5 }}</p>
+                {{ form_widget(edit_form.article5) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 5 -->
+
+
+    <!-- BLOC 6 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre6 }}</h3>
+                {{ form_widget(edit_form.titre6) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article6 }}</p>
+                {{ form_widget(edit_form.article6) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 6 -->
+
+
+    <!-- BLOC 7 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre7 }}</h3>
+                {{ form_widget(edit_form.titre7) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article7 }}</p>
+                {{ form_widget(edit_form.article7) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 7 -->
+
+
+    <!-- BLOC 8 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre8 }}</h3>
+                {{ form_widget(edit_form.titre8) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article8 }}</p>
+                {{ form_widget(edit_form.article8) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 8 -->
+
+
+    <!-- BLOC 9 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre9 }}</h3>
+                {{ form_widget(edit_form.titre9) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article9 }}</p>
+                {{ form_widget(edit_form.article9) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 9 -->
+
+
+    <!-- BLOC 10 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre10 }}</h3>
+                {{ form_widget(edit_form.titre10) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
+                                       class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article10 }}</p>
+                {{ form_widget(edit_form.article10) }}
+
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 10 -->
+
+    <br/>
+    <br/>
+
     {{ form_end(edit_form) }}
 
     <ul>
-        <li>
-            <a href="{{ path('realisation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+
+        <li><a href="{{ path('realisation_index') }}">retour vers index</a>
         </li>
     </ul>
 {% endblock %}
