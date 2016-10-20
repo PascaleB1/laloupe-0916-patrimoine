@@ -293,8 +293,8 @@
                 <h3>{{ realisation.titre10 }}</h3>
 
             </div>
-
-            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1" class="thumbnail img_tmp"/>
+             {{ realisation.image }}
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image }}"  class="thumbnail img_tmp">
 
                 <!-- BLOC IMAGE A FINIR -->
 
@@ -306,6 +306,8 @@
                 <p>{{ realisation.article10 }}</p>
 
             </div>
+
+
         </div>
 
     </div>

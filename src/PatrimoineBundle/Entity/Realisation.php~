@@ -8,6 +8,57 @@ use Symfony\Component\Validator\Constraints\Image;
  */
 class Realisation
 {
+    public $file;
+
+    protected function getUploadDir()
+    {
+        return 'uploads';
+    }
+
+    protected function getUploadRootDir()
+    {
+        return __DIR__.'/../../../web/'.$this->getUploadDir();
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->image ? null : $this->getUploadDir().'/'.$this->image;
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->image ? null : $this->getUploadRootDir().'/'.$this->image;
+    }
+
+    public function preUpload()
+    {
+        if (null !== $this->file) {
+            // do whatever you want to generate a unique name
+            $this->image = uniqid().'.'.$this->file->guessExtension();
+        }
+    }
+
+    public function upload()
+    {
+        if (null === $this->file) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file->move($this->getUploadRootDir(), $this->image);
+
+        unset($this->file);
+    }
+    
+    public function removeUpload()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
+
     /* ENTITES GENEREES */
     /**
      * @var int
@@ -605,66 +656,4 @@ class Realisation
     {
         return $this->article10;
     }
-
-//    /**
-//     * @var string
-//     */
-//    private $image;
-//
-//    /**
-//     * Set image
-//     *
-//     * @param string $image
-//     *
-//     * @return Image
-//     */
-//    public function setImage($image)
-//    {
-//        $this->image = $image;
-//
-//        return $this;
-//    }
-//
-//
-//    /**
-//     * Constructor
-//     */
-//    public function __construct()
-//    {
-//        $this->image = new \Doctrine\Common\Collections\ArrayCollection();
-//    }
-
-//    /**
-//     * Add image
-//     *
-//     * @param \PatrimoineBundle\Entity\Image $image
-//     *
-//     * @return Realisation
-//     */
-//    public function addImage(\PatrimoineBundle\Entity\Image $image)
-//    {
-//        $this->image[] = $image;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Remove image
-//     *
-//     * @param \PatrimoineBundle\Entity\Image $image
-//     */
-//    public function removeImage(\PatrimoineBundle\Entity\Image $image)
-//    {
-//        $this->image->removeElement($image);
-//    }
-//
-//    /**
-//     * Get image
-//     *
-//     * @return \Doctrine\Common\Collections\Collection
-//     */
-//    public function getImage()
-//    {
-//        return $this->image;
-//    }
 }

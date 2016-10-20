@@ -79,11 +79,13 @@ PatrimoineBundle\Entity\Realisation:
         article10:
             type: text
             nullable: TRUE
+        image:
+            type: string
+            length: 255
 
-#    oneToMany :
-#
-#        image:
-#            targetEntity: PatrimoineBundle\Entity\Image
-#            mappedBy: image
-
-    lifecycleCallbacks: {  }
+    lifecycleCallbacks:
+      prePersist: [ preUpload ]
+      preUpdate: [ preUpload ]
+      postPersist: [ upload ]
+      postUpdate: [ upload ]
+      postRemove: [ removeUpload ]
