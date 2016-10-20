@@ -62,8 +62,9 @@
 
             </div>
 
-            <div class="col-xs-4"><img src="../fichiers/file/real/affiche_film_14-18.jpg" alt="IMGArt 1"
-                                       class="thumbnail img_tmp"/>
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image1 }}" class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.form) }}
+                {{ form_errors(edit_form.form) }}
 
                 <!-- BLOC IMAGE A FINIR -->
 

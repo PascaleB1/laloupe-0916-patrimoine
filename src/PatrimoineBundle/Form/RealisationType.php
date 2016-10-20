@@ -35,6 +35,7 @@ class RealisationType extends AbstractType
             ->add('article9')
             ->add('titre10')
             ->add('article10')
+            ->add('file', 'file', array('label' => 'image', 'required' => false));
         ;
     }
     

@@ -16,6 +16,7 @@ PatrimoineBundle\Entity\Realisation:
         article1:
             type: text
             nullable: TRUE
+
         titre2:
             type: string
             length: 255
@@ -23,6 +24,7 @@ PatrimoineBundle\Entity\Realisation:
         article2:
             type: text
             nullable: TRUE
+
         titre3:
             type: string
             length: 255
@@ -30,6 +32,7 @@ PatrimoineBundle\Entity\Realisation:
         article3:
             type: text
             nullable: TRUE
+
         titre4:
             type: string
             length: 255
@@ -37,6 +40,7 @@ PatrimoineBundle\Entity\Realisation:
         article4:
             type: text
             nullable: TRUE
+
         titre5:
             type: string
             length: 255
@@ -44,6 +48,7 @@ PatrimoineBundle\Entity\Realisation:
         article5:
             type: text
             nullable: TRUE
+
         titre6:
             type: string
             length: 255
@@ -51,6 +56,7 @@ PatrimoineBundle\Entity\Realisation:
         article6:
             type: text
             nullable: TRUE
+
         titre7:
             type: string
             length: 255
@@ -58,6 +64,7 @@ PatrimoineBundle\Entity\Realisation:
         article7:
             type: text
             nullable: TRUE
+
         titre8:
             type: string
             length: 255
@@ -65,6 +72,7 @@ PatrimoineBundle\Entity\Realisation:
         article8:
             type: text
             nullable: TRUE
+
         titre9:
             type: string
             length: 255
@@ -72,6 +80,7 @@ PatrimoineBundle\Entity\Realisation:
         article9:
             type: text
             nullable: TRUE
+
         titre10:
             type: string
             length: 255
@@ -80,10 +89,41 @@ PatrimoineBundle\Entity\Realisation:
             type: text
             nullable: TRUE
 
-#    oneToMany :
-#
-#        image:
-#            targetEntity: PatrimoineBundle\Entity\Image
-#            mappedBy: image
+        image1:
+            type: string
+            nullable: TRUE
+        image2:
+            type: string
+            nullable: TRUE
+        image3:
+            type: string
+            nullable: TRUE
+        image4:
+            type: string
+            nullable: TRUE
+        image5:
+            type: string
+            nullable: TRUE
+        image6:
+            type: string
+            nullable: TRUE
+        image7:
+            type: string
+            nullable: TRUE
+        image8:
+            type: string
+            nullable: TRUE
+        image9:
+            type: string
+            nullable: TRUE
+        image10:
+            type: string
+            nullable: TRUE
 
-    lifecycleCallbacks: {  }
+
+    lifecycleCallbacks:
+      prePersist: [ preUpload ]
+      preUpdate: [ preUpload ]
+      postPersist: [ upload ]
+      postUpdate: [ upload ]
+      postRemove: [ removeUpload ]
