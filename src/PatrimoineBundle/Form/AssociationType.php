@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 class AssociationType extends AbstractType
 {
     /**
@@ -14,15 +14,19 @@ class AssociationType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('titre1', TextareaType::class)
-                ->add('titre2', TextareaType::class)
-                ->add('titre3', TextareaType::class)
-                ->add('titre4', TextareaType::class)
+        $builder->add('titre1')
+                ->add('titre2')
+                ->add('titre3')
+                ->add('titre4')
                 ->add('article1', TextareaType::class)
                 ->add('article2', TextareaType::class)
                 ->add('article3', TextareaType::class)
                 ->add('article4', TextareaType::class)
-                ->add('file', 'file', array('label' => 'image', 'required' => false));
+                ->add('file1', FileType::class, array('label' => 'insérer une image', 'required' => false))
+                ->add('file2', FileType::class, array('label' => 'insérer une image', 'required' => false))
+                ->add('file3', FileType::class, array('label' => 'insérer une image', 'required' => false))
+                ->add('file4', FileType::class, array('label' => 'insérer une image', 'required' => false));
+
     }
     
     /**

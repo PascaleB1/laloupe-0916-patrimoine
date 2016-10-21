@@ -31,9 +31,9 @@ ul.nav.navbar-nav > li.active > a.btn.btn-outline-warning {
     max-height: 632px;
 }
 
-.image+p {
+/*.image+p {
     padding-left: 3%;
-}
+}*/
 
 #container {
     margin-top: 40px;
@@ -121,7 +121,7 @@ a.btn.btn-default {
     border-radius: 15px;
 }
 .img_tmp {
-    height: 400px;
+    height: 50%;
     width: auto;
     margin-bottom: 10px;
 }

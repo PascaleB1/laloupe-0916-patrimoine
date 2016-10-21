@@ -3,55 +3,67 @@
 {% block body %}
     <br/>
     <br/>
-   <h1>Associations list</h1>
+   <h1></h1>
 
 
      {% for association in associations %}
-        <div class=container>
+       <div class=container>
         <div class="row fond">
-            <div class="présentation">
-                <div class="col-xs-12 col-lg-8">
-                    <h1>{{ association.titre1 }}</h1>
-                    <p class="txt_assos">{{ association.article1 }}</p>
-                </div>
-                <div class="image col-xs-12 col-lg-4">
-                    <img class="photo_visiteur" src="img/visiteurs_soir.jpg">{{ association.image1 }}
-                </div>
+            <div class="col-xs-12">
+                <h1>{{ association.titre1 }}</h1>
+            </div>
+
+            <div class="col-xs-12 col-lg-4">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image1 }}" class="thumbnail img_tmp">
+            </div>
+
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos">{{ association.article1 }}</p>
             </div>
         </div>
-          <div class="row fond">
-              <div class="présentation">
-                  <div class="col-xs-12 col-lg-8">
-                      <h1>{{ association.titre2 }}</h1>
-                      <p class="txt_assos">{{ association.article2 }}</p>
-                  </div>
-                  <div class="image col-xs-12 col-lg-4">
-                      <img class="photo_visiteur" src="img/visiteurs_soir.jpg">{{ association.image2 }}
-                  </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre2 }}</h1>
               </div>
-          </div>
-          <div class="row fond">
-              <div class="présentation">
-                  <div class="col-xs-12 col-lg-8">
-                      <h1>{{ association.titre3 }}</h1>
-                      <p class="txt_assos">{{ association.article3 }}</p>
-                  </div>
-                  <div class="image col-xs-12 col-lg-4">
-                      <img class="photo_visiteur" src="img/visiteurs_soir.jpg">{{ association.image3 }}
-                  </div>
+
+              <div class="col-xs-12 col-lg-7">
+                  <p class="txt_assos">{{ association.article2 }}</p>
               </div>
-          </div>
-          <div class="row fond">
-              <div class="présentation">
-                  <div class="col-xs-12 col-lg-8">
-                      <h1>{{ association.titre4 }}</h1>
-                      <p class="txt_assos">{{ association.article4 }}</p>
-                  </div>
-                  <div class="image col-xs-12 col-lg-4">
-                      <img class="photo_visiteur" src="img/visiteurs_soir.jpg">{{ association.image4 }}
-                  </div>
+
+             <div class="col-xs-12 col-lg-5">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image2 }}" class="thumbnail img_tmp">
+             </div>
+
+         </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre3 }}</h1>
               </div>
-          </div>
+
+             <div class="col-xs-12 col-lg-4">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image3 }}" class="thumbnail img_tmp">
+             </div>
+
+              <div class="col-xs-12 col-lg-8">
+                  <p class="txt_assos">{{ association.article3 }}</p>
+              </div>
+         </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre4 }}</h1>
+              </div>
+
+             <div class="col-xs-12 col-lg-7">
+                  <p class="txt_assos">{{ association.article4 }}</p>
+             </div>
+
+             <div class="col-xs-12 col-lg-5">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image4 }}" class="thumbnail img_tmp">
+             </div>
+         </div>
      {% endfor %}
-    </div>
+        </div>
 {% endblock %}

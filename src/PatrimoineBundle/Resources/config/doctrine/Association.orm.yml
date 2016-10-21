@@ -12,43 +12,55 @@ PatrimoineBundle\Entity\Association:
         titre1:
             type: string
             length: 255
-        titre2:
-            type: string
-            length: 255
-        titre3:
-            type: string
-            length: 255
-        titre4:
-            type: string
-            length: 255
+            nullable: TRUE
         article1:
             type: string
-            length: 255
-        article2:
-            type: string
-            length: 255
-        article3:
-            type: string
-            length: 255
-        article4:
-            type: string
-            length: 255
+            length: 700
+            nullable: TRUE
         image1:
             type: string
             lenght: 255
+            nullable: TRUE
+        titre2:
+            type: string
+            length: 255
+            nullable: TRUE
+        article2:
+            type: string
+            length: 700
+            nullable: TRUE
         image2:
             type: string
             lenght: 255
+            nullable: TRUE
+        titre3:
+            type: string
+            length: 255
+            nullable: TRUE
+        article3:
+            type: string
+            length: 700
+            nullable: TRUE
         image3:
             type: string
             lenght: 255
+            nullable: TRUE
+        titre4:
+            type: string
+            length: 255
+            nullable: TRUE
+        article4:
+            type: string
+            length: 700
+            nullable: TRUE
         image4:
             type: string
             lenght: 255
+            nullable: TRUE
 
     lifecycleCallbacks:
-      prePersist: [ preUpload]
-      preUpdate: [ preUpload ]
-      postPersist: [ upload ]
-      postUpdate: [ upload ]
-      postRemove: [ removeUpload ]
+      prePersist: [ preUpload1, preUpload2, preUpload3, preUpload4 ]
+      preUpdate: [ preUpload1, preUpload2, preUpload3, preUpload4 ]
+      postPersist: [ upload1, upload2, upload3, upload4 ]
+      postUpdate: [ upload1, upload2, upload3, upload4 ]
+      postRemove: [ removeUpload1, removeUpload2, removeUpload3, removeUpload4 ]
