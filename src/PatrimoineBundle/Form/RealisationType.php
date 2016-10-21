@@ -35,7 +35,16 @@ class RealisationType extends AbstractType
             ->add('article9')
             ->add('titre10')
             ->add('article10')
-            ->add('file', 'file', array('label' => 'image', 'required' => false));
+            ->add('file1', 'file', array('label' => 'image', 'required' => false))
+            ->add('file2', 'file', array('label' => 'image', 'required' => false))
+            ->add('file3', 'file', array('label' => 'image', 'required' => false))
+            ->add('file4', 'file', array('label' => 'image', 'required' => false))
+            ->add('file5', 'file', array('label' => 'image', 'required' => false))
+            ->add('file6', 'file', array('label' => 'image', 'required' => false))
+            ->add('file7', 'file', array('label' => 'image', 'required' => false))
+            ->add('file8', 'file', array('label' => 'image', 'required' => false))
+            ->add('file9', 'file', array('label' => 'image', 'required' => false))
+            ->add('file10', 'file', array('label' => 'image', 'required' => false))
         ;
     }
     

@@ -1,7 +1,6 @@
 <?php
 
 namespace PatrimoineBundle\Entity;
-use Symfony\Component\Validator\Constraints\Image;
 
 /**
  * Realisation
@@ -10,40 +9,10 @@ class Realisation
 {
 
 
-    public $file;
 
-
-    public function preUpload()
-    {
-        if (null !== $this->file) {
-            // do whatever you want to generate a unique name
-            $this->image1 = uniqid().'.'.$this->file->guessExtension();
-        }
-    }
-
-
-    public function upload()
-    {
-        if (null === $this->file) {
-            return;
-        }
-
-        // if there is an error when moving the file, an exception will
-        // be automatically thrown by move(). This will properly prevent
-        // the entity from being persisted to the database on error
-        $this->file->move($this->getUploadRootDir(), $this->image1);
-
-        unset($this->file);
-    }
-
-
-    public function removeUpload()
-    {
-        if ($file = $this->getAbsolutePath()) {
-            unlink($file);
-        }
-    }
-
+    /*
+    * A NE PASSER QU'UNE FOIS
+    */
     protected function getUploadDir()
     {
         return 'uploads';
@@ -51,20 +20,506 @@ class Realisation
 
     protected function getUploadRootDir()
     {
-        return __DIR__.'/../../../web/'.$this->getUploadDir();
+        return __DIR__ . '/../../../web/' . $this->getUploadDir();
+    }
+
+    /*
+     * FIN BLOC UNIQUE
+     */
+
+
+    /*
+     * IMAGE 1
+     */
+
+    public $file1;
+
+
+    public function preUpload()
+    {
+        if (null !== $this->file1) {
+            // do whatever you want to generate a unique name
+            $this->image1 = uniqid() . '.' . $this->file1->guessExtension();
+        }
+    }
+
+    public function upload()
+    {
+        if (null === $this->file1) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file1->move($this->getUploadRootDir(), $this->image1);
+
+        unset($this->file1);
+    }
+
+    public function removeUpload()
+    {
+        if ($file1 = $this->getAbsolutePath()) {
+            unlink($file1);
+        }
     }
 
     public function getWebPath()
     {
-        return null === $this->image1 ? null : $this->getUploadDir().'/'.$this->image1;
+        return null === $this->image1 ? null : $this->getUploadDir() . '/' . $this->image1;
     }
 
     public function getAbsolutePath()
     {
-        return null === $this->image1 ? null : $this->getUploadRootDir().'/'.$this->image1;
+        return null === $this->image1 ? null : $this->getUploadRootDir() . '/' . $this->image1;
+    }
+    /*
+     * FIN IMAGE 1
+     */
+
+    /*
+     * IMAGE 2
+     */
+
+    public $file2;
+
+
+    public function preUpload2()
+    {
+        if (null !== $this->file2) {
+            // do whatever you want to generate a unique name
+            $this->image2 = uniqid() . '.' . $this->file2->guessExtension();
+        }
     }
 
+    public function upload2()
+    {
+        if (null === $this->file2) {
+            return;
+        }
 
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file2->move($this->getUploadRootDir(), $this->image2);
+
+        unset($this->file2);
+    }
+
+    public function removeUpload2()
+    {
+        if ($file2 = $this->getAbsolutePath()) {
+            unlink($file2);
+        }
+    }
+
+    public function getWebPath2()
+    {
+        return null === $this->image2 ? null : $this->getUploadDir() . '/' . $this->image2;
+    }
+
+    public function getAbsolutePath2()
+    {
+        return null === $this->image2 ? null : $this->getUploadRootDir() . '/' . $this->image2;
+    }
+    /*
+     * FIN IMAGE 2
+     */
+
+
+    /*
+     * IMAGE 3
+     */
+
+    public $file3;
+
+
+    public function preUpload3()
+    {
+        if (null !== $this->file3) {
+            // do whatever you want to generate a unique name
+            $this->image3 = uniqid() . '.' . $this->file3->guessExtension();
+        }
+    }
+
+    public function upload3()
+    {
+        if (null === $this->file3) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file3->move($this->getUploadRootDir(), $this->image3);
+
+        unset($this->file3);
+    }
+
+    public function removeUpload3()
+    {
+        if ($file3 = $this->getAbsolutePath()) {
+            unlink($file3);
+        }
+    }
+
+    public function getWebPath3()
+    {
+        return null === $this->image3 ? null : $this->getUploadDir() . '/' . $this->image3;
+    }
+
+    public function getAbsolutePath3()
+    {
+        return null === $this->image3 ? null : $this->getUploadRootDir() . '/' . $this->image3;
+    }
+    /*
+     * FIN IMAGE 3
+     */
+
+
+    /*
+     * IMAGE 4
+     */
+
+    public $file4;
+
+
+    public function preUpload4()
+    {
+        if (null !== $this->file4) {
+            // do whatever you want to generate a unique name
+            $this->image4 = uniqid() . '.' . $this->file4->guessExtension();
+        }
+    }
+
+    public function upload4()
+    {
+        if (null === $this->file4) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file4->move($this->getUploadRootDir(), $this->image4);
+
+        unset($this->file4);
+    }
+
+    public function removeUpload4()
+    {
+        if ($file4 = $this->getAbsolutePath()) {
+            unlink($file4);
+        }
+    }
+
+    public function getWebPath4()
+    {
+        return null === $this->image4 ? null : $this->getUploadDir() . '/' . $this->image4;
+    }
+
+    public function getAbsolutePath4()
+    {
+        return null === $this->image4 ? null : $this->getUploadRootDir() . '/' . $this->image4;
+    }
+    /*
+     * FIN IMAGE 4
+     */
+
+    /*
+     * IMAGE 5
+     */
+
+    public $file5;
+
+
+    public function preUpload5()
+    {
+        if (null !== $this->file5) {
+            // do whatever you want to generate a unique name
+            $this->image5 = uniqid() . '.' . $this->file5->guessExtension();
+        }
+    }
+
+    public function upload5()
+    {
+        if (null === $this->file5) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file5->move($this->getUploadRootDir(), $this->image5);
+
+        unset($this->file5);
+    }
+
+    public function removeUpload5()
+    {
+        if ($file5 = $this->getAbsolutePath()) {
+            unlink($file5);
+        }
+    }
+
+    public function getWebPath5()
+    {
+        return null === $this->image5 ? null : $this->getUploadDir() . '/' . $this->image5;
+    }
+
+    public function getAbsolutePath5()
+    {
+        return null === $this->image5 ? null : $this->getUploadRootDir() . '/' . $this->image5;
+    }
+    /*
+     * FIN IMAGE 5
+     */
+
+    /*
+     * IMAGE 6
+     */
+
+    public $file6;
+
+
+    public function preUpload6()
+    {
+        if (null !== $this->file6) {
+            // do whatever you want to generate a unique name
+            $this->image6 = uniqid() . '.' . $this->file6->guessExtension();
+        }
+    }
+
+    public function upload6()
+    {
+        if (null === $this->file6) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file6->move($this->getUploadRootDir(), $this->image6);
+
+        unset($this->file6);
+    }
+
+    public function removeUpload6()
+    {
+        if ($file6= $this->getAbsolutePath()) {
+            unlink($file6);
+        }
+    }
+
+    public function getWebPath6()
+    {
+        return null === $this->image6 ? null : $this->getUploadDir() . '/' . $this->image6;
+    }
+
+    public function getAbsolutePath6()
+    {
+        return null === $this->image6 ? null : $this->getUploadRootDir() . '/' . $this->image6;
+    }
+    /*
+     * FIN IMAGE 6
+     */
+
+
+    /*
+     * IMAGE 7
+     */
+
+    public $file7;
+
+
+    public function preUpload7()
+    {
+        if (null !== $this->file7) {
+            // do whatever you want to generate a unique name
+            $this->image7 = uniqid() . '.' . $this->file7->guessExtension();
+        }
+    }
+
+    public function upload7()
+    {
+        if (null === $this->file7) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file7->move($this->getUploadRootDir(), $this->image7);
+
+        unset($this->file7);
+    }
+
+    public function removeUpload7()
+    {
+        if ($file7= $this->getAbsolutePath()) {
+            unlink($file7);
+        }
+    }
+
+    public function getWebPath7()
+    {
+        return null === $this->image7 ? null : $this->getUploadDir() . '/' . $this->image7;
+    }
+
+    public function getAbsolutePath7()
+    {
+        return null === $this->image7 ? null : $this->getUploadRootDir() . '/' . $this->image7;
+    }
+    /*
+     * FIN IMAGE 7
+     */
+
+    /*
+     * IMAGE 8
+     */
+
+    public $file8;
+
+
+    public function preUpload8()
+    {
+        if (null !== $this->file8) {
+            // do whatever you want to generate a unique name
+            $this->image8 = uniqid() . '.' . $this->file8->guessExtension();
+        }
+    }
+
+    public function upload8()
+    {
+        if (null === $this->file8) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file8->move($this->getUploadRootDir(), $this->image8);
+
+        unset($this->file8);
+    }
+
+    public function removeUpload8()
+    {
+        if ($file8 = $this->getAbsolutePath()) {
+            unlink($file8);
+        }
+    }
+
+    public function getWebPath8()
+    {
+        return null === $this->image8 ? null : $this->getUploadDir() . '/' . $this->image8;
+    }
+
+    public function getAbsolutePath8()
+    {
+        return null === $this->image8 ? null : $this->getUploadRootDir() . '/' . $this->image8;
+    }
+    /*
+     * FIN IMAGE 8
+     */
+
+    /*
+     * IMAGE 9
+     */
+
+    public $file9;
+
+
+    public function preUpload9()
+    {
+        if (null !== $this->file9) {
+            // do whatever you want to generate a unique name
+            $this->image9 = uniqid() . '.' . $this->file9->guessExtension();
+        }
+    }
+
+    public function upload9()
+    {
+        if (null === $this->file9) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file9->move($this->getUploadRootDir(), $this->image9);
+
+        unset($this->file9);
+    }
+
+    public function removeUpload9()
+    {
+        if ($file9 = $this->getAbsolutePath()) {
+            unlink($file9);
+        }
+    }
+
+    public function getWebPath9()
+    {
+        return null === $this->image9 ? null : $this->getUploadDir() . '/' . $this->image9;
+    }
+
+    public function getAbsolutePath9()
+    {
+        return null === $this->image9 ? null : $this->getUploadRootDir() . '/' . $this->image9;
+    }
+    /*
+     * FIN IMAGE 9
+     */
+
+    /*
+     * IMAGE 10
+     */
+
+    public $file10;
+
+
+    public function preUpload10()
+    {
+        if (null !== $this->file10) {
+            // do whatever you want to generate a unique name
+            $this->image10 = uniqid() . '.' . $this->file10->guessExtension();
+        }
+    }
+
+    public function upload10()
+    {
+        if (null === $this->file10) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file10->move($this->getUploadRootDir(), $this->image10);
+
+        unset($this->file10);
+    }
+
+    public function removeUpload10()
+    {
+        if ($file10 = $this->getAbsolutePath()) {
+            unlink($file10);
+        }
+    }
+
+    public function getWebPath10()
+    {
+        return null === $this->image10 ? null : $this->getUploadDir() . '/' . $this->image10;
+    }
+
+    public function getAbsolutePath10()
+    {
+        return null === $this->image10 ? null : $this->getUploadRootDir() . '/' . $this->image10;
+    }
+    /*
+     * FIN IMAGE 10
+     */
 
     /* ENTITES GENEREES */
     /**
@@ -82,7 +537,7 @@ class Realisation
     {
         return $this->id;
     }
-    
+
     /**
      * @var string
      */
@@ -664,67 +1119,6 @@ class Realisation
         return $this->article10;
     }
 
-//    /**
-//     * @var string
-//     */
-//    private $image;
-//
-//    /**
-//     * Set image
-//     *
-//     * @param string $image
-//     *
-//     * @return Image
-//     */
-//    public function setImage($image)
-//    {
-//        $this->image = $image;
-//
-//        return $this;
-//    }
-//
-//
-//    /**
-//     * Constructor
-//     */
-//    public function __construct()
-//    {
-//        $this->image = new \Doctrine\Common\Collections\ArrayCollection();
-//    }
-
-//    /**
-//     * Add image
-//     *
-//     * @param \PatrimoineBundle\Entity\Image $image
-//     *
-//     * @return Realisation
-//     */
-//    public function addImage(\PatrimoineBundle\Entity\Image $image)
-//    {
-//        $this->image[] = $image;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Remove image
-//     *
-//     * @param \PatrimoineBundle\Entity\Image $image
-//     */
-//    public function removeImage(\PatrimoineBundle\Entity\Image $image)
-//    {
-//        $this->image->removeElement($image);
-//    }
-//
-//    /**
-//     * Get image
-//     *
-//     * @return \Doctrine\Common\Collections\Collection
-//     */
-//    public function getImage()
-//    {
-//        return $this->image;
-//    }
     /**
      * @var string
      */

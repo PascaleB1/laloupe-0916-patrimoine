@@ -16,6 +16,9 @@ PatrimoineBundle\Entity\Realisation:
         article1:
             type: text
             nullable: TRUE
+        image1:
+            type: string
+            nullable: TRUE
 
         titre2:
             type: string
@@ -23,6 +26,9 @@ PatrimoineBundle\Entity\Realisation:
             nullable: TRUE
         article2:
             type: text
+            nullable: TRUE
+        image2:
+            type: string
             nullable: TRUE
 
         titre3:
@@ -32,6 +38,9 @@ PatrimoineBundle\Entity\Realisation:
         article3:
             type: text
             nullable: TRUE
+        image3:
+            type: string
+            nullable: TRUE
 
         titre4:
             type: string
@@ -39,6 +48,9 @@ PatrimoineBundle\Entity\Realisation:
             nullable: TRUE
         article4:
             type: text
+            nullable: TRUE
+        image4:
+            type: string
             nullable: TRUE
 
         titre5:
@@ -48,6 +60,9 @@ PatrimoineBundle\Entity\Realisation:
         article5:
             type: text
             nullable: TRUE
+        image5:
+            type: string
+            nullable: TRUE
 
         titre6:
             type: string
@@ -55,6 +70,9 @@ PatrimoineBundle\Entity\Realisation:
             nullable: TRUE
         article6:
             type: text
+            nullable: TRUE
+        image6:
+            type: string
             nullable: TRUE
 
         titre7:
@@ -64,6 +82,9 @@ PatrimoineBundle\Entity\Realisation:
         article7:
             type: text
             nullable: TRUE
+        image7:
+            type: string
+            nullable: TRUE
 
         titre8:
             type: string
@@ -71,6 +92,9 @@ PatrimoineBundle\Entity\Realisation:
             nullable: TRUE
         article8:
             type: text
+            nullable: TRUE
+        image8:
+            type: string
             nullable: TRUE
 
         titre9:
@@ -80,6 +104,9 @@ PatrimoineBundle\Entity\Realisation:
         article9:
             type: text
             nullable: TRUE
+        image9:
+            type: string
+            nullable: TRUE
 
         titre10:
             type: string
@@ -88,42 +115,14 @@ PatrimoineBundle\Entity\Realisation:
         article10:
             type: text
             nullable: TRUE
-
-        image1:
-            type: string
-            nullable: TRUE
-        image2:
-            type: string
-            nullable: TRUE
-        image3:
-            type: string
-            nullable: TRUE
-        image4:
-            type: string
-            nullable: TRUE
-        image5:
-            type: string
-            nullable: TRUE
-        image6:
-            type: string
-            nullable: TRUE
-        image7:
-            type: string
-            nullable: TRUE
-        image8:
-            type: string
-            nullable: TRUE
-        image9:
-            type: string
-            nullable: TRUE
         image10:
             type: string
             nullable: TRUE
 
 
     lifecycleCallbacks:
-      prePersist: [ preUpload ]
-      preUpdate: [ preUpload ]
-      postPersist: [ upload ]
-      postUpdate: [ upload ]
-      postRemove: [ removeUpload ]
+      prePersist: [ preUpload, preUpload2, preUpload3,preUpload4, preUpload5, preUpload6, preUpload7, preUpload8, preUpload9, preUpload10 ]
+      preUpdate: [ preUpload, preUpload2, preUpload3,preUpload4, preUpload5, preUpload6, preUpload7, preUpload8, preUpload9, preUpload10 ]
+      postPersist: [ upload, upload2, upload3, upload4, upload5, upload6, upload7, upload8, upload9, upload10 ]
+      postUpdate: [ upload, upload2, upload3, upload4, upload5, upload6, upload7, upload8, upload9, upload10 ]
+      postRemove: [ removeUpload, removeUpload2, removeUpload3, removeUpload4, removeUpload5, removeUpload6, removeUpload7, removeUpload8, removeUpload9, removeUpload10 ]
