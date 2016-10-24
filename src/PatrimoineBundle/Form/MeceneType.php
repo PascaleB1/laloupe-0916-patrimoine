@@ -5,6 +5,7 @@ namespace PatrimoineBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class MeceneType extends AbstractType
 {
@@ -13,7 +14,9 @@ class MeceneType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('presentation')->add('formulaire1')->add('formulaire2')        ;
+        $builder->add('presentation', TextareaType::class)
+                ->add('formulaire1', TextareaType::class)
+                ->add('formulaire2', TextareaType::class);
     }
     
     /**
