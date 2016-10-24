@@ -22,7 +22,7 @@ ul.nav.navbar-nav > li.active > a.btn.btn-outline-warning {
     padding: 10px;
     border-radius: 15px;
     background-color: #FFF;
-    text-align: justify;
+    text-align-all: justify;
 }
 
 .carousel-inner {
@@ -31,9 +31,9 @@ ul.nav.navbar-nav > li.active > a.btn.btn-outline-warning {
     max-height: 632px;
 }
 
-/*.image+p {
+.image+p {
     padding-left: 3%;
-}*/
+}
 
 #container {
     margin-top: 40px;
@@ -71,7 +71,6 @@ a.btn.btn-default {
 }
 .eleve {
     width: 100%;
-
 }
 
 #float_right {
@@ -96,7 +95,6 @@ a.btn.btn-default {
     background-color: #fff;
 }
 
-
 .text-big {
     text-align: center;
 }
@@ -120,11 +118,13 @@ a.btn.btn-default {
     opacity: 0.7;
     border-radius: 15px;
 }
+
 .img_tmp {
     height: 50%;
     width: auto;
     margin-bottom: 10px;
 }
+
 .btn_grp {
     margin-top: 20px;
     margin-bottom: 20px;
