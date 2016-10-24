@@ -29,6 +29,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="{{ path('accueil_index') }}">Accueil</a></li>
+
                     <li><a href="{{ path('association_index') }}">Associations</a></li>
                     <li><a href="{{ path('realisation_index') }}">Realisations</a></li>
                     <li><a href="{{ path('agenda_index') }}">Agenda</a></li>
@@ -47,7 +48,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-4">
-                        <p id="float_right">Réalise par: </p>
+                        <p id="float_right">Site réalisé par </p>
                     </div>
                     <div class="col-xs-4">
                         <a class="btn btn-primary text-center" role="button" data-toggle="modal" data-target="#myModal"><img src="{{ asset('bundles/patrimoine/img/WCS-logo.png') }}" alt="log_WCS" /></a>
@@ -79,6 +80,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-4"><a href="#">Mentions légales</a></div>
                 </div>
             </div>
             <!-- Modal -->
@@ -96,8 +98,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/BARBOTEAU%20Pascale.JPG') }}" alt="Pascale" class="thumbnail eleve" /></div>
-                                <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Picard%20Lionel.JPG') }}" alt="Pascale" class="thumbnail eleve" /></div>
-                                <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Le%20Corre%20Yannick.JPG') }}" alt="Pascale" class="thumbnail eleve" /></div>
+                                <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Picard%20Lionel.JPG') }}" alt="Lionel" class="thumbnail eleve" /></div>
+                                <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Le%20Corre%20Yannick.JPG') }}" alt="Yannick" class="thumbnail eleve" /></div>
                             </div>
                         </div>
                         <div class="modal-footer">

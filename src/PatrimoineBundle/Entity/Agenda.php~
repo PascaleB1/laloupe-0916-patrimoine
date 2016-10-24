@@ -1,0 +1,29 @@
+<?php
+
+namespace PatrimoineBundle\Entity;
+
+/**
+ * Agenda
+ */
+class Agenda
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16

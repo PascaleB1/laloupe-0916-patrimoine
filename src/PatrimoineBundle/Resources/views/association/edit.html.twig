@@ -4,79 +4,104 @@
 
     {{ form_start(edit_form) }}
     {{ form_errors(edit_form) }}
+ <hr/>
+ <hr/>
+  <div id="container" xmlns="http://www.w3.org/1999/html">
+        <div class="row fond">
+            <div class="col-xs-12">
+                <h1>{{ association.titre1}}</h1>
+                {{ form_widget(edit_form.titre1) }}
+                {{ form_errors(edit_form.titre1) }}
+            </div>
 
-            {{ form_widget(edit_form.article) }}
-            {{ form_errors(edit_form.article) }}
-<div id="container">
-    <div class="row fond">
-        <div class="présentation">
-            <div class="col-xs-12 col-lg-8">
-                <p class="txt_assos"></p>
+            <div class="col-xs-12 col-lg-4">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image1 }}" class="thumbnail img_tmp">
             </div>
-            <div class="image col-xs-12 col-lg-4">
-                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+
+            <div class="col-xs12 col-lg-8">
+                <p class="txt_assos">{{ association.article1 }}</p>
+                {{ form_widget(edit_form.article1) }}
+                {{ form_errors(edit_form.article1) }}
             </div>
         </div>
-    </div>
-    <hr/>
-    <hr/>
-            {{ form_widget(edit_form.article1) }}
-            {{ form_errors(edit_form.article1) }}
-    <div class="row fond">
-        <div class="présentation">
-            <div class="image col-xs-12 col-lg-4">
-               <!-- <img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12">
+                <h1>{{ association.titre2}}</h1>
+                {{ form_widget(edit_form.titre2) }}
+                {{ form_errors(edit_form.titre2) }}
             </div>
-            <div class="col-xs-12 col-lg-8">
-                <p class="txt_assos"></p>
+
+            <div class="col-xs-12 col-lg-7">
+                <p class="txt_assos">{{ association.article2 }}</p>
+                {{ form_widget(edit_form.article2) }}
+                {{ form_errors(edit_form.article2) }}
+            </div>
+
+            <div class="col-xs-12 col-lg-5">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image2 }}" class="thumbnail img_tmp">
             </div>
         </div>
-    </div>
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12">
+                <h1>{{ association.titre3}}</h1>
+                {{ form_widget(edit_form.titre3) }}
+                {{ form_errors(edit_form.titre3) }}
+            </div>
+
+            <div class="col-xs-12 col-lg-4">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image3 }}" class="thumbnail img_tmp">
+            </div>
+
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos">{{ association.article3 }}</p>
+                {{ form_widget(edit_form.article3) }}
+                {{ form_errors(edit_form.article3) }}
+            </div>
+        </div>
+    <hr/>
+    <hr/>
+
+        <div class="row fond">
+            <div class="col-xs-12">
+                <h1>{{ association.titre4}}</h1>
+                {{ form_widget(edit_form.titre4) }}
+                {{ form_errors(edit_form.titre4) }}
+            </div>
+
+            <div class="col-xs-12 col-lg-7">
+                <p class="txt_assos">{{ association.article4 }}</p>
+                {{ form_widget(edit_form.article4) }}
+                {{ form_errors(edit_form.article4) }}
+            </div>
+
+            <div class="col-xs-12 col-lg-5">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image4 }}" class="thumbnail img_tmp">
+            </div>
+        </div>
 </div>
-    <br/>
-    <br/>
-    {{ form_widget(edit_form.article2) }}
-    {{ form_errors(edit_form.article2) }}
-    <div class="row fond">
-        <div class="présentation">
-            <div class="col-xs-12 col-lg-8">
-                <p class="txt_assos"></p>
-            </div>
-            <div class="image col-xs-12 col-lg-4">
-                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
-            </div>
-        </div>
-    </div>
-    <hr/>
-    <hr/>
-    {{ form_widget(edit_form.article3) }}
-    {{ form_errors(edit_form.article3) }}
-    <div class="row fond">
-        <div class="présentation">
-            <div class="image col-xs-12 col-lg-4">
-                <!--<img class="photo_visiteur" src="img/visiteurs_soir.jpg">-->
-            </div>
-            <div class="col-xs-12 col-lg-8">
-                <p class="txt_assos"></p>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <br/>
     <br/>
 
-         <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
-
-    <ul>
+    <ul class="bouton_twix">
         <li>
             <a href="{{ path('association_index') }}">Back to the list</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+    <input type="submit" value="Edit"/>
+    {{ form_end(edit_form) }}
+        </li>
+        <li>
+    {{ form_start(delete_form) }}
+    <input type="submit" value="Delete">
+    {{ form_end(delete_form) }}
         </li>
     </ul>
+
 {% endblock %}

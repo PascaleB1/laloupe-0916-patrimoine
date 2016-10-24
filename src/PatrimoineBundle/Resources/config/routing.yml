@@ -2,8 +2,6 @@ patrimoine_patrimoine:
     resource: "@PatrimoineBundle/Resources/config/routing/patrimoine.yml"
     prefix:   /patrimoine
 
-
-
 patrimoine_homepage:
     path:     /
     defaults: { _controller: PatrimoineBundle:Default:index }
@@ -23,10 +21,6 @@ patrimoine_agenda:
 patrimoine_mecene:
     resource: "@PatrimoineBundle/Resources/config/routing/mecene.yml"
     prefix:   /mecene
-
-patrimoine_histoire:
-    resource: "@PatrimoineBundle/Resources/config/routing/histoire.yml"
-    prefix:   /histoire
 
 patrimoine_realisation:
     resource: "@PatrimoineBundle/Resources/config/routing/realisation.yml"

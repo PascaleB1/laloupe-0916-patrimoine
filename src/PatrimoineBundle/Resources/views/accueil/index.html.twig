@@ -1,37 +1,49 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Accueils list</h1>
+    <br/>
+    <br/>
+    <h1></h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for accueil in accueils %}
-            <tr>
-                <td><a href="{{ path('accueil_show', { 'id': accueil.id }) }}">{{ accueil.id }}</a></td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('accueil_show', { 'id': accueil.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('accueil_edit', { 'id': accueil.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
+
+    {% for accueil in accueils %}
+    <div id="container">
+        <div class="row fond">
+            <div class="video">
+                <iframe src="https://www.youtube.com/watch?v=rZRLTsJHNTo&feature=youtu.be" style="height:80%; width:25%"></iframe>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="row fond">
+            <div class="presentation">
+                <div class="col-xs-12 col-lg-6">
+                    <h1>{{ accueil.titre1 }}</h1>
+
+                    <p class="txt_accueil">{{ accueil.article1 }}</p>
+
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <h1>{{ accueil.titre2 }}</h1>
+
+                    <p class="txt_accueil">{{ accueil.article2 }}</p>
+
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <h1>{{ accueil.titre3 }}</h1>
+
+                    <p class="txt_accueil">{{ accueil.article3 }}</p>
+
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <h1>{{ accueil.titre4 }}</h1>
+
+                    <p class="txt_accueil">{{ accueil.article4 }}</p>
+
+                </div>
+            </div>
+        </div>
+
         {% endfor %}
-        </tbody>
-    </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('accueil_new') }}">Create a new accueil</a>
-        </li>
-    </ul>
+    </div>
 {% endblock %}

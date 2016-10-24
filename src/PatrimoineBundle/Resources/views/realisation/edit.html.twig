@@ -1,21 +1,444 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Realisation edit</h1>
+    <br/>
+    <br/>
+    <h1>Realisation edit - PAGE EDIT</h1>
 
     {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
+
+
+    <!-- BLOC 1 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre1 }}</h3>
+
+                {{ form_widget(edit_form.titre1) }}
+                {{ form_errors(edit_form.titre1) }}
+
+            </div>
+
+            <div class="col-xs-4">
+
+                <img src="{{ app.request.basepath }}/uploads/{{ realisation.image1 }}" class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file1) }}
+                {{ form_errors(edit_form.file1) }}
+
+
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article1 }}</p>
+                {{ form_widget(edit_form.article1) }}
+                {{ form_errors(edit_form.article1) }}
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+            </div>
+        </div>
+    </div>
+    <!-- FIN BLOC 1 -->
+
+
+    <!-- BLOC 2 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+
+                <h3>{{ realisation.titre2 }}</h3>
+                {{ form_widget(edit_form.titre2) }}
+                {{ form_errors(edit_form.titre2) }}
+
+
+            </div>
+
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image2 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file2) }}
+                {{ form_errors(edit_form.file2) }}
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article2 }}</p>
+                {{ form_widget(edit_form.article2) }}
+                {{ form_errors(edit_form.article2) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 2 -->
+
+
+    <!-- BLOC 3 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre3 }}</h3>
+                {{ form_widget(edit_form.titre3) }}
+                {{ form_errors(edit_form.titre3) }}
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image3 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file3) }}
+                {{ form_errors(edit_form.file3) }}
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article3 }}</p>
+                {{ form_widget(edit_form.article3) }}
+                {{ form_errors(edit_form.article3) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 3 -->
+
+
+    <!-- BLOC 4 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre4 }}</h3>
+                {{ form_widget(edit_form.titre4) }}
+                {{ form_errors(edit_form.titre4) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image4 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file4) }}
+                {{ form_errors(edit_form.file4) }}
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article4 }}</p>
+                {{ form_widget(edit_form.article4) }}
+                {{ form_errors(edit_form.article4) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 4 -->
+
+
+    <!-- BLOC 5 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre5 }}</h3>
+                {{ form_widget(edit_form.titre5) }}
+                {{ form_errors(edit_form.titre5) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image5 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file5) }}
+                {{ form_errors(edit_form.file5) }}
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article5 }}</p>
+                {{ form_widget(edit_form.article5) }}
+                {{ form_errors(edit_form.article5) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 5 -->
+
+
+    <!-- BLOC 6 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre6 }}</h3>
+                {{ form_widget(edit_form.titre6) }}
+                {{ form_errors(edit_form.titre6) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image6 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file6) }}
+                {{ form_errors(edit_form.file6) }}
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article6 }}</p>
+                {{ form_widget(edit_form.article6) }}
+                {{ form_errors(edit_form.article6) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 6 -->
+
+
+    <!-- BLOC 7 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre7 }}</h3>
+                {{ form_widget(edit_form.titre7) }}
+                {{ form_errors(edit_form.titre7) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image7 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file7) }}
+                {{ form_errors(edit_form.file7) }}
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article7 }}</p>
+                {{ form_widget(edit_form.article7) }}
+                {{ form_errors(edit_form.article7) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 7 -->
+
+
+    <!-- BLOC 8 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre8 }}</h3>
+                {{ form_widget(edit_form.titre8) }}
+                {{ form_widget(edit_form.titre8) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image8 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file8) }}
+                {{ form_errors(edit_form.file8) }}
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article8 }}</p>
+                {{ form_widget(edit_form.article8) }}
+                {{ form_errors(edit_form.article8) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 8 -->
+
+
+    <!-- BLOC 9 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre9 }}</h3>
+                {{ form_widget(edit_form.titre9) }}
+                {{ form_errors(edit_form.titre9) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image9 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file9) }}
+                {{ form_errors(edit_form.file9) }}
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article9 }}</p>
+                {{ form_widget(edit_form.article9) }}
+                {{ form_widget(edit_form.article9) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 9 -->
+
+
+    <!-- BLOC 10 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre10 }}</h3>
+                {{ form_widget(edit_form.titre10) }}
+                {{ form_errors(edit_form.titre10) }}
+
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image10 }}"
+                                       class="thumbnail img_tmp"/>
+                {{ form_widget(edit_form.file10) }}
+                {{ form_errors(edit_form.file10) }}
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+
+                <p>{{ realisation.article10 }}</p>
+                {{ form_widget(edit_form.article10) }}
+                {{ form_errors(edit_form.article10) }}
+
+
+            </div>
+            <div class="col-xs-12 text-center">
+                <input type="submit" value="Valider les modifications"/>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 10 -->
+
+    <br/>
+    <br/>
+
     {{ form_end(edit_form) }}
 
     <ul>
-        <li>
-            <a href="{{ path('realisation_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+
+        <li><a href="{{ path('realisation_index') }}">retour vers index</a>
         </li>
     </ul>
 {% endblock %}

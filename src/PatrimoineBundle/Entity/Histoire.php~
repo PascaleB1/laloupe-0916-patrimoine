@@ -1,0 +1,87 @@
+<?php
+
+namespace PatrimoineBundle\Entity;
+
+/**
+ * Histoire
+ */
+class Histoire
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $article1;
+
+    /**
+     * @var string
+     */
+    private $article2;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set article1
+     *
+     * @param string $article1
+     *
+     * @return Histoire
+     */
+    public function setArticle1($article1)
+    {
+        $this->article1 = $article1;
+
+        return $this;
+    }
+
+    /**
+     * Get article1
+     *
+     * @return string
+     */
+    public function getArticle1()
+    {
+        return $this->article1;
+    }
+
+    /**
+     * Set article2
+     *
+     * @param string $article2
+     *
+     * @return Histoire
+     */
+    public function setArticle2($article2)
+    {
+        $this->article2 = $article2;
+
+        return $this;
+    }
+
+    /**
+     * Get article2
+     *
+     * @return string
+     */
+    public function getArticle2()
+    {
+        return $this->article2;
+    }
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16

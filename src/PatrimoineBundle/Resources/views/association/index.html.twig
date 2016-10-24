@@ -21,44 +21,69 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Associations list</h1>
+    <br/>
+    <br/>
+   <h1></h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Intro</th>
-                <th>Article</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for association in associations %}
-            <tr>
-                <td><a href="{{ path('association_show', { 'id': association.id }) }}">{{ association.id }}</a></td>
-                <td>{{ association.intro }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>{{ association.article }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('association_show', { 'id': association.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('association_edit', { 'id': association.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('association_new') }}">Create a new association</a>
-        </li>
-    </ul>
+     {% for association in associations %}
+       <div class=container>
+        <div class="row fond">
+            <div class="col-xs-12">
+                <h1>{{ association.titre1 }}</h1>
+            </div>
+
+            <div class="col-xs-12 col-lg-4">
+                <img src="{{ app.request.basepath }}/uploads/{{ association.image1 }}" class="thumbnail img_tmp">
+            </div>
+
+            <div class="col-xs-12 col-lg-8">
+                <p class="txt_assos">{{ association.article1 }}</p>
+            </div>
+        </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre2 }}</h1>
+              </div>
+
+              <div class="col-xs-12 col-lg-7">
+                  <p class="txt_assos">{{ association.article2 }}</p>
+              </div>
+
+             <div class="col-xs-12 col-lg-5">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image2 }}" class="thumbnail img_tmp">
+             </div>
+
+         </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre3 }}</h1>
+              </div>
+
+             <div class="col-xs-12 col-lg-4">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image3 }}" class="thumbnail img_tmp">
+             </div>
+
+              <div class="col-xs-12 col-lg-8">
+                  <p class="txt_assos">{{ association.article3 }}</p>
+              </div>
+         </div>
+
+         <div class="row fond">
+              <div class="col-xs-12">
+                  <h1>{{ association.titre4 }}</h1>
+              </div>
+
+             <div class="col-xs-12 col-lg-7">
+                  <p class="txt_assos">{{ association.article4 }}</p>
+             </div>
+
+             <div class="col-xs-12 col-lg-5">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image4 }}" class="thumbnail img_tmp">
+             </div>
+         </div>
+     {% endfor %}
+        </div>
 {% endblock %}
