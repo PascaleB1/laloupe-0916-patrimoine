@@ -81,4 +81,7 @@ class Histoire
         return $this->article2;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16

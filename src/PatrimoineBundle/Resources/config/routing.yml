@@ -2,15 +2,9 @@ patrimoine_patrimoine:
     resource: "@PatrimoineBundle/Resources/config/routing/patrimoine.yml"
     prefix:   /patrimoine
 
-
-
 patrimoine_homepage:
     path:     /
     defaults: { _controller: PatrimoineBundle:Default:index }
-
-patrimoine_accueil:
-        resource: "@PatrimoineBundle/Resources/config/routing/accueil.yml"
-        prefix:   /accueil
 
 patrimoine_association:
     resource: "@PatrimoineBundle/Resources/config/routing/association.yml"

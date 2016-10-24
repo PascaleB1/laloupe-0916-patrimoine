@@ -1,41 +1,317 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Realisation list</h1>
+    <br/>
+    <br/>
+    <h1>Realisation list - PAGE INDEX</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Titre</th>
-                <th>Article</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for realisation in realisations %}
-            <tr>
-                <td><a href="{{ path('realisation_show', { 'id': realisation.id }) }}">{{ realisation.id }}</a></td>
-                <td>{{ realisation.titre }}</td>
-                <td>{{ realisation.article }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('realisation_show', { 'id': realisation.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('realisation_edit', { 'id': realisation.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('realisation_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+
+
+
+    {% for realisation in realisations %}
+
+
+    <!-- BLOC 1 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre1 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image1 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article1 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 1 -->
+
+
+    <!-- BLOC 2 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre2 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image2 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article2 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 2 -->
+
+
+    <!-- BLOC 3 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre3 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image3 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article3 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 3 -->
+
+
+    <!-- BLOC 4 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre4 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image4 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article4 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 4 -->
+
+
+    <!-- BLOC 5 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre5 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image5 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article5 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 5 -->
+
+
+    <!-- BLOC 6 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre6 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image6 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article6 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 6 -->
+
+
+    <!-- BLOC 7 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre7 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image7 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article7 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 7 -->
+
+
+    <!-- BLOC 8 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre8 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image8 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article8 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 8 -->
+
+
+    <!-- BLOC 9 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre9 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image9 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article9 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 9 -->
+
+
+    <!-- BLOC 10 -->
+    <div class="container">
+        <br/>
+        <br/>
+
+        <div class="row fond">
+            <div class="col-xs-12 text-center">
+
+                <h3>{{ realisation.titre10 }}</h3>
+
+            </div>
+
+            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image10 }}" class="thumbnail img_tmp"/>
+
+                <!-- BLOC IMAGE A FINIR -->
+
+            </div>
+
+            <div class="col-xs-8">
+                <h3>description</h3>
+
+                <p>{{ realisation.article10 }}</p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN BLOC 10 -->
+
+    <br />
+    <br />
+{% endfor %}
 {% endblock %}

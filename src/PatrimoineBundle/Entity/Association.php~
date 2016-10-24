@@ -389,11 +389,14 @@ class Association
      */
     private $article3;
 
+<<<<<<< HEAD
     /**
      * @var string
      */
     private $article4;
 
+=======
+>>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
 
     /**
      * Set article1
@@ -456,6 +459,7 @@ class Association
 
         return $this;
     }
+<<<<<<< HEAD
 
     /**
      * Get article3
@@ -635,5 +639,16 @@ class Association
     public function getImage()
     {
         return $this->image;
+=======
+
+    /**
+     * Get article3
+     *
+     * @return string
+     */
+    public function getArticle3()
+    {
+        return $this->article3;
+>>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
     }
 }
