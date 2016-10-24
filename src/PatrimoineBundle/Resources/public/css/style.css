@@ -1,20 +1,46 @@
 body {
     background-color: #F5F0D8;
+    position: relative;
 }
+
+/**************MEDIA QUERIES - NAV *************************/
 
 .navbar {
     background-color: #6E7A7F;
 }
 
-ul.nav.navbar-nav > li.active > a {
+/*ul.nav.navbar-nav > a {
     background-color: #6E7A7F;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-ul.nav.navbar-nav > li.active > a.btn.btn-outline-warning {
+/*ul.nav.navbar-nav > a.btn.btn-outline-warning {
     background-color: #D8CFA6;
     width: 200px;
+}*/
+
+/*.navbar-inverse .navbar-nav > li:hover {
+    background-color: #A2A8A7;
+}*/
+
+/*.navbar-inverse .navbar-nav > li:active {
+    background-color: #7E8281;
+}*/
+
+.navbar-inverse .navbar-nav > li:hover > a:hover{
+    background-color: #A2A8A7;
+    border-radius: 4px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #A2A8A7;
+    border-radius: 4px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    margin: 0px 25px;
 }
 
 .txt_assos {
@@ -61,14 +87,17 @@ footer {
     color: #fff;
     line-height: 50px;
 }
+
 a.btn.btn-primary {
     margin-left: 150px;
     background-color: #3E3A3A;
     border: #3E3A3A;
 }
+
 a.btn.btn-default {
     width: 100%;
 }
+
 .eleve {
     width: 100%;
 
@@ -201,8 +230,9 @@ textarea {
 }
 
 .btn_fermer {
-    margin: 20px;
-    margin-left: 90%;
+    margin: 15px;
+    margin-left: 45%;
+    position: static;
 }
 
 hr {

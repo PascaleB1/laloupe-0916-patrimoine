@@ -28,19 +28,17 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="accueil.html">Acceuil</a></li>
-                    <li class="active"><a href="associations.html">Associations</a></li>
-                    <li class="active"><a href="histoire.html">Histoire</a></li>
-                    <li class="active"><a href="realisations.html">Realisations</a></li>
-                    <li class="active"><a href="agenda.html">Agenda</a></li>
-                    <li class="active"> <a class="btn btn-outline-warning" href="mecene.html" role="button">Devenir mecene</a></li>
+                    <li class="active"><a href="{{ path('accueil_index') }}">Accueil</a></li>
+                    <li><a href="{{ path('association_index') }}">Associations</a></li>
+                    <li><a href="{{ path('realisation_index') }}">Realisations</a></li>
+                    <li><a href="{{ path('agenda_index') }}">Agenda</a></li>
+                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir mecene</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <body data-spy="scroll" data-target="#navbar">
-    {% endblock %}
+{% endblock %}
 
     {% block body %}
        {% endblock %}
@@ -54,19 +52,17 @@
                     <div class="col-xs-4">
                         <a class="btn btn-primary text-center" role="button" data-toggle="modal" data-target="#myModal"><img src="{{ asset('bundles/patrimoine/img/WCS-logo.png') }}" alt="log_WCS" /></a>
                     </div>
-
-                    <div class="col-xs-4">
                         <!-- Large modal -->
                         <a href=".bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Mention Légale</a>
 
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                             <div class="modal-dialog modal-lg" role="document">
+                                <div class="col-xs-12">
                                 <div class="modal-content">
                                     <p class="modal_mention">Propriétaire du site : PERCHE COMMUNICATION - http://perchecom.wix.com/perche-communication <br/> Contact mail : perche.com@sfr.fr <br/> Contact téléphonique : 02.37.52.20.33 <br/> Siret : 349 195 875 00027 Code APE
                                         : 921B <br/> Directeur de publication : Bernard MENAUT <br/> Responsable de rédaction : Michel Krecke <br/> Webmaster : Pascal PEAU Droit d'auteur -Copyright-
                                     <hr/>
                                     </p>
-
                                     <p class="modal_mention">Marques Le contenu et la présentation du site constituent une œuvre de l'esprit et bénéficient de la protection accordée par la législation française et internationale en vigueur sur la propriété intellectuelle et industrielle.
                                         L'exploitation, la reproduction, l'extraction de tout ou partie des données, fichiers, représentations graphiques, photographiques, numériques ou audiovisuelles ou de tout élément figurant sur le site ou encore
                                         de tout ou partie du site lui-même sont formellement interdites sans l'accord écrit et préalable de PERCHE COMMUNICATION. Les marques éventuellement citées sur le site sont la propriété de leurs titulaires respectifs.
@@ -83,7 +79,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <!-- Modal -->
@@ -107,7 +102,7 @@
                         </div>
                         <div class="modal-footer">
                             <div class="row">
-                                <div class="col-xs-12"> <a class="btn btn-default" href="{{ asset('http://www.wildcodeschool.fr') }}" target="_blank" role="button">contacter l'école</a> </div>
+                                <div class="col-xs-4"> <a class="btn btn-default" href="{{ asset('http://www.wildcodeschool.fr') }}" target="_blank" role="button">contacter l'école</a> </div>
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                         </div>
@@ -115,13 +110,13 @@
                 </div>
             </div>
         </footer>
-    </body>
 
     {% block javascripts %}
-        <script>$('body').scrollspy({ target: '#navbar-example' })</script>
+
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     {% endblock %}
 </html>

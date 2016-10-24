@@ -25,8 +25,8 @@ patrimoine_mecene:
     prefix:   /mecene
 
 patrimoine_histoire:
-        resource: "@PatrimoineBundle/Resources/config/routing/histoire.yml"
-        prefix:   /histoire
+    resource: "@PatrimoineBundle/Resources/config/routing/histoire.yml"
+    prefix:   /histoire
 
 patrimoine_realisation:
     resource: "@PatrimoineBundle/Resources/config/routing/realisation.yml"
