@@ -1,17 +1,39 @@
 {% extends 'base.html.twig' %}
 
+{% block navbar %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ path('accueil_index') }}">Accueil</a></li>
+                    <li><a href="{{ path('association_index') }}">Les associations</a></li>
+                    <li><a href="{{ path('realisation_index') }}">Nos réalisations</a></li>
+                    <li><a href="{{ path('agenda_index') }}">L'agenda</a></li>
+                    <li class="active"><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir mécène</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+{% endblock %}
+
 {% block body %}
+    <hr />
+    <hr />
     <h1>Mecenes list</h1>
 
     <table>
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Presentation</th>
-                <th>Formulaire1</th>
-                <th>Formulaire2</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Presentation</th>
+            <th>Formulaire1</th>
+            <th>Formulaire2</th>
+
+        </tr>
         </thead>
         <tbody>
         {% for mecene in mecenes %}
@@ -40,4 +62,5 @@
             <a href="{{ path('mecene_new') }}">Create a new mecene</a>
         </li>
     </ul>
-{% endblock %}
+
+ {% endblock %}

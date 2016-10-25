@@ -2,20 +2,23 @@
 
 {% block body %}
     <br/>
-    <br/>
 
     {{ form_start(form) }}
     {{ form_errors(form) }}
 
 <div id="container" xmlns="http://www.w3.org/1999/html">
-    <div class="row fond">
+   <br>
+   <br>
+    <!--lien video-->
+    <div class="row fond_accueil">
         <div class="video">
             <iframe src="https://www.youtube.com/watch?v=rZRLTsJHNTo&feature=youtu.be"></iframe>
         </div>
     </div>
     <br/>
     <br/>
-    <div class="row fond">
+    <!--articles-->
+    <div class="row fond_accueil">
         <div class="presentation">
             <div class="col-xs-12 col-lg-6">
                 <h1>{{ accueil.titre1 }}</h1>
@@ -55,9 +58,9 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
 </div>
-
-
         <ul class="bouton_twix">
             <li>
                 <a href="{{ path('accueil_index') }}">Back to the list</a>
@@ -72,5 +75,4 @@
                 {{ form_end(delete_form) }}
             </li>
         </ul>
-
 {% endblock %}

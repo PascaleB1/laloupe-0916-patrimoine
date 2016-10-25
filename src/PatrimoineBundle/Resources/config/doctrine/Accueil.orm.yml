@@ -10,17 +10,13 @@ PatrimoineBundle\Entity\Accueil:
                 strategy: AUTO
     fields:
         article1:
-            type: string
-            length: 700
+            type: text
         article2:
-            type: string
-            length: 700
+            type: text
         article3:
-            type: string
-            length: 700
+            type: text
         article4:
-            type: string
-            length: 700
+            type: text
         titre1:
             type: string
             length: 255
