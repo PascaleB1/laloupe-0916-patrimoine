@@ -2,11 +2,9 @@
 
 namespace PatrimoineBundle\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use PatrimoineBundle\Entity\Realisation;
-use PatrimoineBundle\Form\RealisationType;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Realisation controller.
@@ -85,6 +83,25 @@ class RealisationController extends Controller
             return $this->redirectToRoute('realisation_edit', array('id' => $realisation->getId()));
         }
 
+        if (null !== ($editForm->get('file1')->getData()))
+        {
+            $extention = $article->getArticleLogoChemin();
+            if (null !== $article->getArticleLogoChemin())
+            {
+                if (file_exists($article->getAbsolutePath()))
+                {
+                    unlink($article->getAbsolutePath());
+                }
+            }
+            $article->preUpload();
+            if ($article->getArticleLogoChemin() == $extention)
+            {
+                $article->upload();
+            }
+        }
+
+
+
         return $this->render('PatrimoineBundle:realisation:edit.html.twig', array(
             'realisation' => $realisation,
             'edit_form' => $editForm->createView(),
@@ -122,7 +139,6 @@ class RealisationController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('realisation_delete', array('id' => $realisation->getId())))
             ->setMethod('DELETE')
-            ->getForm()
-        ;
+            ->getForm();
     }
 }
