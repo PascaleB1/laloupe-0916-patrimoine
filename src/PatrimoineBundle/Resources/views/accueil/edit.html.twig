@@ -6,17 +6,23 @@
     {{ form_start(form) }}
     {{ form_errors(form) }}
 
-<div id="container" xmlns="http://www.w3.org/1999/html">
+<div id="container">
    <br>
    <br>
     <!--lien video-->
-    <div class="row fond_accueil">
-        <div class="video">
-            <iframe src="https://www.youtube.com/watch?v=rZRLTsJHNTo&feature=youtu.be"></iframe>
+    <div class="row fond_video">
+        <div class="col-xs-12 col-lg-6">
+            <div class="video">
+                <h3 class="titre_accueil">Fonds de Soutien du Patrimoine Percheron</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rZRLTsJHNTo" frameborder="0" allowfullscreen></iframe>
+                {{ form_widget(form.video) }}
+                {{ form_errors(form.video) }}
+            </div>
         </div>
     </div>
     <br/>
     <br/>
+
     <!--articles-->
     <div class="row fond_accueil">
         <div class="presentation">
@@ -26,8 +32,8 @@
                 {{ form_errors(form.titre1) }}
 
                 <p class="txt_accueil">{{ accueil.article1 }}</p>
-                {{ form_widget(form.article1) }}
-                {{ form_errors(form.article1) }}
+                {{ form_widget(form.article1,  {'attr': {'class': 'champ5'}}) }}
+                {{ form_errors(form.article1,  {'attr': {'class': 'champ5'}}) }}
             </div>
             <div class="col-xs-12 col-lg-6">
                 <h1>{{ accueil.titre2 }}</h1>
@@ -35,8 +41,8 @@
                 {{ form_errors(form.titre2) }}
 
                 <p class="txt_accueil">{{ accueil.article2 }}</p>
-                {{ form_widget(form.article2) }}
-                {{ form_errors(form.article2) }}
+                {{ form_widget(form.article2,  {'attr': {'class': 'champ5'}}) }}
+                {{ form_errors(form.article2,  {'attr': {'class': 'champ5'}}) }}
             </div>
             <div class="col-xs-12 col-lg-6">
                 <h1>{{ accueil.titre3 }}</h1>
@@ -44,8 +50,8 @@
                 {{ form_errors(form.titre3) }}
 
                 <p class="txt_accueil">{{ accueil.article3 }}</p>
-                {{ form_widget(form.article3) }}
-                {{ form_errors(form.article3) }}
+                {{ form_widget(form.article3,  {'attr': {'class': 'champ5'}}) }}
+                {{ form_errors(form.article3,  {'attr': {'class': 'champ5'}}) }}
             </div>
             <div class="col-xs-12 col-lg-6">
                 <h1>{{ accueil.titre4 }}</h1>
@@ -53,11 +59,12 @@
                 {{ form_errors(form.titre4) }}
 
                 <p class="txt_accueil">{{ accueil.article4 }}</p>
-                {{ form_widget(form.article4) }}
-                {{ form_errors(form.article4) }}
+                {{ form_widget(form.article4,  {'attr': {'class': 'champ5'}}) }}
+                {{ form_errors(form.article4,  {'attr': {'class': 'champ5'}}) }}
             </div>
         </div>
     </div>
+    <!--fin articles-->
     <br>
     <br>
 </div>

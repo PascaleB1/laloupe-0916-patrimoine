@@ -9,7 +9,7 @@
       <!--article 1-->
       <br>
       <br>
-        <div class="row fond_asso">
+        <div class="row fond">
             <div class="col-xs-12">
                 <h1>{{ association.titre1}}</h1>
                 {{ form_widget(edit_form.titre1) }}
@@ -17,17 +17,19 @@
             </div>
             <div class="col-xs-12 col-lg-4">
                 <img src="{{ app.request.basepath }}/uploads/{{ association.image1 }}" class="thumbnail img_tmp">
+                {{ form_widget(edit_form.file1) }}
+                {{ form_errors(edit_form.file1) }}
             </div>
-            <div class="col-xs12 col-lg-8">
-                <p class="txt_assos">{{ association.article1 }}</p>
-                {{ form_widget(edit_form.article1) }}
-                {{ form_errors(edit_form.article1) }}
+            <div class="col-xs-12 col-lg-8">
+                <p  class="txt_assos">{{ association.article1 }}</p>
+                {{ form_widget(edit_form.article1,  {'attr': {'class': 'champ4'}}) }}
+                {{ form_errors(edit_form.article1,  {'attr': {'class': 'champ4'}}) }}
             </div>
         </div>
-        <br/>
-        <br/>
+      <br/>
+      <br/>
       <!--article 2-->
-        <div class="row fond_asso">
+        <div class="row fond">
             <div class="col-xs-12">
                 <h1>{{ association.titre2}}</h1>
                 {{ form_widget(edit_form.titre2) }}
@@ -35,17 +37,19 @@
             </div>
             <div class="col-xs-12 col-lg-7">
                 <p class="txt_assos">{{ association.article2 }}</p>
-                {{ form_widget(edit_form.article2) }}
-                {{ form_errors(edit_form.article2) }}
+                {{ form_widget(edit_form.article2,  {'attr': {'class': 'champ4'}}) }}
+                {{ form_errors(edit_form.article2,  {'attr': {'class': 'champ4'}}) }}
             </div>
             <div class="col-xs-12 col-lg-5">
                 <img src="{{ app.request.basepath }}/uploads/{{ association.image2 }}" class="thumbnail img_tmp">
+                {{ form_widget(edit_form.file2) }}
+                {{ form_errors(edit_form.file2) }}
             </div>
         </div>
-        <br/>
-        <br/>
+      <br/>
+      <br/>
       <!--article 3-->
-        <div class="row fond_asso">
+        <div class="row fond">
             <div class="col-xs-12">
                 <h1>{{ association.titre3}}</h1>
                 {{ form_widget(edit_form.titre3) }}
@@ -53,17 +57,19 @@
             </div>
             <div class="col-xs-12 col-lg-4">
                 <img src="{{ app.request.basepath }}/uploads/{{ association.image3 }}" class="thumbnail img_tmp">
+                {{ form_widget(edit_form.file3) }}
+                {{ form_errors(edit_form.file3) }}
             </div>
             <div class="col-xs-12 col-lg-8">
                 <p class="txt_assos">{{ association.article3 }}</p>
-                {{ form_widget(edit_form.article3) }}
-                {{ form_errors(edit_form.article3) }}
+                {{ form_widget(edit_form.article3,  {'attr': {'class': 'champ4'}}) }}
+                {{ form_errors(edit_form.article3,  {'attr': {'class': 'champ4'}}) }}
             </div>
         </div>
-        <br/>
-        <br/>
+      <br/>
+      <br/>
       <!--article 4-->
-        <div class="row fond_asso">
+        <div class="row fond">
             <div class="col-xs-12">
                 <h1>{{ association.titre4}}</h1>
                 {{ form_widget(edit_form.titre4) }}
@@ -71,16 +77,18 @@
             </div>
             <div class="col-xs-12 col-lg-7">
                 <p class="txt_assos">{{ association.article4 }}</p>
-                {{ form_widget(edit_form.article4) }}
-                {{ form_errors(edit_form.article4) }}
+                {{ form_widget(edit_form.article4,  {'attr': {'class': 'champ4'}}) }}
+                {{ form_errors(edit_form.article4,  {'attr': {'class': 'champ4'}}) }}
             </div>
             <div class="col-xs-12 col-lg-5">
                 <img src="{{ app.request.basepath }}/uploads/{{ association.image4 }}" class="thumbnail img_tmp">
+                {{ form_widget(edit_form.file4) }}
+                {{ form_errors(edit_form.file4) }}
             </div>
         </div>
 </div>
-        <br/>
-        <br/>
+      <br/>
+      <br/>
     <!--boutons-->
     <ul class="bouton_twix">
         <li>

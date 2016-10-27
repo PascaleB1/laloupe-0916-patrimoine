@@ -40,15 +40,15 @@ body {
     margin: 0px 25px;
 }
 
-
 /* ******************************************************** */
 
 .txt_assos {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #FFF;
-    text-align-all: justify;
+    padding: 15px;
+    text-align: justify;
+}
+
+.text_accueil {
+    text-align: justify;
 }
 
 .image+p {
@@ -132,32 +132,52 @@ a.btn.btn-default {
     margin-bottom: 3% ;
     height: 800px;
 }
-/*Lionel*/
-/* YLC */
 
+/*couleurs de fond*/
 .fond {
     background-color: #fff;
     opacity: 0.7;
     border-radius: 15px;
 }
 
+.titre_accueil {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    opacity: 0.7;
+}
+
+.video {
+    text-align: center;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.fond_video {
+    background-color: #E5F7E5;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
 .fond_accueil {
-    background-color: #E3F9E5;
+    background-color: #E5F7E5;
     opacity: 0.7;
     border-radius: 15px;
 }
 
 .fond_asso {
-    background-color: #E5E9F3;
+    background-color: #F4F4F4;
     opacity: 0.7;
     border-radius: 15px;
 }
 
 .fond_real {
-    background-color: #FAD2D4;
+    background-color: #FEE6E6;
     opacity: 0.7;
     border-radius: 15px;
 }
+/*fin de couleurs de fond*/
 
 .img_tmp {
     height: 50%;
@@ -175,10 +195,6 @@ a.btn.btn-default {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-}
-
-.video {
-    text-align: center;
 }
 
 textarea {
@@ -202,6 +218,15 @@ h1 {
 
 .champ3 {
     height: 210px;
+}
+
+.champ4 {
+    width: 90%;
+    margin-left: 2%;
+}
+
+.champ5 {
+    width: 100%;
 }
 /*boutons mécène*/
 
@@ -235,7 +260,7 @@ h1 {
     background-color: #7E8281;
 }
 
-/* MODAL MENTION LEGAL */
+/* MODAL MENTIONS LEGALES */
 
 .modal_mention {
          text-align: center;
