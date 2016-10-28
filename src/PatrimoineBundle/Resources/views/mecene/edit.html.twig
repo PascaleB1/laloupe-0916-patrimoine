@@ -21,30 +21,27 @@
 {% block body %}
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
     {{ form_start(edit_form) }}
     {{ form_errors(edit_form) }}
 
     <hr/>
     <div class="container">
         <div id="marge_top">
-            <p>Etre donateur ou mécène, c'est s'impliquer dans la mesure de ses moyens dans le développement d'actions qui sensibilisent, informent et dynamisent le territoire percheron et ses richesses. C'est permettre de concrétiser, grâce à la force du plus grand nombre, des idées généreuses et porteuses de progrès social pour les habitants et hôtes du Perche.
 
-                Les avantages du mécénat: pour les entreprises, c'est un moyen de communiquer, d'afficher une image positive, tournée vers son environnement proche et de bénéficier d'un avantage fiscal, pour les particuliers c'est aussi un avantage fiscal et un mode de participation citoyen.
 
-                Le fonds de dotation est un organisme d'intérêt général à but non lucratif régi par la loi du 4 août 2008; déclaré en préfecture le 22 juillet 2010 et publié au JO du 21 août 2010, son objet est de promouvoir la mise en valeur et la conservation du patrimoine percheron. Les donateurs ou mécènes bénéficient d'un avantage fiscal (art 200 et 238bis du CGI):
-
-                les entreprises qui consentent des dons au profit d'un fonds de dotation bénéficient d'une réduction d'impôt à hauteur de 60% du montant des versements dans la limite de 0.5% du chiffre d'affaires.
-
-                les particuliers bénéficient d'une réduction d'impôt sur le revenu de 66% de leur versement dans la limite de 20% du revenu imposable.
-
-                les dons et legs consentis au profit d'un fonds de dotation sont exonérés des droits de mutation (art 795, §14 du CGI).
-
-            </p>
             {{ mecene.presentation }}
             {{ form_widget(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
             {{ form_errors(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
 
         </div>
+
+        <div class="col-xs-12 text-center">
+            <input type="submit" value="Valider les modifications"/>
+        </div>
+
         <br/>
 
         <!-- DEVENIR MECENE SECTION -->
@@ -62,6 +59,7 @@
                     <div class="section-header">
 
                         <h2 class="white-text">Devenir Mécènes</h2>
+
                     </div>
 
                 </div>
@@ -72,8 +70,13 @@
                 <div class="row">
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-12 col-md-12" data-scrollreveal="enter top after 0s over 1s">
+
                         <p class="text-big">Un reçu fiscal vous sera adressé automatiquement</p><hr/>
                         <p>Valoriser le Perche en étant notre mécène. la suite.<br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
+
+                        <p class="text-big">Un reçu fiscal vous sera adressé automatiquement.</p><hr/>
+                        <p>Valoriser le Perche en étant notre mécène. <br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
+
 
                     </div>
                 </div>
@@ -110,14 +113,18 @@
                         <div class="text-center">
                             <div class="para_txt">
 
-                                <p>
-                                    La réduction d’impôt est égale à 60 % du montant du don effectué , et retenu dans la limite de 0,5 % du chiffre d’affaires H.T., avec la possibilité, en cas de dépassement de ce plafond, de reporter l’excédent au titre des cinq exercices suivants </p>
                                 {{ mecene.formulaire1 }}
                                 {{ form_widget(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
                                 {{ form_errors(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
 
 
                             </div>
+
+                            <div class="col-xs-12">
+                                <input type="submit" value="Valider les modifications"/>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -134,14 +141,18 @@
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter right after 0s over 1.5s">
                         <div class="text-center">
 
-                            <p>
-                                La réduction d'impôt est égale à 66 % des sommes versées, retenues dans la limite annuelle de 20 % du revenu imposable
-                            </p>
+               <p></p>
+
                             {{ mecene.formulaire2 }}
                             {{ form_widget(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
                             {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
 
 
+                        </div>
+
+                    </div>
+                       <div class="col-xs-12">
+                            <input type="submit" value="Valider les modifications"/>
                         </div>
 
                     </div>
@@ -194,6 +205,7 @@
                 </div>
                 <br/>
                 <div class="row">
+
                 <ul class="bouton_twix">
 
                     <div class="col-lg-4 col-md-4">
@@ -218,6 +230,23 @@
                     </li>
                     </div>
                 </ul>
+
+                    <ul class="bouton_twix">
+
+                        <div class="col-lg-4 col-md-4">
+
+                            <li>
+                                {{ form_end(edit_form) }}
+                            </li>
+
+                             <li>
+                                 <a href="{{ path('mecene_index') }}">retour vers index</a>
+                             </li>
+
+                        </div>
+
+                    </ul>
+
                 </div>
 
             </div>
@@ -225,7 +254,11 @@
 
             <!-- / END CONTAINER -->
 
+<<<<<<< HEAD
     </section>
+=======
+        </section>
+>>>>>>> pascale
     </div>
 
 
@@ -239,6 +272,7 @@
                     <h2 class="modal-title rainbow" id="gridSystemModalLabel">Je suis une entreprise</h2>
                 </div>
                 <div class="modal-body">
+<<<<<<< HEAD
                     Moyens de paiement: <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise" size="1">
                         <option value="cheque" selected="selected"> cheque </option>
                         <option value="virement"> virement </option>
@@ -251,66 +285,120 @@
                         <input name="submitted" id="submitted" value="true" type="hidden">
                         <div class="form-group">
                             <label class="control-label col-md-4" for="entreprise">Nom de l'entreprise:</label>
+=======
+                    Moyens de paiement <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise" size="1">
+                        <option value="cheque" selected="selected"> chèque </option>
+                        <option value="virement"> virement </option>
+                    </select>
+                    <p id="cheque"><br>Chèque à envoyer à l'adresse suivante: 8, rue Saint-Thomas - 28330 Soizé<br> à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron.</p>
+                    <p id="virement" class="hidden"><br>RIB FRANCE:15459 37125 000104363301 77<br>IBAN ETRANGER:FR76 1545 9371 2500 0104 36301 77<br>BIC:CMCIFR2A</p>
+                    <hr/>
+                    <h3>Faire un don</h3>
+                    <form role="form" method="POST" action="" class="form-horizontal">
+                        <input name="submitted" id="submitted" value="true" type="hidden">
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="entreprise">Nom de l'entreprise</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="entreprise" id="entreprise" placeholder="Nom de l'entreprise" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="siret">N° SIRET:</label>
+=======
+                            <label class="control-label col-md-4" for="siret">N° SIRET</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="siret" id="siret" placeholder="12345678912345" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="nom">Nom:</label>
+=======
+                            <label class="control-label col-md-4" for="nom">Nom</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="nom" id="nom" placeholder="votre nom" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="prenom">Prénom:</label>
+=======
+                            <label class="control-label col-md-4" for="prenom">Prénom</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="prenom" id="prenom" placeholder="votre prénom" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="adresse">Adresse:</label>
+=======
+                            <label class="control-label col-md-4" for="adresse">Adresse</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="adresse" id="adresse" placeholder="votre adresse" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="ville">Ville:</label>
+=======
+                            <label class="control-label col-md-4" for="ville">Ville</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="ville" id="ville" placeholder="votre ville" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="code_postale">Code postal:</label>
+=======
+                            <label class="control-label col-md-4" for="code_postale">Code postal</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="code_postale" id="code_postale" placeholder="votre code postal" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="email">Adresse Email:</label>
+=======
+                            <label class="control-label col-md-4" for="email">Adresse Email</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="email" id="email" placeholder="johndoe@example.com" value="" required="" type="email">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="phone">Téléphone:</label>
+=======
+                            <label class="control-label col-md-4" for="phone">Téléphone</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="phone" id="phone" placeholder="0450699887" value="" required="" type="tel">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="don">Montant du don:</label>
+=======
+                            <label class="control-label col-md-4" for="don">Montant du don</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="don" id="don" placeholder="300" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="comment">Votre message:</label>
+=======
+                            <label class="control-label col-md-4" for="comment">Votre message</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <textarea class="form-control" rows="10" name="comment" id="comment" placeholder="" required=""></textarea>
                             </div>
@@ -338,6 +426,7 @@
                     <h2 class="modal-title rainbow" id="gridSystemModalLabel">Je suis un particulier</h2>
                 </div>
                 <div class="modal-body">
+<<<<<<< HEAD
                     Moyens de paiement: <select name="moyen_paiement_particulier" id="moyen_paiement_particulier" size="1">
                         <option value="cheque" selected="selected"> cheque </option>
                         <option value="virement"> virement </option>
@@ -349,29 +438,55 @@
                     <form method="POST" action="" class="form-horizontal" role="form">
                         <div class="form-group">
                             <label class="control-label col-md-4" for="nom">Nom:</label>
+=======
+                    Moyens de paiement <select name="moyen_paiement_particulier" id="moyen_paiement_particulier" size="1">
+                        <option value="cheque" selected="selected"> chèque </option>
+                        <option value="virement"> virement </option>
+                    </select>
+                    <p id="cheque_p"><br>Chèque à envoyer à l'adresse suivante: 8, rue Saint-Thomas - 28330 Soizé<br> à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron.</p>
+                    <p id="virement_p" class="hidden"><br>RIB FRANCE:15459 37125 000104363301 77<br>IBAN ETRANGER:FR76 1545 9371 2500 0104 36301 77<br>BIC:CMCIFR2A</p>
+                    <hr/>
+                    <h3>Faire un don</h3>
+                    <form method="POST" action="" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="nom">Nom</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="nom" naid="nom" placeholder="votre nom" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="prenom">Prénom:</label>
+=======
+                            <label class="control-label col-md-4" for="prenom">Prénom</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="prenom" id="prenom" placeholder="votre prénom" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="adresse">Adresse:</label>
+=======
+                            <label class="control-label col-md-4" for="adresse">Adresse</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="adresse" id="adresse" placeholder="votre adresse" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="ville">Ville:</label>
+=======
+                            <label class="control-label col-md-4" for="ville">Ville</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="ville" id="ville" placeholder="votre ville" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="code_postale">Code postal:</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="code_postale" id="code_postale" placeholder="votre code postal" value="" required="" type="text">
@@ -379,24 +494,45 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-4" for="email">Adresse Email:</label>
+=======
+                            <label class="control-label col-md-4" for="code_postale">Code postal</label>
+                            <div class="col-md-6">
+                                <input class="form-control" name="code_postal" id="code_postal" placeholder="votre code postal" value="" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="email">Adresse Email</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="email" id="email" placeholder="johndoe@example.com" value="" required="" type="email">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="phone">Téléphone:</label>
+=======
+                            <label class="control-label col-md-4" for="phone">Téléphone</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="phone" id="phone" placeholder="0450699887" value="" required="" type="tel">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="don">Montant du don:</label>
+=======
+                            <label class="control-label col-md-4" for="don">Montant du don</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <input class="form-control" name="don" id="don" placeholder="300" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
+<<<<<<< HEAD
                             <label class="control-label col-md-4" for="comment">Votre message:</label>
+=======
+                            <label class="control-label col-md-4" for="comment">Votre message</label>
+>>>>>>> pascale
                             <div class="col-md-6">
                                 <textarea class="form-control" rows="10" name="comment" id="comment" placeholder="" required=""></textarea>
                             </div>
@@ -414,5 +550,9 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- FIN MODAL PARTICULIER -->
+<<<<<<< HEAD
 </body>
+=======
+    </body>
+>>>>>>> pascale
 {% endblock %}

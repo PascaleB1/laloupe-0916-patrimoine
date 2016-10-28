@@ -15,6 +15,7 @@ body {
     margin-right: 30px;
 }
 
+<<<<<<< HEAD
 /*ul.nav.navbar-nav > a.btn.btn-outline-warning {
     background-color: #D8CFA6;
     width: 200px;
@@ -25,6 +26,18 @@ body {
 }*/
 
 /*.navbar-inverse .navbar-nav > li:active {
+=======
+/ul.nav.navbar-nav > a.btn.btn-outline-warning {
+    background-color: #D8CFA6;
+    width: 200px;
+}/
+
+/.navbar-inverse .navbar-nav > li:hover {
+    background-color: #A2A8A7;
+}/
+
+/.navbar-inverse .navbar-nav > li:active {
+>>>>>>> pascale
     background-color: #7E8281;
 }*/
 
@@ -36,6 +49,14 @@ body {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #A2A8A7;
     border-radius: 4px;
+<<<<<<< HEAD
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    margin: 0px 25px;
+=======
+>>>>>>> pascale
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -43,18 +64,15 @@ body {
     margin: 0px 25px;
 }
 
+/* ******************************************************** */
+
 .txt_assos {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #FFF;
-    text-align-all: justify;
+    padding: 15px;
+    text-align: justify;
 }
 
-.carousel-inner {
-    margin-top: 70px;
-    margin-bottom: 20px;
-    max-height: 632px;
+.text_accueil {
+    text-align: justify;
 }
 
 .image+p {
@@ -138,16 +156,56 @@ a.btn.btn-default {
 
 .calendar {
     margin-top: 2.5%;
+    margin-top: 3%;
+    margin-bottom: 3% ;
     height: 800px;
 }
-/*Lionel*/
-/* YLC */
 
+/*couleurs de fond*/
 .fond {
     background-color: #fff;
     opacity: 0.7;
     border-radius: 15px;
 }
+
+.titre_accueil {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    opacity: 0.7;
+}
+
+.video {
+    text-align: center;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.fond_video {
+    background-color: #E5F7E5;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.fond_accueil {
+    background-color: #E5F7E5;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.fond_asso {
+    background-color: #F4F4F4;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.fond_real {
+    background-color: #FEE6E6;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+/*fin de couleurs de fond*/
 
 .img_tmp {
     height: 50%;
@@ -211,10 +269,6 @@ a.btn.btn-default {
    justify-content: space-around;
 }
 
-.video {
-    text-align: center;
-}
-
 textarea {
     border: #6E7A7F 2px solid;
     border-radius: 12.5px 12.5px 0px 12.5px;
@@ -254,3 +308,69 @@ h1 {
     font-family: Verdana, serif;
     font-size: x-large;
 }
+
+/*personnalisation texte area*/
+
+.champ1 {
+    width: 1050px;
+}
+
+.champ3 {
+    height: 210px;
+}
+
+.champ4 {
+    width: 90%;
+    margin-left: 2%;
+}
+
+.champ5 {
+    width: 100%;
+}
+/*boutons mécène*/
+
+.bouton_entreprise:hover, .bouton_entreprise:focus {
+    border: solid 1px #C5D1CE;
+    background-color: whitesmoke;
+}
+
+.bouton_entreprise, .bouton_entreprise:focus {
+    border: solid 1px #C5D1CE;
+    background-color: #C5D1CE;
+}
+
+.bouton_paypal:hover, .bouton_paypal:focus {
+    border: solid 1px #A2A8A7;
+    background-color: whitesmoke;
+}
+
+.bouton_paypal, .bouton_paypal:focus {
+    border: solid 1px #A2A8A7;
+    background-color: #A2A8A7;
+}
+
+.bouton_particulier:hover, .bouton_particulier:focus {
+    border: solid 1px #7E8281;
+    background-color: whitesmoke;
+}
+
+.bouton_particulier, .bouton_particulier:focus {
+    border: solid 1px #7E8281;
+    background-color: #7E8281;
+}
+
+/* MODAL MENTIONS LEGALES */
+
+.modal_mention {
+         text-align: center;
+         font-size: 1.35em;
+         color: black;
+         margin: 20px;
+     }
+
+.btn_fermer {
+    margin: 15px;
+    margin-left: 45%;
+    position: static;
+}
+
