@@ -70,14 +70,4 @@ swiftmailer:
     spool:     { type: memory }
 
 
-# app/config/security.yml
-security:
-    # [...]
-
-    encoders:
-        FOS\UserBundle\Model\UserInterface: sha512
-
-    acl:
-        connection: default
-
 

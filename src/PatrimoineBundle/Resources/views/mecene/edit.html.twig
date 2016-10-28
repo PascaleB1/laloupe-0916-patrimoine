@@ -15,6 +15,11 @@
             {{ form_errors(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
 
         </div>
+
+        <div class="col-xs-12 text-center">
+            <input type="submit" value="Valider les modifications"/>
+        </div>
+
         <br/>
 
         <!-- DEVENIR MECENE SECTION -->
@@ -87,6 +92,11 @@
 
 
                             </div>
+
+                            <div class="col-xs-12">
+                                <input type="submit" value="Valider les modifications"/>
+                            </div>
+
                         </div>
 
                     </div>
@@ -109,6 +119,10 @@
                             {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
 
 
+                        </div>
+
+                        <div class="col-xs-12">
+                            <input type="submit" value="Valider les modifications"/>
                         </div>
 
                     </div>
@@ -163,26 +177,17 @@
                     <ul class="bouton_twix">
 
                         <div class="col-lg-4 col-md-4">
+
                             <li>
-                                <input type="submit" value="Edit" />
                                 {{ form_end(edit_form) }}
-
                             </li>
+
+                             <li>
+                                 <a href="{{ path('mecene_index') }}">retour vers index</a>
+                             </li>
+
                         </div>
 
-                        <div class="col-lg-4 col-md-4">
-                            <li>
-                                <a href="{{ path('mecene_index') }}">Back to the list</a>
-                            </li>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4">
-                            <li>
-                                {{ form_start(delete_form) }}
-                                <input type="submit" value="Delete">
-                                {{ form_end(delete_form) }}
-                            </li>
-                        </div>
                     </ul>
                 </div>
 
