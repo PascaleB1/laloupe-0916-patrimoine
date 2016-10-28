@@ -5,10 +5,7 @@ patrimoine:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
-<<<<<<< HEAD
 
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
-=======
->>>>>>> pascale

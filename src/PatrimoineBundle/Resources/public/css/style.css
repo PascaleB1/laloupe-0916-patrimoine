@@ -49,14 +49,13 @@ body {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #A2A8A7;
     border-radius: 4px;
-<<<<<<< HEAD
+
 }
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     margin: 0px 25px;
-=======
->>>>>>> pascale
+
 }
 
 .navbar-inverse .navbar-nav > li > a {
