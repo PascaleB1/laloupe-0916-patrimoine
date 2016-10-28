@@ -7,12 +7,6 @@ namespace PatrimoineBundle\Entity;
  */
 class Realisation
 {
-<<<<<<< HEAD
-    /**
-     * @var int
-     */
-    private $id;
-=======
 
 
 
@@ -45,7 +39,7 @@ class Realisation
     {
         if (null !== $this->file1) {
             // do whatever you want to generate a unique name
-            $this->image1 = uniqid() . '.' . $this->file->guessExtension();
+            $this->image1 = uniqid() . '.' . $this->file1->guessExtension();
         }
     }
 
@@ -60,7 +54,7 @@ class Realisation
         // the entity from being persisted to the database on error
         $this->file1->move($this->getUploadRootDir(), $this->image1);
 
-        unset($this->file);
+        unset($this->file1);
     }
 
     public function removeUpload()
@@ -1124,45 +1118,15 @@ class Realisation
     {
         return $this->article10;
     }
->>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
 
     /**
      * @var string
      */
-<<<<<<< HEAD
-    private $titre;
-=======
     private $image1;
->>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
 
     /**
      * @var string
      */
-<<<<<<< HEAD
-    private $article;
-
-
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set titre
-     *
-     * @param string $titre
-     *
-     * @return Realisation
-     */
-    public function setTitre($titre)
-    {
-        $this->titre = $titre;
-=======
     private $image2;
 
     /**
@@ -1240,33 +1204,11 @@ class Realisation
     public function setImage2($image2)
     {
         $this->image2 = $image2;
->>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
 
         return $this;
     }
 
     /**
-<<<<<<< HEAD
-     * Get titre
-     *
-     * @return string
-     */
-    public function getTitre()
-    {
-        return $this->titre;
-    }
-
-    /**
-     * Set article
-     *
-     * @param string $article
-     *
-     * @return Realisation
-     */
-    public function setArticle($article)
-    {
-        $this->article = $article;
-=======
      * Get image2
      *
      * @return string
@@ -1286,24 +1228,11 @@ class Realisation
     public function setImage3($image3)
     {
         $this->image3 = $image3;
->>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16
 
         return $this;
     }
 
     /**
-<<<<<<< HEAD
-     * Get article
-     *
-     * @return string
-     */
-    public function getArticle()
-    {
-        return $this->article;
-    }
-}
-
-=======
      * Get image3
      *
      * @return string
@@ -1481,4 +1410,3 @@ class Realisation
         return $this->image10;
     }
 }
->>>>>>> 6b0b11817515823f26c7f2350d61815f92499c16

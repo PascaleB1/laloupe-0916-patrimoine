@@ -9,19 +9,7 @@
     <hr/>
     <div class="container">
         <div id="marge_top">
-            <p>Etre donateur ou mécène, c'est s'impliquer dans la mesure de ses moyens dans le développement d'actions qui sensibilisent, informent et dynamisent le territoire percheron et ses richesses. C'est permettre de concrétiser, grâce à la force du plus grand nombre, des idées généreuses et porteuses de progrès social pour les habitants et hôtes du Perche.
 
-                Les avantages du mécénat: pour les entreprises, c'est un moyen de communiquer, d'afficher une image positive, tournée vers son environnement proche et de bénéficier d'un avantage fiscal, pour les particuliers c'est aussi un avantage fiscal et un mode de participation citoyen.
-
-                Le fonds de dotation est un organisme d'intérêt général à but non lucratif régi par la loi du 4 août 2008; déclaré en préfecture le 22 juillet 2010 et publié au JO du 21 août 2010, son objet est de promouvoir la mise en valeur et la conservation du patrimoine percheron. Les donateurs ou mécènes bénéficient d'un avantage fiscal (art 200 et 238bis du CGI):
-
-                les entreprises qui consentent des dons au profit d'un fonds de dotation bénéficient d'une réduction d'impôt à hauteur de 60% du montant des versements dans la limite de 0.5% du chiffre d'affaires.
-
-                les particuliers bénéficient d'une réduction d'impôt sur le revenu de 66% de leur versement dans la limite de 20% du revenu imposable.
-
-                les dons et legs consentis au profit d'un fonds de dotation sont exonérés des droits de mutation (art 795, §14 du CGI).
-
-            </p>
             {{ mecene.presentation }}
             {{ form_widget(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
             {{ form_errors(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
@@ -225,11 +213,16 @@
                         <option value="cheque" selected="selected"> cheque </option>
                         <option value="virement"> virement </option>
                     </select>
-                    <p id="cheque"><br>Chèque à envoyer à l'adresse: 4 résidence fernand chevallier, 28240&nbsp;Loupe<br> à l'ordre de les mécènes du numérique</p>
-                    <p id="virement" class="hidden"><br>RIB FRANCE: 14406 - 00122 - 90003898180 - 34<br>IBAN ETRANGER: FR76 - 1440 - 6001 - 2290 - 00386 - 9818 - 034<br>BIC: AGRIFRPP844</p>
+                    <p id="cheque" class="">
+                        <br>Chèque à envoyer à l'adresse: 4 résidence fernand chevallier, 28240&nbsp;Loupe
+                        <br> à l'ordre de les mécènes du numérique</p>
+                    <p id="virement" class="hidden">
+                        <br>RIB FRANCE: 14406 - 00122 - 90003898180 - 34
+                        <br>IBAN ETRANGER: FR76 - 1440 - 6001 - 2290 - 00386 - 9818 - 034
+                        <br>BIC: AGRIFRPP844</p>
                     <hr/>
                     <h3>Faire un don:</h3>
-                    <form role="form" method="POST" action="" class="form-horizontal">
+                    <form action="{{ path('patrimoine_sendMail') }}" method="POST" class="form-horizontal">
                         <input name="submitted" id="submitted" value="true" type="hidden">
                         <div class="form-group">
                             <label class="control-label col-md-4" for="entreprise">Nom de l'entreprise:</label>
@@ -328,7 +321,7 @@
                     <p id="virement_p" class="hidden"><br>RIB FRANCE: 14406 - 00122 - 90003898180 - 34<br>IBAN ETRANGER: FR76 - 1440 - 6001 - 2290 - 00386 - 9818 - 034<br>BIC: AGRIFRPP844</p>
                     <hr/>
                     <h3>Faire un don:</h3>
-                    <form method="POST" action="" class="form-horizontal" role="form">
+                    <form action="{{ path('patrimoine_sendMail') }}" method="POST" class="form-horizontal">
                         <div class="form-group">
                             <label class="control-label col-md-4" for="nom">Nom:</label>
                             <div class="col-md-6">

@@ -64,7 +64,7 @@
                                         : 921B <br/> Directeur de publication : Bernard MENAUT <br/> Responsable de rédaction : Michel Krecke <br/> Webmaster : Pascal PEAU Droit d'auteur -Copyright-
                                     <hr/>
                                     </p>
-                                    <p class="modal_mention">Marques Le contenu et la présentation du site constituent une œuvre de l'esprit et bénéficient de la protection accordée par la législation française et internationale en vigueur sur la propriété intellectuelle et industrielle.
+                                    <p class="modal_mention">Le contenu et la présentation du site constituent une œuvre de l'esprit et bénéficient de la protection accordée par la législation française et internationale en vigueur sur la propriété intellectuelle et industrielle.
                                         L'exploitation, la reproduction, l'extraction de tout ou partie des données, fichiers, représentations graphiques, photographiques, numériques ou audiovisuelles ou de tout élément figurant sur le site ou encore
                                         de tout ou partie du site lui-même sont formellement interdites sans l'accord écrit et préalable de PERCHE COMMUNICATION. Les marques éventuellement citées sur le site sont la propriété de leurs titulaires respectifs.
                                         Collecte des données personnelles Les informations recueillies sur le formulaire de contact sont nécessaires pour traiter votre demande d'informations ou pour votre adhésion. Elles font l’objet d’un traitement informatique
@@ -80,9 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-4"><a href="#">Mentions légales</a></div>
                 </div>
-            </div>
             <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
@@ -114,11 +112,32 @@
         </footer>
 
     {% block javascripts %}
-
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script> document.getElementById("moyen_paiement_entreprise").addEventListener('change', function(e){
+        var selected_e = e.target.value;
+        document.getElementById("virement").className = '';
+        document.getElementById("cheque").className = '';
+        if (selected_e == 'cheque') {
+        document.getElementById("virement").className = "hidden";
+        } else if (selected_e == 'virement') {
+        document.getElementById("cheque").className = "hidden";
+        }
+        });
+        document.getElementById("moyen_paiement_particulier").addEventListener('change', function(e){
+        var selected_p = e.target.value;
+        document.getElementById("virement_p").className = '';
+        document.getElementById("cheque_p").className = '';
+        if (selected_p == 'cheque') {
+        document.getElementById("virement_p").className = "hidden";
+        } else if (selected_p == 'virement') {
+        document.getElementById("cheque_p").className = "hidden";
+        }
+        }); </script>
+
 
     {% endblock %}
 </html>
