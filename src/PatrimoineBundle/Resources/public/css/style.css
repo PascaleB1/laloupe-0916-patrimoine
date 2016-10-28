@@ -284,6 +284,9 @@ textarea {
     height: 210px;
 }
 
+.champ5 {
+    height: 210px;
+}
 /* MODAL MENTION LEGAL */
 
 .modal_mention {
@@ -373,3 +376,8 @@ h1 {
     position: static;
 }
 
+/*** LOGIN *****/
+
+.bloc_login {
+    text-align: center;
+}
