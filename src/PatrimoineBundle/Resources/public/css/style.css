@@ -9,37 +9,7 @@ body {
     background-color: #6E7A7F;
 }
 
-/*ul.nav.navbar-nav > a {
-    background-color: #6E7A7F;
-    margin-left: 30px;
-    margin-right: 30px;
-}
 
-<<<<<<< HEAD
-/*ul.nav.navbar-nav > a.btn.btn-outline-warning {
-    background-color: #D8CFA6;
-    width: 200px;
-}*/
-
-/*.navbar-inverse .navbar-nav > li:hover {
-    background-color: #A2A8A7;
-}*/
-
-/*.navbar-inverse .navbar-nav > li:active {
-=======
-/ul.nav.navbar-nav > a.btn.btn-outline-warning {
-    background-color: #D8CFA6;
-    width: 200px;
-}/
-
-/.navbar-inverse .navbar-nav > li:hover {
-    background-color: #A2A8A7;
-}/
-
-/.navbar-inverse .navbar-nav > li:active {
->>>>>>> pascale
-    background-color: #7E8281;
-}*/
 
 .navbar-inverse .navbar-nav > li:hover > a:hover{
     background-color: #A2A8A7;
@@ -49,14 +19,13 @@ body {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #A2A8A7;
     border-radius: 4px;
-<<<<<<< HEAD
+
 }
 
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     margin: 0px 25px;
-=======
->>>>>>> pascale
+
 }
 
 .navbar-inverse .navbar-nav > li > a {
