@@ -55,15 +55,6 @@ class AgendaController extends Controller
      * Finds and displays a agenda entity.
      *
      */
-    public function showAction(Agenda $agenda)
-    {
-        $deleteForm = $this->createDeleteForm($agenda);
-
-        return $this->render('PatrimoineBundle:agenda:show.html.twig', array(
-            'agenda' => $agenda,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
 
     /**
      * Displays a form to edit an existing agenda entity.

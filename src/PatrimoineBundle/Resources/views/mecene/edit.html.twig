@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-{% block navbar %}
+{% navbar %}
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -18,10 +18,9 @@
         </div>
     </nav>
 {% endblock %}
+
 {% block body %}
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
     {{ form_start(edit_form) }}
@@ -58,9 +57,7 @@
                     <div class="section-header">
 
                         <h2 class="white-text">Devenir Mécènes</h2>
-
                     </div>
-
                 </div>
 
 
@@ -75,8 +72,6 @@
 
                         <p class="text-big">Un reçu fiscal vous sera adressé automatiquement.</p><hr/>
                         <p>Valoriser le Perche en étant notre mécène. <br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
-
-
                     </div>
                 </div>
 
@@ -87,7 +82,6 @@
                         <div class="title_mecene">
                             <h3>Entreprise</h3>
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter bottom after 0s over 1.5s">
@@ -101,8 +95,6 @@
                             <h3>Particulier</h3>
                         </div>
                     </div>
-
-
                 </div>
 
                 <!-- text des colonnes -->
@@ -115,49 +107,35 @@
                                 {{ mecene.formulaire1 }}
                                 {{ form_widget(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
                                 {{ form_errors(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
-
-
                             </div>
 
                             <div class="col-xs-12">
                                 <input type="submit" value="Valider les modifications"/>
                             </div>
-
-
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter bottom after 0s over 1.5s">
                         <div class="text-center">
 
                             <p>Entreprise ou Particulier</p>
-
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter right after 0s over 1.5s">
                         <div class="text-center">
 
-               <p></p>
 
                             {{ mecene.formulaire2 }}
                             {{ form_widget(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
                             {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
-
-
                         </div>
-
                     </div>
                        <div class="col-xs-12">
                             <input type="submit" value="Valider les modifications"/>
-                        </div>
-
-                    </div>
-
-
+                       </div>
                 </div>
+            </div>
 
                 <div class="row">
 

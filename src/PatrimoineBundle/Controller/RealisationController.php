@@ -55,15 +55,6 @@ class RealisationController extends Controller
      * Finds and displays a Realisation entity.
      *
      */
-    public function showAction(Realisation $realisation)
-    {
-        $deleteForm = $this->createDeleteForm($realisation);
-
-        return $this->render('PatrimoineBundle:realisation:show.html.twig', array(
-            'realisation' => $realisation,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
 
     /**
      * Displays a form to edit an existing Realisation entity.

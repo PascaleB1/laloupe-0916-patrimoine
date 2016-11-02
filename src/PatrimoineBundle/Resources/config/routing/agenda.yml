@@ -3,11 +3,6 @@ agenda_index:
     defaults: { _controller: "PatrimoineBundle:Agenda:index" }
     methods:  GET
 
-agenda_show:
-    path:     /{id}/show
-    defaults: { _controller: "PatrimoineBundle:Agenda:show" }
-    methods:  GET
-
 agenda_new:
     path:     /new
     defaults: { _controller: "PatrimoineBundle:Agenda:new" }
