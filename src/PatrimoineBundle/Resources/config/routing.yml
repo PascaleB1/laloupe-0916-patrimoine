@@ -2,7 +2,7 @@ patrimoine_patrimoine:
     resource: "@PatrimoineBundle/Resources/config/routing/patrimoine.yml"
     prefix:   /patrimoine
 
-patrimoin_redirection:
+patrimoine_redirection:
     path:     /
     defaults: { _controller: PatrimoineBundle:Default:redirection }
 

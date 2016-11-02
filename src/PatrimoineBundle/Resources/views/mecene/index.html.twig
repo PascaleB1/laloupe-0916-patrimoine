@@ -12,11 +12,10 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ path('accueil_index') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index') }}">Associations</a></li>
-                    <li><a href="{{ path('realisation_index') }}">Realisations</a></li>
-                    <li><a href="{{ path('agenda_index') }}">Agenda</a></li>
-                    <li class="active"><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}"
-                                          role="button">Devenir mecene</a></li>
+                    <li><a href="{{ path('association_index') }}">Les associations</a></li>
+                    <li><a href="{{ path('realisation_index') }}">Nos réalisations</a></li>
+                    <li><a href="{{ path('agenda_index') }}">L'agenda</a></li>
+                    <li class="active"><a href="{{ path('mecene_index') }}">Devenir mécène</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -46,7 +45,7 @@
             <div class="row">
                 <div class="section-header">
 
-                    <h2 class="white-text">Devenir Mécènes</h2>
+                    <h2 class="white-text">Devenir Mécène</h2>
                 </div>
             </div>
 
@@ -146,8 +145,6 @@
                      data-scrollreveal="enter bottom after 0s over 1.5s">
                     <p>Je donne avec paypal</p>
 
-                    <p>
-                    </p>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="6FKMYCRQKEAFU">
@@ -156,7 +153,6 @@
                         <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1"
                              height="1">
                     </form>
-                    <p></p>
 
                 </div>
 
@@ -197,8 +193,8 @@
                 <div class="modal-body">
                     Moyens de paiement: <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise"
                                                 size="1">
-                        <option value="cheque" selected="selected"> chèque</option>
-                        <option value="virement"> virement</option>
+                        <option value="cheque" selected="selected">chèque</option>
+                        <option value="virement">virement</option>
                     </select>
                     <p id="cheque" class="">
                         <br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé
@@ -316,8 +312,8 @@
                 <div class="modal-body">
                     Moyens de paiement: <select name="moyen_paiement_particulier" id="moyen_paiement_particulier"
                                                 size="1">
-                        <option value="chèque" selected="selected"> cheque</option>
-                        <option value="virement"> virement</option>
+                        <option value="chèque" selected="selected">chèque</option>
+                        <option value="virement">virement</option>
                     </select>
                     <p id="cheque_p"><br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé<br>
                         à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron</p>
