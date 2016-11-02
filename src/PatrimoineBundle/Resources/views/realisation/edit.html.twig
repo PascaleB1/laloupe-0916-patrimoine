@@ -8,10 +8,10 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ path('accueil_index')~('1/edit') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index')~('1/edit') }}">Associations</a></li>
-                    <li class="active"><a href="{{ path('realisation_index')~('1/edit') }}">Realisations</a></li>
-                    <li><a href="{{ path('agenda_index')~('1/edit') }}">Agenda</a></li>
-                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index')~('1/edit') }}" role="button">Devenir mecene</a></li>
+                    <li><a href="{{ path('association_index')~('1/edit') }}">Les associations</a></li>
+                    <li class="active"><a href="{{ path('realisation_index')~('1/edit') }}">Les réalisations</a></li>
+                    <li><a href="{{ path('agenda_index')~('1/edit') }}">L'agenda</a></li>
+                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index')~('1/edit') }}" role="button">Devenir mécène</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -55,12 +55,12 @@
                 <h3>description</h3>
 
                 <p>{{ realisation.article1 }}</p>
-                {{ form_widget(edit_form.article1) }}
-                {{ form_errors(edit_form.article1) }}
+                {{ form_widget(edit_form.article1, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article1, {'attr': {'class': 'champ5'}})  }}
 
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
     </div>
@@ -97,14 +97,13 @@
 
 
                 <p>{{ realisation.article2 }}</p>
-                {{ form_widget(edit_form.article2) }}
-                {{ form_errors(edit_form.article2) }}
+                {{ form_widget(edit_form.article2, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article2, {'attr': {'class': 'champ5'}})  }}
 
 
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -139,14 +138,12 @@
 
 
                 <p>{{ realisation.article3 }}</p>
-                {{ form_widget(edit_form.article3) }}
-                {{ form_errors(edit_form.article3) }}
+                {{ form_widget(edit_form.article3, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article3, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -167,7 +164,6 @@
                 {{ form_widget(edit_form.titre4) }}
                 {{ form_errors(edit_form.titre4) }}
 
-
             </div>
 
             <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image4 }}"
@@ -181,14 +177,12 @@
 
 
                 <p>{{ realisation.article4 }}</p>
-                {{ form_widget(edit_form.article4) }}
-                {{ form_errors(edit_form.article4) }}
+                {{ form_widget(edit_form.article4, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article4, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -223,14 +217,12 @@
 
 
                 <p>{{ realisation.article5 }}</p>
-                {{ form_widget(edit_form.article5) }}
-                {{ form_errors(edit_form.article5) }}
+                {{ form_widget(edit_form.article5, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article5, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -265,14 +257,12 @@
 
 
                 <p>{{ realisation.article6 }}</p>
-                {{ form_widget(edit_form.article6) }}
-                {{ form_errors(edit_form.article6) }}
+                {{ form_widget(edit_form.article6, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article6, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -308,14 +298,12 @@
 
 
                 <p>{{ realisation.article7 }}</p>
-                {{ form_widget(edit_form.article7) }}
-                {{ form_errors(edit_form.article7) }}
+                {{ form_widget(edit_form.article7, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article7, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                 <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                 </div>
             </div>
         </div>
 
@@ -336,7 +324,6 @@
                 {{ form_widget(edit_form.titre8) }}
                 {{ form_widget(edit_form.titre8) }}
 
-
             </div>
 
             <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image8 }}"
@@ -350,14 +337,12 @@
 
 
                 <p>{{ realisation.article8 }}</p>
-                {{ form_widget(edit_form.article8) }}
-                {{ form_errors(edit_form.article8) }}
+                {{ form_widget(edit_form.article8, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article8, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -392,14 +377,12 @@
 
 
                 <p>{{ realisation.article9 }}</p>
-                {{ form_widget(edit_form.article9) }}
-                {{ form_widget(edit_form.article9) }}
+                {{ form_widget(edit_form.article9, {'attr': {'class': 'champ5'}})  }}
+                {{ form_widget(edit_form.article9, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 
@@ -435,14 +418,12 @@
 
 
                 <p>{{ realisation.article10 }}</p>
-                {{ form_widget(edit_form.article10) }}
-                {{ form_errors(edit_form.article10) }}
+                {{ form_widget(edit_form.article10, {'attr': {'class': 'champ5'}})  }}
+                {{ form_errors(edit_form.article10, {'attr': {'class': 'champ5'}})  }}
 
-
-            </div>
-            <div class="col-xs-12 text-center">
-                <input type="submit" value="Valider les modifications"/>
-
+                <div class="col-xs-12 text-center">
+                     <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
         </div>
 

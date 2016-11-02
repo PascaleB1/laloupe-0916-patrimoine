@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "fe3fa62d6bde0b9bdbdd0c52ec871e5e",
+
     "content-hash": "3b58d5ca607b5f621751b702bdf8080a",
     "packages": [
         {
@@ -87,6 +88,16 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/cache/zipball/f8af318d14bdb0eff0336795b428b547bd39ccb6",
                 "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6",
+            "version": "v1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/b6f544a20f4807e81f7044d31e679ccbb1866dc3",
+                "reference": "b6f544a20f4807e81f7044d31e679ccbb1866dc3",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +154,8 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-12-31 16:37:02"
+
+            "time": "2016-10-29 11:16:17"
         },
         {
             "name": "doctrine/collections",
@@ -1180,6 +1192,16 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/7bc47dcfdbde6d567e1a834577d1c04ddb970281",
                 "reference": "7bc47dcfdbde6d567e1a834577d1c04ddb970281",
+            "version": "v5.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
+                "reference": "e64947de9ebc37732a62f5115164484a9bee7fa6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/e64947de9ebc37732a62f5115164484a9bee7fa6",
+                "reference": "e64947de9ebc37732a62f5115164484a9bee7fa6",
                 "shasum": ""
             },
             "require": {
@@ -1218,7 +1240,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-10-08 18:50:33"
+            "time": "2016-10-30 23:18:01"
         },
         {
             "name": "sensio/framework-extra-bundle",

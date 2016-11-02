@@ -9,8 +9,6 @@ body {
     background-color: #6E7A7F;
 }
 
-
-
 .navbar-inverse .navbar-nav > li:hover > a:hover{
     background-color: #A2A8A7;
     border-radius: 4px;
@@ -124,7 +122,6 @@ a.btn.btn-default {
 }
 
 .calendar {
-    margin-top: 2.5%;
     margin-top: 3%;
     margin-bottom: 3% ;
     height: 800px;
@@ -228,6 +225,16 @@ a.btn.btn-default {
     background-color: #7E8281;
 }
 
+/*---------- BOUTON MODAL ---------*/
+
+.btn-info:hover, .btn-info:focus {
+    border: solid 1px #A2A8A7;
+    background-color: grey;
+}
+.btn-info, .btn-info:focus {
+    border: solid 1px #A2A8A7;
+    background-color: #A2A8A7;
+}
 
 /* TEXTAREA */
 
@@ -247,13 +254,16 @@ textarea {
 }
 
 .champ1 {
-    width: 1050px;
+    width: 95%;
 }
 
 .champ3 {
     height: 210px;
 }
 
+.champ5 {
+    height: 210px;
+}
 /* MODAL MENTION LEGAL */
 
 .modal_mention {
@@ -343,3 +353,8 @@ h1 {
     position: static;
 }
 
+/*** LOGIN *****/
+
+.bloc_login {
+    text-align: center;
+}

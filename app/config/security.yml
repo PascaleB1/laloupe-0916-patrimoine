@@ -16,7 +16,6 @@ security:
         in_memory:
             memory: ~
 
-
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:

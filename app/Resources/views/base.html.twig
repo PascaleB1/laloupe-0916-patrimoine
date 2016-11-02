@@ -104,11 +104,32 @@
             </div>
         </footer>
     {% block javascripts %}
-
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script> document.getElementById("moyen_paiement_entreprise").addEventListener('change', function(e){
+        var selected_e = e.target.value;
+        document.getElementById("virement").className = '';
+        document.getElementById("cheque").className = '';
+        if (selected_e == 'cheque') {
+        document.getElementById("virement").className = "hidden";
+        } else if (selected_e == 'virement') {
+        document.getElementById("cheque").className = "hidden";
+        }
+        });
+        document.getElementById("moyen_paiement_particulier").addEventListener('change', function(e){
+        var selected_p = e.target.value;
+        document.getElementById("virement_p").className = '';
+        document.getElementById("cheque_p").className = '';
+        if (selected_p == 'cheque') {
+        document.getElementById("virement_p").className = "hidden";
+        } else if (selected_p == 'virement') {
+        document.getElementById("cheque_p").className = "hidden";
+        }
+        }); </script>
+
 
     {% endblock %}
 </html>

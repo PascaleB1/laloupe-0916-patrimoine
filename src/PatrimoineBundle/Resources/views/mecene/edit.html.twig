@@ -18,9 +18,11 @@
         </div>
     </nav>
 {% endblock %}
+
 {% block body %}
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 
     {{ form_start(edit_form) }}
     {{ form_errors(edit_form) }}
@@ -28,7 +30,6 @@
     <hr/>
     <div class="container">
         <div id="marge_top">
-
 
             {{ mecene.presentation }}
             {{ form_widget(edit_form.presentation, {'attr': {'class': 'champ1'}}) }}
@@ -58,8 +59,8 @@
 
                         <h2 class="white-text">Devenir Mécène</h2>
 
-                    </div>
 
+                    </div>
                 </div>
 
 
@@ -71,8 +72,7 @@
 
                         <p class="text-big">Un reçu fiscal vous sera adressé automatiquement.</p><hr/>
                         <p>Valoriser le Perche en étant notre mécène. <br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
-
-                    </div>
+                  </div>
                 </div>
 
                 <!-- // titres des colonnes -->
@@ -82,7 +82,6 @@
                         <div class="title_mecene">
                             <h3>Entreprise</h3>
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter bottom after 0s over 1.5s">
@@ -96,8 +95,6 @@
                             <h3>Particulier</h3>
                         </div>
                     </div>
-
-
                 </div>
 
                 <!-- text des colonnes -->
@@ -110,49 +107,35 @@
                                 {{ mecene.formulaire1 }}
                                 {{ form_widget(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
                                 {{ form_errors(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
-
-
                             </div>
 
                             <div class="col-xs-12">
                                 <input type="submit" value="Valider les modifications"/>
                             </div>
-
-
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter bottom after 0s over 1.5s">
                         <div class="text-center">
 
                             <p>Entreprise ou Particulier</p>
-
                         </div>
-
                     </div>
 
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-4 col-md-4" data-scrollreveal="enter right after 0s over 1.5s">
                         <div class="text-center">
 
-               <p></p>
 
                             {{ mecene.formulaire2 }}
                             {{ form_widget(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
                             {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
-
-
                         </div>
-
                     </div>
                        <div class="col-xs-12">
                             <input type="submit" value="Valider les modifications"/>
-                        </div>
-
-                    </div>
-
-
+                       </div>
                 </div>
+            </div>
 
                 <div class="row">
 
@@ -249,7 +232,6 @@
 
     </div>
 
-
     <!-- MODAL ENTREPRISE-->
 
     <div aria-hidden="true" style="display: none;" class="modal fade bs-entreprise-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Entreprise">
@@ -261,7 +243,7 @@
                 </div>
                 <div class="modal-body">
 
-                    Moyens de paiement <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise" size="1">
+                    Moyens de paiement:<select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise" size="1">
                         <option value="cheque" selected="selected"> chèque </option>
                         <option value="virement"> virement </option>
                     </select>
@@ -319,7 +301,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-
+<<
                             <label class="control-label col-md-4" for="code_postale">Code postal</label>
 
                             <div class="col-md-6">
@@ -381,6 +363,7 @@
                     <h2 class="modal-title rainbow" id="gridSystemModalLabel">Je suis un particulier</h2>
                 </div>
                 <div class="modal-body">
+
 
                     Moyens de paiement <select name="moyen_paiement_particulier" id="moyen_paiement_particulier" size="1">
                         <option value="cheque" selected="selected"> chèque </option>

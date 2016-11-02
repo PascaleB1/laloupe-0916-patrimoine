@@ -13,6 +13,7 @@
                     <li><a href="{{ path('realisation_index')~('1/edit') }}">Les réalisations</a></li>
                     <li><a href="{{ path('agenda_index')~('1/edit') }}">L'agenda</a></li>
                     <li><a href="{{ path('mecene_index')~('1/edit') }}">Devenir mécène</a></li>
+
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -28,23 +29,24 @@
 
 
 <div id="container">
-   <br>
-   <br>
+   <br/>
+   <br/>
 
     <!--bloc video-->
 
     <div class="row fond_video">
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-12">
             <div class="video">
 
                 <h3 class="titre_accueil">Fonds de Soutien du Patrimoine Percheron</h3>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rZRLTsJHNTo" frameborder="0" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/rZRLTsJHNTo" frameborder="0" allowfullscreen></iframe>
+                <br/>
+                <br/>
                 {{ form_widget(form.video) }}
                 {{ form_errors(form.video) }}
 
             </div>
-
         </div>
     </div>
 
@@ -67,12 +69,11 @@
                 <p class="txt_accueil">{{ accueil.article1 }}</p>
                 {{ form_widget(form.article1,  {'attr': {'class': 'champ5'}}) }}
                 {{ form_errors(form.article1,  {'attr': {'class': 'champ5'}}) }}
-            </div>
 
-            <div class="col-xs-12">
-                <input type="submit" value="Valider les modifications"/>
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
-
             <!--article 2-->
 
             <div class="col-xs-12 col-lg-6">
@@ -83,12 +84,11 @@
                 <p class="txt_accueil">{{ accueil.article2 }}</p>
                 {{ form_widget(form.article2,  {'attr': {'class': 'champ5'}}) }}
                 {{ form_errors(form.article2,  {'attr': {'class': 'champ5'}}) }}
-            </div>
 
-            <div class="col-xs-12">
-                <input type="submit" value="Valider les modifications"/>
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
-
             <!--article 3-->
 
             <div class="col-xs-12 col-lg-6">
@@ -99,12 +99,11 @@
                 <p class="txt_accueil">{{ accueil.article3 }}</p>
                 {{ form_widget(form.article3,  {'attr': {'class': 'champ5'}}) }}
                 {{ form_errors(form.article3,  {'attr': {'class': 'champ5'}}) }}
-            </div>
 
-            <div class="col-xs-12">
-                <input type="submit" value="Valider les modifications"/>
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
             </div>
-
             <!--article 4-->
 
             <div class="col-xs-12 col-lg-6">
@@ -115,12 +114,12 @@
                 <p class="txt_accueil">{{ accueil.article4 }}</p>
                 {{ form_widget(form.article4,  {'attr': {'class': 'champ5'}}) }}
                 {{ form_errors(form.article4,  {'attr': {'class': 'champ5'}}) }}
-            </div>
 
-            <div class="col-xs-12">
-                <input type="submit" value="Valider les modifications"/>
-            </div>
 
+                <div class="col-xs-12 text-center">
+                    <input type="submit" value="Valider les modifications"/>
+                </div>
+            </div>
         </div>
     </div>
 

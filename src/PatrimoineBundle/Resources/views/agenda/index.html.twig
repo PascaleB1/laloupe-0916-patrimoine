@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block navbar %}
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,6 +20,7 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
+
 {% endblock %}
 
 {% block body %}
@@ -34,33 +36,5 @@
             </div>
         </div>
     </div>
-
-
-    <table>
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for agenda in agendas %}
-            <tr>
-                <td><a href="{{ path('agenda_show', { 'id': agenda.id }) }}">{{ agenda.id }}</a></td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('agenda_show', { 'id': agenda.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('agenda_edit', { 'id': agenda.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
 
 {% endblock %}
