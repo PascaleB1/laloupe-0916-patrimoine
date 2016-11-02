@@ -1,8 +1,13 @@
 <html>
+
     <head>
         <title>Formulaire Mail</title>
     </head>
     <form action="{{ path('patrimoine_sendMail') }}" method="POST" >
+
+
+<form action="{{ path('patrimoine_sendMail') }}" method="POST" >
+
 
     <h1>Veuillez renseigner les champs</h1>
     <br />
@@ -24,5 +29,7 @@
     <textarea name="message"></textarea>
 
     <input type="submit" value="Send"/>
+
     </form>
+
 </html>
