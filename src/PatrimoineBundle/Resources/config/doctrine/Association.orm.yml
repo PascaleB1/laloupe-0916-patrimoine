@@ -15,7 +15,7 @@ PatrimoineBundle\Entity\Association:
             nullable: TRUE
         article1:
             type: string
-            length: 700
+            length: 900
             nullable: TRUE
         image1:
             type: string
@@ -27,7 +27,7 @@ PatrimoineBundle\Entity\Association:
             nullable: TRUE
         article2:
             type: string
-            length: 700
+            length: 900
             nullable: TRUE
         image2:
             type: string
@@ -39,7 +39,7 @@ PatrimoineBundle\Entity\Association:
             nullable: TRUE
         article3:
             type: string
-            length: 700
+            length: 900
             nullable: TRUE
         image3:
             type: string
@@ -51,7 +51,7 @@ PatrimoineBundle\Entity\Association:
             nullable: TRUE
         article4:
             type: string
-            length: 700
+            length: 900
             nullable: TRUE
         image4:
             type: string

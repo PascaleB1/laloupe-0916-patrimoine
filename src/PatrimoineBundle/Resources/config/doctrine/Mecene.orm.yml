@@ -10,12 +10,11 @@ PatrimoineBundle\Entity\Mecene:
                 strategy: AUTO
     fields:
         presentation:
-            type: string
-            length: 255
+            type: text
         formulaire1:
             type: string
-            length: 255
+            length: 700
         formulaire2:
             type: string
-            length: 255
+            length: 700
     lifecycleCallbacks: {  }

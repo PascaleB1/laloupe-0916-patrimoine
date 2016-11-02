@@ -10,10 +10,12 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ path('accueil_index') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index') }}">Associations</a></li>
-                    <li class="active"><a href="{{ path('realisation_index') }}">Realisations</a></li>
-                    <li><a href="{{ path('agenda_index') }}">Agenda</a></li>
-                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir mecene</a></li>
+
+                    <li><a href="{{ path('association_index') }}">Les associations</a></li>
+                    <li class="active"><a href="{{ path('realisation_index') }}">Nos réalisations</a></li>
+                    <li><a href="{{ path('agenda_index') }}">L'agenda</a></li>
+                    <li><a href="{{ path('mecene_index') }}">Devenir mécène</a></li>
+
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -25,7 +27,6 @@
 {% block body %}
     <br/>
     <br/>
-    <h1>Realisation list - PAGE INDEX</h1>
 
 
 
@@ -39,14 +40,15 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre1 }}</h3>
 
             </div>
 
-            <div class="col-xs-4"><img src="{{ app.request.basepath }}/uploads/{{ realisation.image1 }}" class="thumbnail img_tmp"/>
+            <div class="col-xs-4">
+                <img src="{{ app.request.basepath }}/uploads/{{ realisation.image1 }}" class="thumbnail img_tmp" />
 
                 <!-- BLOC IMAGE A FINIR -->
 
@@ -69,7 +71,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre2 }}</h3>
@@ -99,7 +101,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre3 }}</h3>
@@ -129,7 +131,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre4 }}</h3>
@@ -159,7 +161,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre5 }}</h3>
@@ -189,7 +191,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre6 }}</h3>
@@ -219,7 +221,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre7 }}</h3>
@@ -249,7 +251,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre8 }}</h3>
@@ -279,7 +281,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre9 }}</h3>
@@ -309,7 +311,7 @@
         <br/>
         <br/>
 
-        <div class="row fond">
+        <div class="row fond_real">
             <div class="col-xs-12 text-center">
 
                 <h3>{{ realisation.titre10 }}</h3>

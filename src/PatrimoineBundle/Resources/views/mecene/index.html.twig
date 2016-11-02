@@ -197,92 +197,92 @@
                 <div class="modal-body">
                     Moyens de paiement: <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise"
                                                 size="1">
-                        <option value="cheque" selected="selected"> cheque</option>
+                        <option value="cheque" selected="selected"> chèque</option>
                         <option value="virement"> virement</option>
                     </select>
                     <p id="cheque" class="">
-                        <br>Chèque à envoyer à l'adresse: 4 résidence fernand chevallier, 28240&nbsp;Loupe
-                        <br> à l'ordre de les mécènes du numérique</p>
+                        <br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé
+                        <br> à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron</p>
                     <p id="virement" class="hidden">
-                        <br>RIB FRANCE: 14406 - 00122 - 90003898180 - 34
-                        <br>IBAN ETRANGER: FR76 - 1440 - 6001 - 2290 - 00386 - 9818 - 034
-                        <br>BIC: AGRIFRPP844</p>
+                        <br>RIB FRANCE: 15459 37125 000104363301 77
+                        <br>IBAN ETRANGER: FR76 - 1545 - 9371 - 2500 - 0104 - 36301 - 77
+                        <br>BIC: CMCIFR2A</p>
                     <hr/>
-                    <h3>Faire un don:</h3>
+                    <h3>Faire un don</h3>
                     <form action="{{ path('patrimoine_sendMail') }}" method="POST" class="form-horizontal">
                         <input name="submitted" id="submitted" value="true" type="hidden">
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="entreprise">Nom de l'entreprise:</label>
+                            <label class="control-label col-md-4" for="entreprise">Nom de l'entreprise</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="entreprise" id="entreprise"
                                        placeholder="Nom de l'entreprise" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="siret">N° SIRET:</label>
+                            <label class="control-label col-md-4" for="siret">N° SIRET</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="siret" id="siret" placeholder="12345678912345"
                                        value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="nom">Nom:</label>
+                            <label class="control-label col-md-4" for="nom">Nom</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="nom" id="nom" placeholder="votre nom" value=""
                                        required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="prenom">Prénom:</label>
+                            <label class="control-label col-md-4" for="prenom">Prénom</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="prenom" id="prenom" placeholder="votre prénom"
                                        value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="adresse">Adresse:</label>
+                            <label class="control-label col-md-4" for="adresse">Adresse</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="adresse" id="adresse" placeholder="votre adresse"
                                        value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="ville">Ville:</label>
+                            <label class="control-label col-md-4" for="ville">Ville</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="ville" id="ville" placeholder="votre ville" value=""
                                        required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="code_postale">Code postal:</label>
+                            <label class="control-label col-md-4" for="code_postale">Code postal</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="code_postale" id="code_postale"
                                        placeholder="votre code postal" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="email">Adresse Email:</label>
+                            <label class="control-label col-md-4" for="email">Adresse Email</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="email" id="email" placeholder="johndoe@example.com"
                                        value="" required="" type="email">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="phone">Téléphone:</label>
+                            <label class="control-label col-md-4" for="phone">Téléphone</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="phone" id="phone" placeholder="0450699887" value=""
                                        required="" type="tel">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="don">Montant du don:</label>
+                            <label class="control-label col-md-4" for="don">Montant du don</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="don" id="don" placeholder="300" value="" required=""
                                        type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="comment">Votre message:</label>
+                            <label class="control-label col-md-4" for="comment">Votre message</label>
                             <div class="col-md-6">
                                 <textarea class="form-control" rows="10" name="comment" id="comment" placeholder=""
                                           required=""></textarea>
@@ -316,74 +316,74 @@
                 <div class="modal-body">
                     Moyens de paiement: <select name="moyen_paiement_particulier" id="moyen_paiement_particulier"
                                                 size="1">
-                        <option value="cheque" selected="selected"> cheque</option>
+                        <option value="chèque" selected="selected"> cheque</option>
                         <option value="virement"> virement</option>
                     </select>
-                    <p id="cheque_p"><br>Chèque à envoyer à l'adresse: 4 résidence fernand chevallier,
-                        28240&nbsp;Loupe<br> à l'ordre de les mécènes du numérique</p>
-                    <p id="virement_p" class="hidden"><br>RIB FRANCE: 14406 - 00122 - 90003898180 - 34<br>IBAN ETRANGER:
-                        FR76 - 1440 - 6001 - 2290 - 00386 - 9818 - 034<br>BIC: AGRIFRPP844</p>
+                    <p id="cheque_p"><br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé<br>
+                        à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron</p>
+                    <p id="virement_p" class="hidden"><br>RIB FRANCE: 15459 37125 000104363301 77<br>IBAN ETRANGER:
+                        FR76 - 1545 - 9371 - 2500 - 0104 - 36301 - 77<br>BIC: CMCIFR2A</p>
                     <hr/>
-                    <h3>Faire un don:</h3>
+                    <h3>Faire un don</h3>
                     <form action="{{ path('patrimoine_sendMail') }}" method="POST" class="form-horizontal">
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="nom">Nom:</label>
+                            <label class="control-label col-md-4" for="nom">Nom</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="nom" naid="nom" placeholder="votre nom" value=""
                                        required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="prenom">Prénom:</label>
+                            <label class="control-label col-md-4" for="prenom">Prénom</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="prenom" id="prenom" placeholder="votre prénom"
                                        value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="adresse">Adresse:</label>
+                            <label class="control-label col-md-4" for="adresse">Adresse</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="adresse" id="adresse" placeholder="votre adresse"
                                        value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="ville">Ville:</label>
+                            <label class="control-label col-md-4" for="ville">Ville</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="ville" id="ville" placeholder="votre ville" value=""
                                        required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="code_postale">Code postal:</label>
+                            <label class="control-label col-md-4" for="code_postale">Code postal</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="code_postale" id="code_postale"
                                        placeholder="votre code postal" value="" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="email">Adresse Email:</label>
+                            <label class="control-label col-md-4" for="email">Adresse Email</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="email" id="email" placeholder="johndoe@example.com"
                                        value="" required="" type="email">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="phone">Téléphone:</label>
+                            <label class="control-label col-md-4" for="phone">Téléphone</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="phone" id="phone" placeholder="0450699887" value=""
                                        required="" type="tel">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="don">Montant du don:</label>
+                            <label class="control-label col-md-4" for="don">Montant du don</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="don" id="don" placeholder="300" value="" required=""
                                        type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="comment">Votre message:</label>
+                            <label class="control-label col-md-4" for="comment">Votre message</label>
                             <div class="col-md-6">
                                 <textarea class="form-control" rows="10" name="comment" id="comment" placeholder=""
                                           required=""></textarea>
@@ -404,5 +404,4 @@
     </div>
     <!-- FIN MODAL PARTICULIER -->
     </body>
-
-{% endblock %}
+ {% endblock %}
