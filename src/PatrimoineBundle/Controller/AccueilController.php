@@ -42,7 +42,7 @@ class AccueilController extends Controller
             $em->persist($accueil);
             $em->flush($accueil);
 
-            return $this->redirectToRoute('accueil_show', array('id' => $accueil->getId()));
+            return $this->redirectToRoute('accueil_edit', array('id' => $accueil->getId()));
         }
 
         return $this->render('PatrimoineBundle:accueil:new.html.twig', array(

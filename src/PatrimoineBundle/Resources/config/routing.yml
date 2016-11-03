@@ -2,13 +2,10 @@ patrimoine_patrimoine:
     resource: "@PatrimoineBundle/Resources/config/routing/patrimoine.yml"
     prefix:   /patrimoine
 
-patrimoine_redirection:
-    path:     /
-    defaults: { _controller: PatrimoineBundle:Default:redirection }
 
 patrimoine_homepage:
     path:     /
-    defaults: { _controller: PatrimoineBundle:Default:index }
+    defaults: { _controller: PatrimoineBundle:Accueil:index}
 
 patrimoine_sendMail:
     path: /sendMail
@@ -16,7 +13,7 @@ patrimoine_sendMail:
 
 patrimoine_mail:
     path: /mail
-    defaults: {_controller: PatrimoineBundle:Default:mail }
+    defaults: {_controller: PatrimoineBundle:Default:sendMail }
 
 patrimoine_association:
     resource: "@PatrimoineBundle/Resources/config/routing/association.yml"
