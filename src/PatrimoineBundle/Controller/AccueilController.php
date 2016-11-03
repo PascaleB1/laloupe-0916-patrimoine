@@ -50,20 +50,7 @@ class AccueilController extends Controller
             'form' => $form->createView(),
         ));
     }
-
-    /**
-     * Finds and displays a accueil entity.
-     *
-     */
-    public function showAction(Accueil $accueil)
-    {
-        $deleteForm = $this->createDeleteForm($accueil);
-
-        return $this->render('PatrimoineBundle:accueil:show.html.twig', array(
-            'accueil' => $accueil,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
+    
 
     /**
      * Displays a form to edit an existing accueil entity.

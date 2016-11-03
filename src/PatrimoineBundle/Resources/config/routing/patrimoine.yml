@@ -3,11 +3,6 @@ patrimoine_index:
     defaults: { _controller: "PatrimoineBundle:Patrimoine:index" }
     methods:  GET
 
-patrimoine_show:
-    path:     /{id}/show
-    defaults: { _controller: "PatrimoineBundle:Patrimoine:show" }
-    methods:  GET
-
 patrimoine_new:
     path:     /new
     defaults: { _controller: "PatrimoineBundle:Patrimoine:new" }

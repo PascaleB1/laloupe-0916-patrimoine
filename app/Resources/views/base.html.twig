@@ -33,9 +33,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-<<<<<<< HEAD
 
-=======
 
                     <li class="active"><a href="{{ path('accueil_index') }}">Accueil</a></li>
 
@@ -45,18 +43,7 @@
                     <li><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir
                             mecene</a></li>
 
->>>>>>> yannick
-                    <li><a href="{{ path('accueil_index') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index') }}">Les associations</a></li>
-                    <li><a href="{{ path('realisation_index') }}">Nos réalisations</a></li>
-                    <li><a href="{{ path('agenda_index') }}">L'agenda</a></li>
-<<<<<<< HEAD
-                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir mécène</a></li>
-=======
-                    <li><a class="btn btn-outline-warning" href="{{ path('mecene_index') }}" role="button">Devenir
-                            mécène</a></li>
 
->>>>>>> yannick
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -78,7 +65,7 @@
                             src="{{ asset('bundles/patrimoine/img/WCS-logo.png') }}" alt="log_WCS"/></a>
             </div>
 
-<<<<<<< HEAD
+
         <footer>
             <div class="container-fluid">
                 <div class="row">
@@ -137,7 +124,7 @@
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                         </div>
-=======
+
 
             <!-- Large modal -->
             <a href=".bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Mentions Légales</a>
@@ -214,7 +201,7 @@
                         <div class="col-xs-4"><a class="btn btn-default"
                                                  href="{{ asset('https://fr.linkedin.com/in/yannick-le-corre-96019812a') }}"
                                                  target="_blank" role="button">Yannick</a></div>
->>>>>>> yannick
+
                     </div>
                     <div class="row">
                         <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/BARBOTEAU%20Pascale.JPG') }}"
@@ -234,39 +221,11 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
-<<<<<<< HEAD
-        </footer>
-
-    {% block javascripts %}
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <script> document.getElementById("moyen_paiement_entreprise").addEventListener('change', function(e){
-        var selected_e = e.target.value;
-        document.getElementById("virement").className = '';
-        document.getElementById("cheque").className = '';
-        if (selected_e == 'cheque') {
-        document.getElementById("virement").className = "hidden";
-        } else if (selected_e == 'virement') {
-        document.getElementById("cheque").className = "hidden";
-        }
-        });
-        document.getElementById("moyen_paiement_particulier").addEventListener('change', function(e){
-        var selected_p = e.target.value;
-        document.getElementById("virement_p").className = '';
-        document.getElementById("cheque_p").className = '';
-        if (selected_p == 'cheque') {
-        document.getElementById("virement_p").className = "hidden";
-        } else if (selected_p == 'virement') {
-        document.getElementById("cheque_p").className = "hidden";
-        }
-        }); </script>
 
 
-    {% endblock %}
-=======
+
+
+
         </div>
     </div>
 </footer>
@@ -300,5 +259,5 @@
             }
         }); </script>
 {% endblock %}
->>>>>>> yannick
+
 </html>

@@ -52,20 +52,6 @@ class AssociationController extends Controller
     }
 
     /**
-     * Finds and displays a association entity.
-     *
-     */
-    public function showAction(Association $association)
-    {
-        $deleteForm = $this->createDeleteForm($association);
-
-        return $this->render('PatrimoineBundle:association:show.html.twig', array(
-            'association' => $association,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing association entity.
      *
      */

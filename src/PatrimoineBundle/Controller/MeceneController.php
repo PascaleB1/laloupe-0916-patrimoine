@@ -52,20 +52,6 @@ class MeceneController extends Controller
     }
 
     /**
-     * Finds and displays a mecene entity.
-     *
-     */
-    public function showAction(Mecene $mecene)
-    {
-        $deleteForm = $this->createDeleteForm($mecene);
-
-        return $this->render('PatrimoineBundle:mecene:show.html.twig', array(
-            'mecene' => $mecene,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing mecene entity.
      *
      */

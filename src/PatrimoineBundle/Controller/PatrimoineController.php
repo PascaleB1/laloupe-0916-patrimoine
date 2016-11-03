@@ -52,21 +52,6 @@ class PatrimoineController extends Controller
             'form' => $form->createView(),
         ));
     }
-
-    /**
-     * Finds and displays a patrimoine entity.
-     *
-     */
-    public function showAction(patrimoine $patrimoine)
-    {
-        $deleteForm = $this->createDeleteForm($patrimoine);
-
-        return $this->render('PatrimoineBundle:patrimoine:show.html.twig', array(
-            'patrimoine' => $patrimoine,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
     /**
      * Displays a form to edit an existing patrimoine entity.
      *

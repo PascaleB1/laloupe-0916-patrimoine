@@ -3,11 +3,6 @@ mecene_index:
     defaults: { _controller: "PatrimoineBundle:Mecene:index" }
     methods:  GET
 
-mecene_show:
-    path:     /{id}/show
-    defaults: { _controller: "PatrimoineBundle:Mecene:show" }
-    methods:  GET
-
 mecene_new:
     path:     /new
     defaults: { _controller: "PatrimoineBundle:Mecene:new" }

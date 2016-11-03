@@ -3,11 +3,6 @@ association_index:
     defaults: { _controller: "PatrimoineBundle:Association:index" }
     methods:  GET
 
-association_show:
-    path:     /{id}/show
-    defaults: { _controller: "PatrimoineBundle:Association:show" }
-    methods:  GET
-
 association_new:
     path:     /new
     defaults: { _controller: "PatrimoineBundle:Association:new" }
