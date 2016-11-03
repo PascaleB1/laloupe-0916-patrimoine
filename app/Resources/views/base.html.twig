@@ -70,11 +70,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-4">
-                        <p id="float_right">Site réalisé par </p>
+
                     </div>
-                    <div class="col-xs-4">
-                        <a class="btn btn-primary text-center" role="button" data-toggle="modal" data-target="#myModal"><img src="{{ asset('bundles/patrimoine/img/WCS-logo.png') }}" alt="log_WCS" /></a>
-                    </div>
+
 
                     <!-- Large modal -->
                     <a href=".bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Mentions Légales</a>
@@ -127,7 +125,7 @@
 
 
             <!-- Large modal -->
-            <a href=".bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Mentions Légales</a>
+
 
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                 <div class="modal-dialog modal-lg" role="document">
@@ -182,52 +180,7 @@
 
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Site réalisé par:</h4></div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-4"><a class="btn btn-default"
-                                                 href="{{ asset('https://www.linkedin.com/in/pascale-barboteau-4a0409a5') }}"
-                                                 target="_blank" role="button">Pascale</a></div>
-                        <div class="col-xs-4"><a class="btn btn-default"
-                                                 href="{{ asset('https://www.linkedin.com/in/lionel-picard') }}"
-                                                 target="_blank" role="button">Lionel</a></div>
-                        <div class="col-xs-4"><a class="btn btn-default"
-                                                 href="{{ asset('https://fr.linkedin.com/in/yannick-le-corre-96019812a') }}"
-                                                 target="_blank" role="button">Yannick</a></div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/BARBOTEAU%20Pascale.JPG') }}"
-                                                   alt="Pascale" class="thumbnail eleve"/></div>
-                        <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Picard%20Lionel.JPG') }}"
-                                                   alt="Lionel" class="thumbnail eleve"/></div>
-                        <div class="col-xs-4"><img src="{{ asset('bundles/patrimoine/img/Le%20Corre%20Yannick.JPG') }}"
-                                                   alt="Yannick" class="thumbnail eleve"/></div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-xs-4"><a class="btn btn-default"
-                                                 href="{{ asset('http://www.wildcodeschool.fr') }}" target="_blank"
-                                                 role="button">contacter l'école</a></div>
-                    </div>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-
-
-
-
-
-        </div>
-    </div>
 </footer>
 
 {% block javascripts %}
@@ -248,16 +201,7 @@
                 document.getElementById("cheque").className = "hidden";
             }
         });
-        document.getElementById("moyen_paiement_particulier").addEventListener('change', function (e) {
-            var selected_p = e.target.value;
-            document.getElementById("virement_p").className = '';
-            document.getElementById("cheque_p").className = '';
-            if (selected_p == 'cheque') {
-                document.getElementById("virement_p").className = "hidden";
-            } else if (selected_p == 'virement') {
-                document.getElementById("cheque_p").className = "hidden";
-            }
-        }); </script>
+         </script>
 {% endblock %}
 
 </html>
