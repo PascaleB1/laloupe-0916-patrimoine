@@ -164,7 +164,7 @@ in src\Site\SiteBundle\Controller\DefaultController.php
 in app\config\parameters.yml
 
 parameters:    
-       database_host: 127.0.0.1
+    database_host: 127.0.0.1
     database_port: null
     database_name: DB_NAME
     database_user: root

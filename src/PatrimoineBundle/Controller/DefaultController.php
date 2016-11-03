@@ -7,9 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-
-
-
     public function sendMailAction()
     {
         $Request = $this->getRequest();
@@ -24,11 +21,7 @@ class DefaultController extends Controller
             $this->get('mailer')->send($message);
             return $this->render('PatrimoineBundle:Default:mail.html.twig');
         }
-        return $this->render('PatrimoineBundle:Default:formMail.html.twig');
+        return $this->render('PatrimoineBundle:accueil:index.html.twig');
     }
-    public function redirectionAction()
-    {
 
-        return $this->render('PatrimoineBundle:Default:formMail.html.twig');
-    }
 }
