@@ -44,7 +44,7 @@ class PatrimoineController extends Controller
             $em->persist($patrimoine);
             $em->flush();
 
-            return $this->redirectToRoute('patrimoine_show', array('id' => $patrimoine->getId()));
+            return $this->redirectToRoute('patrimoine_edit', array('id' => $patrimoine->getId()));
         }
 
         return $this->render('PatrimoineBundle:patrimoine:new.html.twig', array(

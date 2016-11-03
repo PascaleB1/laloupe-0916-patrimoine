@@ -42,7 +42,7 @@ class AssociationController extends Controller
             $em->persist($association);
             $em->flush($association);
 
-            return $this->redirectToRoute('association_show', array('id' => $association->getId()));
+            return $this->redirectToRoute('association_edit', array('id' => $association->getId()));
         }
 
         return $this->render('PatrimoineBundle:association:new.html.twig', array(
