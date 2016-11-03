@@ -4,9 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-
-    "hash": "fe3fa62d6bde0b9bdbdd0c52ec871e5e",
-
+    "hash": "b7de761d45e875de895d7649a929ae55",
     "content-hash": "3b58d5ca607b5f621751b702bdf8080a",
     "packages": [
         {
@@ -79,16 +77,6 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/cache.git",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/f8af318d14bdb0eff0336795b428b547bd39ccb6",
-                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6",
             "version": "v1.6.1",
             "source": {
                 "type": "git",
@@ -155,7 +143,6 @@
                 "cache",
                 "caching"
             ],
-
             "time": "2016-10-29 11:16:17"
         },
         {
@@ -1183,16 +1170,6 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "7bc47dcfdbde6d567e1a834577d1c04ddb970281"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/7bc47dcfdbde6d567e1a834577d1c04ddb970281",
-                "reference": "7bc47dcfdbde6d567e1a834577d1c04ddb970281",
             "version": "v5.0.14",
             "source": {
                 "type": "git",

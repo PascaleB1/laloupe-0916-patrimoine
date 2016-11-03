@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-{% navbar %}
+{% block navbar %}
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -7,20 +7,13 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-<<<<<<< HEAD
-                    <li><a href="{{ path('accueil_index')~('1/edit') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index')~('1/edit') }}">Les associations</a></li>
-                    <li><a href="{{ path('realisation_index')~('1/edit') }}">Les réalisations</a></li>
-                    <li><a href="{{ path('agenda_index')~('1/edit') }}">L'agenda</a></li>
-                    <li class="active"><a class="btn btn-outline-warning" href="{{ path('mecene_index')~('1/edit') }}" role="button">Devenir mécène</a></li>
-=======
-                    <li><a href="{{ path('accueil_index') }}">Accueil</a></li>
-                    <li><a href="{{ path('association_index') }}">Les associations</a></li>
-                    <li><a href="{{ path('realisation_index') }}">Nos réalisations</a></li>
-                    <li><a href="{{ path('agenda_index') }}">L'agenda</a></li>
-                    <li class="active"><a href="{{ path('mecene_index') }}">Devenir mécène</a></li>
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
-                </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ path('accueil_index')~('1/edit') }}">Accueil</a></li>
+                        <li><a href="{{ path('association_index')~('1/edit') }}">Les associations</a></li>
+                        <li><a href="{{ path('realisation_index')~('1/edit') }}">Les réalisations</a></li>
+                        <li><a href="{{ path('agenda_index')~('1/edit') }}">L'agenda</a></li>
+                        <li class="active"><a class="btn btn-outline-warning" href="{{ path('mecene_index')~('1/edit') }}" role="button">Devenir mécène</a></li>
+                    </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -28,13 +21,9 @@
 {% endblock %}
 
 {% block body %}
-<<<<<<< HEAD
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-=======
     <hr/>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
 
 
     <div class="container">
@@ -78,24 +67,12 @@
 
                 <div class="row">
 
-<<<<<<< HEAD
                     <div data-sr-complete="true" data-sr-init="true" class="col-lg-12 col-md-12" data-scrollreveal="enter top after 0s over 1s">
 
                         <p class="text-big">Un reçu fiscal vous sera adressé automatiquement.</p><hr/>
                         <p>Valoriser le Perche en étant notre mécène. <br/> Sensibiliser aux richesses du territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/>  Stimuler l'économie locale et favoriser le lien social.</p>
                   </div>
-=======
-                    <div data-sr-complete="true" data-sr-init="true" class="col-lg-12 col-md-12"
-                         data-scrollreveal="enter top after 0s over 1s">
-                        <p class="text-big">Un reçu fiscal vous sera adressé automatiquement</p>
-                        <hr/>
-                        <p>Valoriser le Perche en étant notre mécène. la suite.<br/> Sensibiliser aux richesses du
-                            territoire.<br/> Conserver et sauvegarder des patrimoines locaux.<br/> Promouvoir la
-                            connaissance des sites, les mettre en valeur et associer culture et patrimoine.<br/> Stimuler
-                            l'économie locale et favoriser le lien social.</p>
 
-                    </div>
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
                 </div>
 
                 <!-- // titres des colonnes -->
@@ -130,17 +107,11 @@
                                 {{ mecene.formulaire1 }}
                                 {{ form_widget(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
                                 {{ form_errors(edit_form.formulaire1, {'attr': {'class': 'champ2'}}) }}
-<<<<<<< HEAD
-                            </div>
 
-                            <div class="col-xs-12">
-                                <input type="submit" value="Valider les modifications"/>
-=======
 
                                 <div class="col-xs-12">
                                     <input type="submit" value="Valider les modifications"/>
                                 </div>
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
                             </div>
                         </div>
                     </div>
@@ -159,15 +130,6 @@
                             {{ mecene.formulaire2 }}
                             {{ form_widget(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
                             {{ form_errors(edit_form.formulaire2, {'attr': {'class': 'champ3'}}) }}
-<<<<<<< HEAD
-                        </div>
-                    </div>
-                       <div class="col-xs-12">
-                            <input type="submit" value="Valider les modifications"/>
-                       </div>
-                </div>
-            </div>
-=======
 
 
                             <div class="col-xs-12">
@@ -177,9 +139,6 @@
                         </div>
                     </div>
                 </div>
-
-
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
 
                 <div class="row">
 
@@ -227,18 +186,6 @@
     <br/>
     </div>
 
-<<<<<<< HEAD
-            <!-- / END CONTAINER -->
-=======
-
-
-    </div>
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
-
-    </section>
-
-    </div>
-
     <!-- MODAL ENTREPRISE-->
 
     <div aria-hidden="true" style="display: none;" class="modal fade bs-entreprise-modal-lg" tabindex="-1" role="dialog"
@@ -251,17 +198,12 @@
                     <h2 class="modal-title rainbow" id="gridSystemModalLabel">Je suis une entreprise</h2>
                 </div>
                 <div class="modal-body">
-<<<<<<< HEAD
 
-                    Moyens de paiement:<select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise" size="1">
-                        <option value="cheque" selected="selected"> chèque </option>
-                        <option value="virement"> virement </option>
-=======
                     Moyens de paiement: <select name="moyen_paiement_entreprise" id="moyen_paiement_entreprise"
                                                 size="1">
                         <option value="cheque" selected="selected">chèque</option>
                         <option value="virement">virement</option>
->>>>>>> 1f3df6aecda72caa543853fde393c5adeeaed8ea
+
                     </select>
                     <p id="cheque" class="">
                         <br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé
@@ -322,7 +264,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-<<
+
                             <label class="control-label col-md-4" for="code_postale">Code postal</label>
                             <div class="col-md-6">
                                 <input class="form-control" name="code_postale" id="code_postale"
