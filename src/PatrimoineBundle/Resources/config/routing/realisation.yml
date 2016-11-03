@@ -3,11 +3,6 @@ realisation_index:
     defaults: { _controller: "PatrimoineBundle:Realisation:index" }
     methods:  GET
 
-realisation_show:
-    path:     /{id}/show
-    defaults: { _controller: "PatrimoineBundle:Realisation:show" }
-    methods:  GET
-
 realisation_new:
     path:     /new
     defaults: { _controller: "PatrimoineBundle:Realisation:new" }

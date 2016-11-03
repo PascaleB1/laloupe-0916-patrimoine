@@ -2,21 +2,23 @@
 
 namespace PatrimoineBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use FOS\UserBundle\Model\User as BaseUser;
 /**
- * Agenda
+ * User
  */
-class Agenda
+class User extends BaseUser
 {
     /**
-     * @var int
+     * @var integer
      */
-    private $id;
+    protected $id;
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
