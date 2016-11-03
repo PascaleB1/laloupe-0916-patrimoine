@@ -52,7 +52,6 @@ class PatrimoineController extends Controller
             'form' => $form->createView(),
         ));
     }
-
     /**
      * Displays a form to edit an existing patrimoine entity.
      *

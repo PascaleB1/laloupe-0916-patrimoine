@@ -50,7 +50,7 @@ class AgendaController extends Controller
             'form' => $form->createView(),
         ));
     }
-
+    
     /**
      * Displays a form to edit an existing agenda entity.
      *

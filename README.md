@@ -66,7 +66,7 @@ Devenir Mecene:
     - 2 modals
 
 
-composer update
+composer install
 
 *User management*
 
@@ -94,11 +94,6 @@ create a new file called : formMail.html.twig
 
 
 insert:
-
-<html>
-        <head>
-        <title>Formulaire Mail</title>
-    </head>
     <form action="{{ path('patrimoine_sendMail') }}" method="POST" >
     <h1>Veuillez renseigner les champs</h1>
     <br />
@@ -118,10 +113,9 @@ insert:
         Text:
     </h2>
     <textarea name="message"></textarea>
-        
     <input type="submit" value="Send"/>
     </form>
-</html>
+
 
 in src\Site\SiteBundle\Ressources\config\routing.yml
 
@@ -138,14 +132,10 @@ patrimoine_mail:
     path: /mail
     defaults: {_controller: PatrimoineBundle:Default:mail }
     
-in src\Site\SiteBundle\Controller\DefaultController.php
-    
-    <?php
+in src\Site\SiteBundle\Controller\DefaultController.php 
     namespace PatrimoineBundle\Controller;
-    
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-    use Symfony\Component\HttpFoundation\Request;
-    
+    use Symfony\Component\HttpFoundation\Request;  
     class DefaultController extends Controller
     {
         public function sendMailAction()
@@ -181,6 +171,6 @@ parameters:
     database_password: DB_PASSWORD
     mailer_transport: MAIL PROVIDER (ie: gmail)
     mailer_host: PROTOCOL OUTGOING MAIL (ie: SMTP)
-    mailer_user: INSERT_MAIL@PROVIDER.EXT
+    mailer_user: EXEMPLE@MAIL.COM
     mailer_password: MAIL_PASSWORD
     secret: ThisTokenIsNotSoSecretChangeIt

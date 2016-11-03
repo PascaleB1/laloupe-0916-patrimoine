@@ -50,7 +50,6 @@ class HistoireController extends Controller
             'form' => $form->createView(),
         ));
     }
-    
 
     /**
      * Displays a form to edit an existing histoire entity.
