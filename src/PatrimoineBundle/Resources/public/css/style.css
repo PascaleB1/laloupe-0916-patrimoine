@@ -42,9 +42,6 @@ body {
     text-align: justify;
 }
 
-.image+p {
-    padding-left: 3%;
-}
 
 #container {
     margin-top: 40px;
@@ -52,18 +49,9 @@ body {
     padding-left: 5%;
 }
 
-.intro {
-    margin-bottom: 40px;
-    padding-top: 15px;
-}
-
 .image {
     width: 400px;
     height: 400px;
-}
-
-.photo_visiteur {
-    margin-top: 20px;
 }
 
 footer {
@@ -184,14 +172,6 @@ a.btn.btn-default {
     margin-bottom: 20px;
 }
 
-/* CLASS TWIX */
-
-.bouton_twix {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
 /* ----------------------BOUTON--------------------------- */
 
 .bouton_entreprise:hover, .bouton_entreprise:focus {
@@ -238,13 +218,6 @@ a.btn.btn-default {
 
 /* TEXTAREA */
 
-.bouton_twix {
-   list-style: none;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-}
-
 textarea {
     border: #6E7A7F 2px solid;
     border-radius: 12.5px 12.5px 0px 12.5px;
@@ -261,8 +234,14 @@ textarea {
     height: 210px;
 }
 
+.champ4 {
+    width: 90%;
+    margin-left: 2%;
+}
+
 .champ5 {
     height: 210px;
+    width: 100%
 }
 /* MODAL MENTION LEGAL */
 
@@ -286,71 +265,6 @@ hr {
 h1 {
     font-family: Verdana, serif;
     font-size: x-large;
-}
-
-/*personnalisation texte area*/
-
-.champ1 {
-    width: 1050px;
-}
-
-.champ3 {
-    height: 210px;
-}
-
-.champ4 {
-    width: 90%;
-    margin-left: 2%;
-}
-
-.champ5 {
-    width: 100%;
-}
-/*boutons mécène*/
-
-.bouton_entreprise:hover, .bouton_entreprise:focus {
-    border: solid 1px #C5D1CE;
-    background-color: whitesmoke;
-}
-
-.bouton_entreprise, .bouton_entreprise:focus {
-    border: solid 1px #C5D1CE;
-    background-color: #C5D1CE;
-}
-
-.bouton_paypal:hover, .bouton_paypal:focus {
-    border: solid 1px #A2A8A7;
-    background-color: whitesmoke;
-}
-
-.bouton_paypal, .bouton_paypal:focus {
-    border: solid 1px #A2A8A7;
-    background-color: #A2A8A7;
-}
-
-.bouton_particulier:hover, .bouton_particulier:focus {
-    border: solid 1px #7E8281;
-    background-color: whitesmoke;
-}
-
-.bouton_particulier, .bouton_particulier:focus {
-    border: solid 1px #7E8281;
-    background-color: #7E8281;
-}
-
-/* MODAL MENTIONS LEGALES */
-
-.modal_mention {
-         text-align: center;
-         font-size: 1.35em;
-         color: black;
-         margin: 20px;
-     }
-
-.btn_fermer {
-    margin: 15px;
-    margin-left: 45%;
-    position: static;
 }
 
 /*** LOGIN *****/
