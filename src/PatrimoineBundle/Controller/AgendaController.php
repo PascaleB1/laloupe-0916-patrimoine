@@ -51,10 +51,6 @@ class AgendaController extends Controller
         ));
     }
 
-    /**
-     * Finds and displays a agenda entity.
-     *
-     */
 
     /**
      * Displays a form to edit an existing agenda entity.

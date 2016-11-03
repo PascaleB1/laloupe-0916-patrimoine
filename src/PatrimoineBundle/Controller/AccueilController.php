@@ -52,11 +52,6 @@ class AccueilController extends Controller
     }
 
     /**
-     * Finds and displays a accueil entity.
-     *
-     */
-
-    /**
      * Displays a form to edit an existing accueil entity.
      *
      */

@@ -52,11 +52,6 @@ class RealisationController extends Controller
     }
 
     /**
-     * Finds and displays a Realisation entity.
-     *
-     */
-
-    /**
      * Displays a form to edit an existing Realisation entity.
      *
      */

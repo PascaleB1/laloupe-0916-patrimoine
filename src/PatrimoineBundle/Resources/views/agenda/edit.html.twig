@@ -9,7 +9,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ path('accueil_index')~('1/edit') }}">Accueil</a></li>
                     <li><a href="{{ path('association_index')~('1/edit') }}">Les associations</a></li>
-                    <li><a href="{{ path('realisation_index')~('1/edit') }}">Les réalisations</a></li>
+                    <li><a href="{{ path('realisation_index')~('1/edit') }}">Nos réalisations</a></li>
                     <li class="active"><a href="{{ path('agenda_index')~('1/edit') }}">L'agenda</a></li>
                     <li><a class="btn btn-outline-warning" href="{{ path('mecene_index')~('1/edit') }}" role="button">Devenir mécène</a></li>
                 </ul>
@@ -29,14 +29,4 @@
         <input type="submit" value="Edit" />
     {{ form_end(edit_form) }}
 
-    <ul>
-        <li>
-            <a href="{{ path('agenda_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
 {% endblock %}

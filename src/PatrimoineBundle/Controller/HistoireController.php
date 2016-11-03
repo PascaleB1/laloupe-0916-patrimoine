@@ -52,20 +52,6 @@ class HistoireController extends Controller
     }
 
     /**
-     * Finds and displays a histoire entity.
-     *
-     */
-    public function showAction(Histoire $histoire)
-    {
-        $deleteForm = $this->createDeleteForm($histoire);
-
-        return $this->render('PatrimoineBundle:histoire:show.html.twig', array(
-            'histoire' => $histoire,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing histoire entity.
      *
      */

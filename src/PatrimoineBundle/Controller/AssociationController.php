@@ -52,11 +52,6 @@ class AssociationController extends Controller
     }
 
     /**
-     * Finds and displays a association entity.
-     *
-     */
-
-    /**
      * Displays a form to edit an existing association entity.
      *
      */

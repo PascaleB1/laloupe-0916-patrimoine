@@ -54,11 +54,6 @@ class PatrimoineController extends Controller
     }
 
     /**
-     * Finds and displays a patrimoine entity.
-     *
-     */
-
-    /**
      * Displays a form to edit an existing patrimoine entity.
      *
      */

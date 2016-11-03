@@ -52,11 +52,6 @@ class MeceneController extends Controller
     }
 
     /**
-     * Finds and displays a mecene entity.
-     *
-     */
-    
-    /**
      * Displays a form to edit an existing mecene entity.
      *
      */
