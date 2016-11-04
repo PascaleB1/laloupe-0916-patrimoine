@@ -48,7 +48,10 @@ body {
     padding-left: 5%;
 }
 
-
+.image {
+    width: 400px;
+    height: 400px;
+}
 footer {
     height: auto;
     background-color: #3E3A3A;
@@ -213,7 +216,6 @@ a.btn.btn-default {
 
 /* TEXTAREA */
 
-
 textarea {
     border: #6E7A7F 2px solid;
     border-radius: 12.5px 12.5px 0px 12.5px;
@@ -237,6 +239,8 @@ textarea {
 
 .champ5 {
     width: 100%;
+    height: 210px;
+    width: 100%
 }
 
 /* MODAL MENTION LEGAL */
