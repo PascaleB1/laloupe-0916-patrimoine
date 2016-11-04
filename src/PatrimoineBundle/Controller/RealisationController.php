@@ -69,23 +69,6 @@ class RealisationController extends Controller
             return $this->redirectToRoute('realisation_edit', array('id' => $realisation->getId()));
         }
 
-        if (null !== ($editForm->get('file1')->getData()))
-        {
-            $extention = $article->getArticleLogoChemin();
-            if (null !== $article->getArticleLogoChemin())
-            {
-                if (file_exists($article->getAbsolutePath()))
-                {
-                    unlink($article->getAbsolutePath());
-                }
-            }
-            $article->preUpload();
-            if ($article->getArticleLogoChemin() == $extention)
-            {
-                $article->upload();
-            }
-        }
-
 
 
         return $this->render('PatrimoineBundle:realisation:edit.html.twig', array(
