@@ -42,7 +42,7 @@ class AgendaController extends Controller
             $em->persist($agenda);
             $em->flush($agenda);
 
-            return $this->redirectToRoute('agenda_show', array('id' => $agenda->getId()));
+            return $this->redirectToRoute('agenda_edit', array('id' => $agenda->getId()));
         }
 
         return $this->render('PatrimoineBundle:accueil:new.html.twig', array(
@@ -50,7 +50,7 @@ class AgendaController extends Controller
             'form' => $form->createView(),
         ));
     }
-    
+
     /**
      * Displays a form to edit an existing agenda entity.
      *

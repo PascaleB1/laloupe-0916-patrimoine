@@ -42,7 +42,7 @@ class MeceneController extends Controller
             $em->persist($mecene);
             $em->flush($mecene);
 
-            return $this->redirectToRoute('mecene_show', array('id' => $mecene->getId()));
+            return $this->redirectToRoute('mecene_index', array('id' => $mecene->getId()));
         }
 
         return $this->render('PatrimoineBundle:mecene:new.html.twig', array(

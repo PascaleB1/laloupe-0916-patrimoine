@@ -42,7 +42,7 @@ class RealisationController extends Controller
             $em->persist($realisation);
             $em->flush();
 
-            return $this->redirectToRoute('realisation_show', array('id' => $realisation->getId()));
+            return $this->redirectToRoute('realisation_edit', array('id' => $realisation->getId()));
         }
 
         return $this->render('PatrimoineBundle:realisation:new.html.twig', array(
