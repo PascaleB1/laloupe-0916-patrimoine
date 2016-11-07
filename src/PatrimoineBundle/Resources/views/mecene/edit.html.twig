@@ -25,9 +25,8 @@
 {% block body %}
     <hr/>
 
-
     {{ form_start(edit_form) }}
-    {{ form_errors(edit_form) }}
+
 
     <div class="container">
         <div id="marge_top">
@@ -195,7 +194,7 @@
             <!-- / END CONTAINER -->
 
         </section>
-
+        {{ form_end(edit_form) }}
     <!-- MODAL ENTREPRISE-->
 
     <div aria-hidden="true" style="display: none;" class="modal fade bs-entreprise-modal-lg" tabindex="-1" role="dialog"
@@ -338,10 +337,10 @@
 
                     Moyens de paiement: <select name="moyen_paiement_particulier" id="moyen_paiement_particulier"
                                                 size="1">
-                        <option value="chèque" selected="selected">chèque</option>
+                        <option value="cheque" selected="selected">chèque</option>
                         <option value="virement">virement</option>
                     </select>
-                    <p id="cheque_p"><br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé<br>
+                    <p id="cheque_p" class=""><br>Chèque à envoyer à l'adresse: 8, Rue Saint Thomas - 28330 Soizé<br>
                         à l'ordre du Fonds pour la Sauvegarde du Patrimoine Percheron</p>
                     <p id="virement_p" class="hidden"><br>RIB FRANCE: 15459 37125 000104363301 77<br>IBAN ETRANGER:
                         FR76 - 1545 - 9371 - 2500 - 0104 - 36301 - 77<br>BIC: CMCIFR2A</p>
@@ -442,7 +441,5 @@
 
     <!-- FIN MODAL PARTICULIER -->
 
-
-    {{ form_end(edit_form) }}
 
 {% endblock %}
