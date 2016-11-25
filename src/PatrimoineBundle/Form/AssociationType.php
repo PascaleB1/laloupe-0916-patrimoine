@@ -18,14 +18,18 @@ class AssociationType extends AbstractType
                 ->add('titre2')
                 ->add('titre3')
                 ->add('titre4')
+                ->add('titre5')
                 ->add('article1', TextareaType::class)
                 ->add('article2', TextareaType::class)
                 ->add('article3', TextareaType::class)
                 ->add('article4', TextareaType::class)
+                ->add('article5', TextareaType::class)
                 ->add('file1', FileType::class, array('label' => 'insérer une image', 'required' => false))
                 ->add('file2', FileType::class, array('label' => 'insérer une image', 'required' => false))
                 ->add('file3', FileType::class, array('label' => 'insérer une image', 'required' => false))
-                ->add('file4', FileType::class, array('label' => 'insérer une image', 'required' => false));
+                ->add('file4', FileType::class, array('label' => 'insérer une image', 'required' => false))
+                ->add('file5', FileType::class, array('label' => 'insérer une image', 'required' => false));
+
 
     }
     

@@ -57,10 +57,22 @@ PatrimoineBundle\Entity\Association:
             type: string
             lenght: 255
             nullable: TRUE
+        titre5:
+            type: string
+            length: 255
+            nullable: TRUE
+        article5:
+            type: string
+            length: 900
+            nullable: TRUE
+        image5:
+            type: string
+            lenght: 255
+            nullable: TRUE
 
     lifecycleCallbacks:
-      prePersist: [ preUpload1, preUpload2, preUpload3, preUpload4 ]
-      preUpdate: [ preUpload1, preUpload2, preUpload3, preUpload4 ]
-      postPersist: [ upload1, upload2, upload3, upload4 ]
-      postUpdate: [ upload1, upload2, upload3, upload4 ]
-      postRemove: [ removeUpload1, removeUpload2, removeUpload3, removeUpload4 ]
+      prePersist: [ preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
+      preUpdate: [ preUpload1, preUpload2, preUpload3, preUpload4, preUpload5 ]
+      postPersist: [ upload1, upload2, upload3, upload4, upload5 ]
+      postUpdate: [ upload1, upload2, upload3, upload4, upload5 ]
+      postRemove: [ removeUpload1, removeUpload2, removeUpload3, removeUpload4, removeUpload5 ]

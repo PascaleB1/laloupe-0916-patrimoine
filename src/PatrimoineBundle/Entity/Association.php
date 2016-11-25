@@ -196,6 +196,51 @@ class Association
         }
     }
 
+    //image5
+
+    public $file5;
+
+
+    public function getWebPath5()
+    {
+        return null === $this->image5 ? null : $this->getUploadDir() . '/' . $this->image5;
+    }
+
+    public function getAbsolutePath5()
+    {
+        return null === $this->image5 ? null : $this->getUploadRootDir() . '/' . $this->image5;
+    }
+
+
+    public function preUpload5()
+    {
+        if (null !== $this->file5) {
+            // do whatever you want to generate a unique name
+            $this->image5 = uniqid() . '.' . $this->file5->guessExtension();
+        }
+    }
+
+    public function upload5()
+    {
+        if (null === $this->file5) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file5->move($this->getUploadRootDir(), $this->image5);
+
+        unset($this->file5);
+    }
+
+    public function removeUpload5()
+    {
+        if ($file5 = $this->getAbsolutePath()) {
+            unlink($file5);
+        }
+    }
+
     /**code généré
     /**
      * @var int
@@ -254,6 +299,8 @@ class Association
     private $titre3;
 
     private $titre4;
+    
+    private $titre5;
 
     /**
      * Set titre
@@ -352,6 +399,30 @@ class Association
     }
 
     /**
+     * Set titre
+     *
+     * @param string $titre
+     *
+     * @return Association
+     */
+    public function setTitre5($titre5)
+    {
+        $this->titre5 = $titre5;
+
+        return $this;
+    }
+
+    /**
+     * Get titre
+     *
+     * @return string
+     */
+    public function getTitre5()
+    {
+        return $this->titre5;
+    }
+
+    /**
      * Set article
      *
      * @param string $article
@@ -393,6 +464,11 @@ class Association
      * @var string
      */
     private $article4;
+
+    /**
+     * @var string
+     */
+    private $article5;
 
 
     /**
@@ -490,6 +566,30 @@ class Association
     {
         return $this->article4;
     }
+
+    /**
+     * Set article5
+     *
+     * @param string $article5
+     *
+     * @return Association
+     */
+    public function setArticle5($article5)
+    {
+        $this->article5 = $article5;
+
+        return $this;
+    }
+
+    /**
+     * Get article5
+     *
+     * @return string
+     */
+    public function getArticle5()
+    {
+        return $this->article5;
+    }
     /**
      * @var string
      */
@@ -510,6 +610,10 @@ class Association
      */
     private $image4;
 
+    /**
+     * @var string
+     */
+    private $image5;
 
     /**
      * Set image1
@@ -606,6 +710,31 @@ class Association
     {
         return $this->image4;
     }
+
+    /**
+     * Set image5
+     *
+     * @param string $image5
+     *
+     * @return Association
+     */
+    public function setImage5($image5)
+    {
+        $this->image5 = $image5;
+
+        return $this;
+    }
+
+    /**
+     * Get image5
+     *
+     * @return string
+     */
+    public function getImage5()
+    {
+        return $this->image5;
+    }
+
 
     /**
      * @var string

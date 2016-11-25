@@ -89,6 +89,18 @@
         </div>
         <br>
         <br>
+         <!--article 5-->
+         <div class="row fond_asso">
+             <div class="col-xs-12">
+                 <h1>{{ association.titre5 }}</h1>
+             </div>
+             <div class="col-xs-12 col-lg-7">
+                 <p class="txt_assos">{{ association.article5 }}</p>
+             </div>
+             <div class="col-xs-12 col-lg-5">
+                 <img src="{{ app.request.basepath }}/uploads/{{ association.image5 }}" class="thumbnail img_tmp">
+             </div>
+         </div>
      {% endfor %}
     </div>
 {% endblock %}
