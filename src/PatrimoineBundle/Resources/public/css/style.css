@@ -134,6 +134,14 @@ a.btn.btn-default {
     padding-bottom: 5%;
 }
 
+
+.full_width {
+    width: 100%;
+}
+
+.iframe {
+    height: 58vh;
+}
 .fond_video {
     background-color: #E5F7E5;
     opacity: 0.7;

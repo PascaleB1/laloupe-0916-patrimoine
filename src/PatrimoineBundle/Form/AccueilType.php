@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class AccueilType extends AbstractType
 {
@@ -23,7 +24,10 @@ class AccueilType extends AbstractType
             ->add('titre2')
             ->add('titre3')
             ->add('titre4')
-            ->add('video');
+            ->add('video')
+            ->add('file', FileType::class, array('label' => 'insérer une image', 'required' => false))
+            ->add('file1', FileType::class, array('label' => 'insérer une image', 'required' => false))
+        ;
 
     }
     

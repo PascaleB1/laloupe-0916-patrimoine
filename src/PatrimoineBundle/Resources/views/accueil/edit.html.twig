@@ -34,6 +34,7 @@
 
     <!--bloc video-->
 
+
     <div class="row fond_video">
         <div class="col-xs-12">
             <div class="video">
@@ -48,9 +49,24 @@
 
             </div>
         </div>
+
+        <div class="col-xs-12 col-lg-4">
+            <img src="{{ app.request.basepath }}/uploads/{{ accueil.image }}" class="thumbnail img_tmp">
+            {{ form_widget(form.file) }}
+            {{ form_errors(form.file) }}
+        </div>
+
+        <div class="col-xs-12 col-lg-4">
+            <img src="{{ app.request.basepath }}/uploads/{{ accueil.image1 }}" class="thumbnail img_tmp">
+            {{ form_widget(form.file1) }}
+            {{ form_errors(form.file1) }}
+        </div>
     </div>
 
     <!--fin bloc video-->
+
+
+
 
     <br/>
     <br/>

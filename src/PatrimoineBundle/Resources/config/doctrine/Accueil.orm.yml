@@ -32,4 +32,19 @@ PatrimoineBundle\Entity\Accueil:
         video:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+        image:
+            type: string
+            lenght: 255
+            nullable: TRUE
+        image1:
+            type: string
+            lenght: 255
+            nullable: TRUE
+
+    lifecycleCallbacks:
+      prePersist: [ preUpload, preUpload1 ]
+      preUpdate: [ preUpload, preUpload1 ]
+      postPersist: [ upload, upload1 ]
+      postUpdate: [ upload, upload1 ]
+      postRemove: [ removeUpload, removeUpload1 ]
+

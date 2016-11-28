@@ -29,15 +29,34 @@
     {% for accueil in accueils %}
     <div class="container">
         <br>
+
         <!--lien video-->
         <div class="row fond_video">
-             <div class="col-xs-12">
+             <div class="col-md-12">
                  <div class="video">
                      <h3 class="titre_accueil">Fonds pour la Sauvegarde du Patrimoine Percheron</h3>
-                     <iframe width="560" height="315" src={{ accueil.video }} frameborder="0" allowfullscreen></iframe>
+                     <div class="'row">
+                         <div class="col-xs-8">
+                             <iframe class="iframe full_width" src={{ accueil.video }} frameborder="0" allowfullscreen></iframe>
+                         </div>
+
+                         <!--image droite-->
+                         <div class="col-xs-4">
+                            <img src="{{ app.request.basepath }}/uploads/{{ accueil.image }}" class=" full_width">
+                            <br /><br />
+                             <img src="{{ app.request.basepath }}/uploads/{{ accueil.image1 }}" class="full_width">
+                         </div>
+                     </div>
+
                  </div>
+
              </div>
-        </div>
+
+
+
+    </div>
+
+
         <br/>
         <br/>
         <!--articles-->
