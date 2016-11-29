@@ -137,6 +137,7 @@ a.btn.btn-default {
 
 .full_width {
     width: 100%;
+    max-width: 100%;
 }
 
 .iframe {
