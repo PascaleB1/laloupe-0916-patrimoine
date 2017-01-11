@@ -6,8 +6,9 @@ namespace PatrimoineBundle\Entity;
  * Association
  */
 class Association
-    //image1
+
 {
+    //image1
     public $file1;
 
     protected function getUploadDir()
@@ -241,7 +242,9 @@ class Association
         }
     }
 
-    /**code généré
+    /**CODE GENERE */
+
+    
     /**
      * @var int
      */
